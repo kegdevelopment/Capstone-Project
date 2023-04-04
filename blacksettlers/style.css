@@ -1294,6 +1294,128 @@ font-size: 1rem;
 	height:15rem;
 }
 
+/* Contact Page */
+.tooltip{
+    color: white;
+    position: relative;
+  display: inline-block;
+  
+}
+.tooltiptext{
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+   
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+}
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+
+
+/* Video Interview Page */
+.video-container {
+    width: 50%;
+    height: 50%;
+    margin-right: 2rem;
+    background-color: antiquewhite;
+}
+.wide-container {
+    display: flex;
+}
+
+.video-text h3{
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+.vid-info {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.clock {
+    display: flex;
+}
+.clock img {
+    width: 1rem;
+}
+img {
+    width: 100%;
+}
+/* Albums Page */
+.communties-album {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	margin-top: 5rem;
+}
+.community-image {
+	grid-column: 2 /-1;
+	
+}
+.community-image img {
+	width: 100%;
+}
+
+.gallery-section {
+	margin-top: 10rem;
+}
+.gallery-images {
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	grid-auto-rows: minmax(100px, auto);
+}
+.farming {
+	grid-column: 1/2;
+	grid-row: 1/-1;
+}
+.schools {
+	grid-column: 2/3;
+	grid-row: 1/2;
+}
+.church {
+	grid-column: 3/-1;
+	grid-row: 1/-1;
+}
+.socializing {
+	grid-column: 2/3;
+}
+section {
+	width: 82.94rem;
+	margin: 0 auto;
+}
+
+.image-box {
+	position: relative;
+	display: inline-block;
+	background-color: black;
+	opacity: 50%;
+}
+.image-box img {
+	width: 100%;
+}
+.image-box .gallery-text {
+	position: absolute;
+	z-index: 999;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	text-align:center;
+	top: 50%;
+	color: white;
+	text-transform: uppercase;
+
+	
+}
+
+
 @media only screen and (min-width: 700px){
 	.intro-header,
 	.intro-video{
