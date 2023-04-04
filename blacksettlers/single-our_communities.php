@@ -1,0 +1,88 @@
+<?php
+/**
+ * The template for displaying all single posts
+ *
+ * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
+ *
+ * @package blacksettlers
+ */
+
+get_header();
+?>
+
+	<main id="primary" class="site-main">
+
+  <div class="community-container">
+    <div class="community-content">
+      <h2><?php the_field('community_name'); ?></h2>
+      <div class="intro-content">
+        <div class="intro-text">
+          <?php the_field('intro_information'); ?>
+        </div>
+        <?php 
+          $image = get_field('intro_image');
+          if( !empty( $image ) ): ?>
+            <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+          <?php endif; ?>
+      </div> <!-- .intro-content -->
+      <div class="first-main-section">
+        <h3><?php the_field('section1_subheading'); ?></h3>
+        <div class="first-main-section section-content">
+        <?php 
+          $image = get_field('section1_image1');
+          if( !empty( $image ) ): ?>
+            <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+          <?php endif; ?>
+          <div class="section-text">
+            <?php the_field('section1_content'); ?>
+          </div>
+        </div> <!-- first-main-section .section-content -->
+        <div class="first-main-section second-img">
+        <?php 
+          $image = get_field('section1_image2');
+          if( !empty( $image ) ): ?>
+            <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+          <?php endif; ?>
+        </div><!-- .second-img -->
+      </div><!-- .first-main-section -->
+      <div class="second-main-section">
+        <h3><?php the_field('section2_subheading'); ?></h3>
+        <div class="second-main-section section-content">
+          <div class="section-text">
+            <?php the_field('section2_content'); ?>
+          </div>
+            <?php 
+              $image = get_field('section2_image');
+              if( !empty( $image ) ): ?>
+                <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+            <?php endif; ?>
+        </div><!--  .second-section section-content -->
+      </div><!-- .second-section -->
+    </div><!-- .community-content -->
+    <div class="amber-valley-only">
+      <h3><?php the_field('ambervalley_subheading'); ?></h3>
+      <div class="hidden-content">
+        <?php the_field('hidden_text'); ?>
+      </div><!-- .hidden-content -->
+      <div class="overlay-image">
+      <?php 
+              $image = get_field('overlay_image');
+              if( !empty( $image ) ): ?>
+                <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+            <?php endif; ?>
+      </div><!-- .overlay-image -->
+      <div class="visible-content">
+        <div class="vis-content1">
+          <?php the_field('visible_content1'); ?>
+        </div>
+        <div class="vis-content2">
+        <?php the_field('visible_content2'); ?>
+        </div>
+      </div><!-- .visible-content-->
+    </div><!-- .amber-valley-only -->
+  </div><!-- .community-container -->
+	</main><!-- #main -->
+
+<?php
+get_sidebar();
+get_footer();
