@@ -968,10 +968,21 @@ textarea {
 	margin-bottom: 1.5em;
 }
 
+/* * * * * * * * * *
+BSAS Custom Styles
+* * * * * * * * * */
+
 body{
 	background-color:#E8DDD5;
-	
+	font-family: 'Montserrat', sans-serif;
 }
+
+h1, h2, h3, h4 {
+	font-family: 'Noto Serif Display', serif;
+	font-weight: 700;
+	color: #800000;
+}
+
 .page-template-default{
 	margin-bottom:0rem;
 }
@@ -1100,7 +1111,7 @@ font-size: 1rem;
 	padding:3rem ;
 }
 
-.video-description{
+.video-description h2, .video-description p{
 	color:#E8DDD5;
 }
 
@@ -1542,4 +1553,30 @@ section {
 		margin: 1rem;
 	}
 	
+}
+
+/* * * * * * * * * * * * *
+COMMUNITIES (CUSTOM POSTS)
+* * * * * * * * * * * * */
+.intro-content, 
+.first-main-section .section-content,
+.second-main-section .section-content,
+.visible-content {
+	display: flex;
+}
+
+.intro-text,
+.second-main-section > .section-text,
+.vis-content1 {
+	margin-right: 3rem;
+}
+
+.first-main-section > .section-text {
+	margin-left: 3rem;
+}
+
+.intro-content img, 
+.first-main-section .section-content img, 
+.second-main-section img {
+	max-width: 40%;
 }
