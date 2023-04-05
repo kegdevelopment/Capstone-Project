@@ -1145,7 +1145,7 @@ font-size: 1rem;
 	margin-bottom:6rem;
 }
 
-.contact-left{
+.contact-left h3, .contact-left p{
 	color:#E8DDD5;
 }
 
