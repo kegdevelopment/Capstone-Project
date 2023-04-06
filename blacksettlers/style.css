@@ -66,7 +66,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
-html {
+ html {
 	line-height: 1.15;
 	-webkit-text-size-adjust: 100%;
 }
@@ -1006,7 +1006,6 @@ h1, h2, h3, h4 {
 }
 
 .site-branding{
-	display:flex;
 	background-color:#CEC0B6;
 }
 
@@ -1024,11 +1023,13 @@ h1, h2, h3, h4 {
 
 .site-info{
 		justify-content:center;
+		max-width: 1280px;
 }
 
 .footer1,
 .footer2{
-	padding:2rem;
+	padding-left:2rem;
+	padding-bottom: 2rem;
 }
 
 .footer1 h2{
@@ -1104,14 +1105,18 @@ font-size: 1rem;
 	margin-bottom:3rem;
 }
 
-
+.intro-video-container,
+.contact-container{
+	background-color:#574436;
+	width: 100vw;
+}
 
 .intro-video{
 	background-color:#574436;
 	padding:3rem ;
 }
 
-.video-description h2, .video-description p{
+.video-description{
 	color:#E8DDD5;
 }
 
@@ -1145,8 +1150,13 @@ font-size: 1rem;
 	margin-bottom:6rem;
 }
 
-.contact-left h3, .contact-left p{
+.contact-left{
 	color:#E8DDD5;
+}
+
+.contact-left h3{
+	color: #E8DDD5;
+	font-size: 28px;
 }
 
 .about-bsas{
@@ -1226,7 +1236,6 @@ font-size: 1rem;
 }
 
 .communities-page-gallery{
-	
 	display: flex;
 	flex-wrap: wrap;
 	justify-content:center;
@@ -1251,7 +1260,7 @@ font-size: 1rem;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-	width:15rem;
+	width:24rem;
 	height:15rem;
 }
 
@@ -1261,7 +1270,7 @@ font-size: 1rem;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-	width:15rem;
+	width:24rem;
 	height:15rem;
 }
 
@@ -1271,7 +1280,7 @@ font-size: 1rem;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-	width:15rem;
+	width:24rem;
 	height:15rem;
 }
 
@@ -1281,7 +1290,7 @@ font-size: 1rem;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-	width:15rem;
+	width:24rem;
 	height:15rem;
 }
 
@@ -1291,7 +1300,7 @@ font-size: 1rem;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-	width:15rem;
+	width:24rem;
 	height:15rem;
 }
 
@@ -1301,7 +1310,7 @@ font-size: 1rem;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-	width:15rem;
+	width:24rem;
 	height:15rem;
 }
 
@@ -1361,6 +1370,7 @@ font-size: 1rem;
 img {
     width: 100%;
 }
+
 /* Albums Page */
 .communties-album {
 	display: grid;
@@ -1426,13 +1436,48 @@ section {
 	
 }
 
+/* * * * * * * * * * * * *
+COMMUNITIES (CUSTOM POSTS)
+* * * * * * * * * * * * */
+.intro-content, 
+.first-main-section .section-content,
+.second-main-section .section-content,
+.visible-content {
+	display: flex;
+}
+
+.intro-text,
+.second-main-section > .section-text,
+.vis-content1 {
+	margin-right: 3rem;
+}
+
+.first-main-section > .section-text {
+	margin-left: 3rem;
+}
+
+.intro-content img, 
+.first-main-section .section-content img, 
+.second-main-section img {
+	max-width: 40%;
+}
+
+/* End of Communities (CPT) Styling  */
 
 @media only screen and (min-width: 700px){
+		
+	.site-info{
+		display: flex;
+		justify-content:space-between;
+		}
+
 	.intro-header,
 	.intro-video{
 	display:flex;
-}
+	}
 	
+
+
 	.intro-dream{
 	width:60%;
 	margin-right:3rem;
@@ -1468,11 +1513,34 @@ section {
 	
 
 	.contact-left{
-		width:65%;
+		width:75%;
+	}
+
+	.contact-left h3{
+		font-size: 28px;
 	}
 
 	.contact-right{
 		margin:auto;
+		width: 25%;
+	}
+
+	.about-bsas{
+		text-align: left;
+	}
+
+	.about-bsas h1{
+		font-size: 2.5rem;
+	}
+
+	.archiving-history h2,
+	.founders h3{
+		font-size: 2rem;
+	}
+
+	.albums-description h3,
+	.video-interviews-description h3{
+		font-size: 1.5rem;
 	}
 	
 	.about-paras{
@@ -1552,31 +1620,16 @@ section {
 	.communities-page-gallery a div{
 		margin: 1rem;
 	}
+
+	.intro-header,
+	.intro-video,
+	.what-we-do,
+	.contact,
+	.about-bsas,
+	.archiving-history,
+	.site-info{
+		max-width:1280px;
+		margin:0 auto;
+	}
 	
-}
-
-/* * * * * * * * * * * * *
-COMMUNITIES (CUSTOM POSTS)
-* * * * * * * * * * * * */
-.intro-content, 
-.first-main-section .section-content,
-.second-main-section .section-content,
-.visible-content {
-	display: flex;
-}
-
-.intro-text,
-.second-main-section > .section-text,
-.vis-content1 {
-	margin-right: 3rem;
-}
-
-.first-main-section > .section-text {
-	margin-left: 3rem;
-}
-
-.intro-content img, 
-.first-main-section .section-content img, 
-.second-main-section img {
-	max-width: 40%;
 }
