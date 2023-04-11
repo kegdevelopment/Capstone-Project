@@ -995,7 +995,7 @@ h1, h2, h3, h4 {
 }
 
 #primary-menu li a{
-	margin-right:2rem;
+	margin-right:1.3rem;
 	color:#800000;
 }
 
@@ -1105,8 +1105,8 @@ font-size: 1rem;
 	margin-bottom:3rem;
 }
 
-.intro-video-container,
-.contact-container{
+.intro-video-container
+{
 	background-color:#574436;
 	width: 100vw;
 }
@@ -1340,7 +1340,7 @@ font-size: 1rem;
 
 /* Vid interview */
 .post-65 h1 {
-	text-align: center;
+	display: none;
 }
 .video-container {
 	margin: 2rem;
@@ -1388,10 +1388,7 @@ img {
 }
 
 
-section {
-	width: 82.94rem;
-	margin: 0 auto;
-}
+
 
 .image-box {
 	position: relative;
