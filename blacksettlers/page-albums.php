@@ -24,6 +24,45 @@
 
 
         </div>
+        <div class="gallery-section">
+            <h2>Galleries</h2>
+            <div class="gallery-images">
+                <div class="gallery-box farming">
+                <div class="image-box">
+                <img src="https://blacksettlersb.web.dmitcapstone.ca/wp-content/uploads/2023/04/walker-beaver-farming.jpeg" alt="man on tractor">
+                </div>
+                <div class="gallery-text">
+                    <h3>Farming</h3>
+                </div>
+                </div>
+                <div class="gallery-box schools">
+                    <div class="image-box">
+                    <img src="https://blacksettlersb.web.dmitcapstone.ca/wp-content/uploads/2023/04/unid-school-children.jpeg" alt="children at school">
+                    </div>
+                    <div class="gallery-text">
+                        <h3>Schools</h3>
+                    </div>
+                </div>
+                <div class="gallery-box church" >
+                <div class="image-box">
+                    <img src="https://blacksettlersb.web.dmitcapstone.ca/wp-content/uploads/2023/04/unid-3-men-cropped.jpg" alt="three men dressed for church">
+                </div>
+                    <div class="gallery-text">
+                        <h3>Church</h3>
+                    </div>
+                </div>
+                <a href="https://blacksettlersb.web.dmitcapstone.ca/albums/socializing/">
+                <div class="gallery-box socializing">
+                <div class="image-box">
+                    <img src="https://blacksettlersb.web.dmitcapstone.ca/wp-content/uploads/2023/04/chrisitineb-garrickd-dennisbowen-social.jpg" alt="group of people socializing">
+                </div>
+                    <div class="gallery-text">
+                        <h3>Socializing</h3>
+                    </div>
+                </div>
+                </a>
+            </div>
+        </div>
         
 
 <section>
