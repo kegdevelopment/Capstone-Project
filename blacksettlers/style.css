@@ -983,6 +983,10 @@ h1, h2, h3, h4 {
 	color: #800000;
 }
 
+h1 {
+	text-transform: uppercase;
+}
+
 .page-template-default{
 	margin-bottom:0rem;
 }
@@ -1416,6 +1420,15 @@ img {
 /* * * * * * * * * * * * *
 COMMUNITIES (CUSTOM POSTS)
 * * * * * * * * * * * * */
+.community-name {
+	font-size: 2rem;
+	text-transform: uppercase;
+}
+
+.community-subheading {
+	font-size: 1.5rem;
+}
+
 .intro-content, 
 .first-main-section .section-content,
 .second-main-section .section-content,
@@ -1433,6 +1446,24 @@ COMMUNITIES (CUSTOM POSTS)
 	margin-left: 3rem;
 }
 
+.community-container {
+	max-width: 1280px;
+}
+
+.intro-text, .section-text {
+	max-width: 60%
+	
+}
+
+.image-content img {
+	border-radius: 5px;
+}
+
+.caption {
+	color: #880000;
+	margin-top: 0;
+	font-style: italic;
+}
 
 /* End of Communities (CPT) Styling  */
 
@@ -1449,7 +1480,6 @@ COMMUNITIES (CUSTOM POSTS)
 	display:flex;
 	}
 	
-
 
 	.intro-dream{
 	width:60%;
@@ -1502,12 +1532,13 @@ COMMUNITIES (CUSTOM POSTS)
 		text-align: left;
 	}
 
-	.about-bsas h1{
+	.about-bsas h1, .community-name {
 		font-size: 2.5rem;
 	}
 
 	.archiving-history h2,
-	.founders h3{
+	.founders h3,
+	.community-subheading {
 		font-size: 2rem;
 	}
 

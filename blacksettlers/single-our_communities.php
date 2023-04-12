@@ -14,7 +14,7 @@ get_header();
 
   <div class="community-container">
     <div class="community-content">
-      <h2><?php the_field('community_name'); ?></h2>
+      <h2 class="community-name"><?php the_field('community_name'); ?></h2>
       <div class="intro-content">
         <div class="intro-text">
           <?php the_field('intro_information'); ?>
@@ -29,7 +29,7 @@ get_header();
         </div> <!-- .image-content -->
       </div> <!-- .intro-content -->
       <div class="first-main-section">
-        <h3><?php the_field('section1_subheading'); ?></h3>
+        <h3 class="community-subheading"><?php the_field('section1_subheading'); ?></h3>
         <div class="first-main-section section-content">
           <div class="image-content">
             <?php 
@@ -55,7 +55,7 @@ get_header();
         </div><!-- .second-img -->
       </div><!-- .first-main-section -->
       <div class="second-main-section">
-        <h3><?php the_field('section2_subheading'); ?></h3>
+        <h3 class="community-subheading"><?php the_field('section2_subheading'); ?></h3>
         <div class="second-main-section section-content">
           <div class="section-text">
             <?php the_field('section2_content'); ?>
@@ -72,7 +72,7 @@ get_header();
       </div><!-- .second-section -->
     </div><!-- .community-content -->
     <div class="amber-valley-only">
-      <h3><?php the_field('ambervalley_subheading'); ?></h3>
+      <h3 class="community-subheading"><?php the_field('ambervalley_subheading'); ?></h3>
       <div class="hidden-content">
         <?php the_field('hidden_text'); ?>
       </div><!-- .hidden-content -->
