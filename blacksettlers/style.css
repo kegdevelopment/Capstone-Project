@@ -985,6 +985,7 @@ h1, h2, h3, h4 {
 
 h1 {
 	text-transform: uppercase;
+	font-size: 2rem;
 }
 
 .page-template-default{
@@ -1532,7 +1533,9 @@ COMMUNITIES (CUSTOM POSTS)
 		text-align: left;
 	}
 
-	.about-bsas h1, .community-name {
+	h1,
+	.about-bsas h1, 
+	h2.community-name {
 		font-size: 2.5rem;
 	}
 
