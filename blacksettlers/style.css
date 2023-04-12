@@ -1433,13 +1433,11 @@ COMMUNITIES (CUSTOM POSTS)
 	margin-left: 3rem;
 }
 
-.intro-content img, 
-.first-main-section .section-content img, 
-.second-main-section img {
+.image-content img {
 	max-width: 40%;
 }
-
 /* End of Communities (CPT) Styling  */
+
 
 @media only screen and (min-width: 700px){
 		

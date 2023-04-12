@@ -19,30 +19,39 @@ get_header();
         <div class="intro-text">
           <?php the_field('intro_information'); ?>
         </div>
-        <?php 
-          $image = get_field('intro_image');
-          if( !empty( $image ) ): ?>
-            <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
-          <?php endif; ?>
+        <div class="image-content">
+          <?php 
+            $image = get_field('intro_image');
+            if( !empty( $image ) ): ?>
+              <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+              <p class="caption"><?php echo $image['caption']; ?></p>
+            <?php endif; ?>
+        </div> <!-- .image-content -->
       </div> <!-- .intro-content -->
       <div class="first-main-section">
         <h3><?php the_field('section1_subheading'); ?></h3>
         <div class="first-main-section section-content">
-        <?php 
-          $image = get_field('section1_image1');
-          if( !empty( $image ) ): ?>
-            <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
-          <?php endif; ?>
-          <div class="section-text">
-            <?php the_field('section1_content'); ?>
-          </div>
+          <div class="image-content">
+            <?php 
+              $image = get_field('section1_image1');
+              if( !empty( $image ) ): ?>
+                <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+                <p class="caption"><?php echo $image['caption']; ?></p>
+              <?php endif; ?>
+          </div><!-- .image-content -->
+            <div class="section-text">
+              <?php the_field('section1_content'); ?>
+            </div>
         </div> <!-- first-main-section .section-content -->
         <div class="first-main-section second-img">
-        <?php 
-          $image = get_field('section1_image2');
-          if( !empty( $image ) ): ?>
-            <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
-          <?php endif; ?>
+          <div class="image-content">
+            <?php 
+            $image = get_field('section1_image2');
+            if( !empty( $image ) ): ?>
+              <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+              <p class="caption"><?php echo $image['caption']; ?></p>
+            <?php endif; ?>
+          </div><!-- .image-content -->
         </div><!-- .second-img -->
       </div><!-- .first-main-section -->
       <div class="second-main-section">
@@ -51,11 +60,14 @@ get_header();
           <div class="section-text">
             <?php the_field('section2_content'); ?>
           </div>
+          <div class="image-content">
             <?php 
               $image = get_field('section2_image');
               if( !empty( $image ) ): ?>
                 <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+                <p class="caption"><?php echo $image['caption']; ?></p>
             <?php endif; ?>
+          </div><!-- .image-content -->
         </div><!--  .second-section section-content -->
       </div><!-- .second-section -->
     </div><!-- .community-content -->
