@@ -17,7 +17,9 @@ get_header();
       <h2 class="community-name"><?php the_field('community_name'); ?></h2>
       <div class="intro-content">
         <div class="intro-text">
-          <?php the_field('intro_information'); ?>
+          <div class="p-container">
+            <?php the_field('intro_information'); ?>
+          </div>
         </div>
         <div class="image-content">
           <?php 
@@ -40,7 +42,9 @@ get_header();
               <?php endif; ?>
           </div><!-- .image-content -->
             <div class="section-text">
-              <?php the_field('section1_content'); ?>
+              <div class="p-container">
+                <?php the_field('section1_content'); ?>
+              </div>
             </div>
         </div> <!-- first-main-section .section-content -->
         <div class="first-main-section second-img">
@@ -58,7 +62,9 @@ get_header();
         <h3 class="community-subheading"><?php the_field('section2_subheading'); ?></h3>
         <div class="second-main-section section-content">
           <div class="section-text">
-            <?php the_field('section2_content'); ?>
+            <div class="p-container">
+              <?php the_field('section2_content'); ?>
+            </div>
           </div>
           <div class="image-content">
             <?php 

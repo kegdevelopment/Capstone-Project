@@ -1419,8 +1419,13 @@ img {
 }
 
 /* * * * * * * * * * * * *
-COMMUNITIES (CUSTOM POSTS)
+COMMUNITIES (CPT) STYLING
 * * * * * * * * * * * * */
+.community-container {
+	max-width: 1280px;
+	margin: 0 auto;
+}
+
 .community-name {
 	font-size: 2rem;
 	text-transform: uppercase;
@@ -1438,6 +1443,16 @@ COMMUNITIES (CUSTOM POSTS)
 }
 
 .intro-text,
+.section-text {
+	display: table;
+}
+
+.p-container {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.intro-text,
 .second-main-section > .section-text,
 .vis-content1 {
 	margin-right: 3rem;
@@ -1445,10 +1460,6 @@ COMMUNITIES (CUSTOM POSTS)
 
 .first-main-section > .section-text {
 	margin-left: 3rem;
-}
-
-.community-container {
-	max-width: 1280px;
 }
 
 .intro-text, .section-text {
@@ -1462,7 +1473,7 @@ COMMUNITIES (CUSTOM POSTS)
 
 .caption {
 	color: #880000;
-	margin-top: 0;
+	margin: 0;
 	font-style: italic;
 }
 
@@ -1643,7 +1654,6 @@ COMMUNITIES (CUSTOM POSTS)
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
 	}
-	
 	
 }
 @media only screen and (min-width: 1400px) {
