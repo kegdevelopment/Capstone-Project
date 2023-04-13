@@ -1470,6 +1470,10 @@ COMMUNITIES (CPT) STYLING
 		font-size: 3rem;
 	}
 
+	.community-content p {
+		max-width: 650px;
+	}
+
 	.intro-content, 
 	.first-main-section .section-content,
 	.second-main-section .section-content,
@@ -1477,7 +1481,12 @@ COMMUNITIES (CPT) STYLING
 		display: flex;
 	}
 
-	.intro-text,
+	.intro-content, 
+	.first-main-section, 
+	.second-main-section {
+    justify-content: space-between;
+}
+
 	.section-text {
 		display: table;
 	}

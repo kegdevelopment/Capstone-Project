@@ -80,6 +80,14 @@ get_header();
           </div><!-- .image-content -->
         </div><!--  .second-section section-content -->
       </div><!-- .second-section -->
+      <div class="third-main-section">
+      <?php if( get_field('section3_subheading') ): ?>
+        <h3 class="community-subheading"><?php the_field('section3_subheading'); ?></h3>
+      <?php endif; ?>
+        <div class="third-main-section section-content">
+        <?php the_field('section3_content'); ?>
+        </div><!--  .third-section section-content -->
+      </div><!-- .third-main-section -->
     </div><!-- .community-content -->
     <div class="amber-valley-only">
       <h3 class="community-subheading"><?php the_field('ambervalley_subheading'); ?></h3>
