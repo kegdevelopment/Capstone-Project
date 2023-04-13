@@ -1422,8 +1422,7 @@ img {
 COMMUNITIES (CPT) STYLING
 * * * * * * * * * * * * */
 .community-container {
-	max-width: 1280px;
-	margin: 0 auto;
+	margin: 0 1rem
 }
 
 .community-name {
@@ -1435,38 +1434,6 @@ COMMUNITIES (CPT) STYLING
 	font-size: 1.5rem;
 }
 
-.intro-content, 
-.first-main-section .section-content,
-.second-main-section .section-content,
-.visible-content {
-	display: flex;
-}
-
-.intro-text,
-.section-text {
-	display: table;
-}
-
-.p-container {
-	display: table-cell;
-	vertical-align: middle;
-}
-
-.intro-text,
-.second-main-section > .section-text,
-.vis-content1 {
-	margin-right: 3rem;
-}
-
-.first-main-section > .section-text {
-	margin-left: 3rem;
-}
-
-.intro-text, .section-text {
-	max-width: 60%
-	
-}
-
 .image-content img {
 	border-radius: 5px;
 }
@@ -1475,6 +1442,54 @@ COMMUNITIES (CPT) STYLING
 	color: #880000;
 	margin: 0;
 	font-style: italic;
+}
+
+@media only screen and (min-width: 900px){
+	.community-container {
+		max-width: 1280px;
+		margin: 0 auto;
+	}
+
+	h2.community-name {
+		font-size: 3.75rem;
+	}
+
+	.community-subheading {
+		font-size: 3rem;
+	}
+
+	.intro-content, 
+	.first-main-section .section-content,
+	.second-main-section .section-content,
+	.visible-content {
+		display: flex;
+	}
+
+	.intro-text,
+	.section-text {
+		display: table;
+	}
+
+	.p-container {
+		display: table-cell;
+		vertical-align: middle;
+	}
+
+	.intro-text,
+	.second-main-section > .section-text,
+	.vis-content1 {
+		margin-right: 3rem;
+	}
+
+	.first-main-section > .section-text {
+		margin-left: 3rem;
+	}
+
+	.intro-text, .section-text {
+		max-width: 60%
+		
+	}
+
 }
 
 /* End of Communities (CPT) Styling  */
@@ -1545,14 +1560,12 @@ COMMUNITIES (CPT) STYLING
 	}
 
 	h1,
-	.about-bsas h1, 
-	h2.community-name {
+	.about-bsas h1 {
 		font-size: 2.5rem;
 	}
 
 	.archiving-history h2,
-	.founders h3,
-	.community-subheading {
+	.founders h3 {
 		font-size: 2rem;
 	}
 

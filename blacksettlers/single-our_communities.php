@@ -31,7 +31,9 @@ get_header();
         </div> <!-- .image-content -->
       </div> <!-- .intro-content -->
       <div class="first-main-section">
+      <?php if( get_field('field_name') ): ?>
         <h3 class="community-subheading"><?php the_field('section1_subheading'); ?></h3>
+      <?php endif; ?>
         <div class="first-main-section section-content">
           <div class="image-content">
             <?php 
