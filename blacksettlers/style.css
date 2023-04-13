@@ -1031,6 +1031,26 @@ h1 {
 		max-width: 1280px;
 }
 
+ul.sub-menu{
+	display:block;
+	background-color:#CEC0B6;
+	padding:0.5rem;
+	box-shadow:none;
+}
+
+ul.sub-menu li{
+	margin-bottom:.2rem;
+}
+
+#primary-menu li a{
+	padding:0.2rem .5rem;
+	border-radius:.5rem
+}
+
+#primary-menu li a:hover{
+	background-color:#E8DDD5;
+}
+
 .footer1,
 .footer2{
 	padding-left:2rem;
@@ -1121,7 +1141,8 @@ font-size: 1rem;
 	padding:3rem ;
 }
 
-.video-description{
+.video-description h2,
+.video-description p {
 	color:#E8DDD5;
 }
 
@@ -1368,9 +1389,11 @@ font-size: 1rem;
 .clock img {
     width: 1rem;
 }
-img {
+
+/* Commented out style below because it was stretching images in medium-sized view ports. -K */
+/* img {
     width: 100%;
-}
+} */
 
 /* Albums Page */
 .communties-album {
@@ -1422,8 +1445,13 @@ img {
 COMMUNITIES (CPT) STYLING
 * * * * * * * * * * * * */
 .community-container {
-	max-width: 1280px;
-	margin: 0 auto;
+	margin: 0 1rem
+}
+
+.community-container h2, 
+.community-container h3,
+.hidden-text {
+	text-align: center;
 }
 
 .community-name {
@@ -1431,40 +1459,12 @@ COMMUNITIES (CPT) STYLING
 	text-transform: uppercase;
 }
 
+.image-content {
+	text-align: center;
+}
+
 .community-subheading {
 	font-size: 1.5rem;
-}
-
-.intro-content, 
-.first-main-section .section-content,
-.second-main-section .section-content,
-.visible-content {
-	display: flex;
-}
-
-.intro-text,
-.section-text {
-	display: table;
-}
-
-.p-container {
-	display: table-cell;
-	vertical-align: middle;
-}
-
-.intro-text,
-.second-main-section > .section-text,
-.vis-content1 {
-	margin-right: 3rem;
-}
-
-.first-main-section > .section-text {
-	margin-left: 3rem;
-}
-
-.intro-text, .section-text {
-	max-width: 60%
-	
 }
 
 .image-content img {
@@ -1477,6 +1477,123 @@ COMMUNITIES (CPT) STYLING
 	font-style: italic;
 }
 
+.hidden-text p:first-child {
+	font-weight: 700;
+}
+
+@media only screen and (max-width: 899px){
+	.intro-content {
+		display: flex;
+		flex-flow: column;
+	}
+
+	.community-container p {
+		text-align: center;
+	}
+	
+	.intro-content .intro-text {
+		order: 2;
+	}
+
+	.second-main-section.section-content {
+    display: flex;
+    flex-direction: column;
+	}
+
+	.second-main-section.section-content .section-text {
+		order: 2;
+	}
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1280px) {
+	.community-container {
+		padding: 0 1rem;
+	}
+}
+
+@media only screen and (min-width: 900px){
+	.community-container {
+		max-width: 1280px;
+		margin: 0 auto;
+	}
+
+	h2.community-name {
+		font-size: 3.75rem;
+	}
+
+	.community-subheading {
+		font-size: 3rem;
+	}
+
+	.community-content p {
+		max-width: 650px;
+		margin-top: 0;
+	}
+
+	.intro-content, 
+	.first-main-section .section-content,
+	.second-main-section .section-content,
+	.visible-content {
+		display: flex;
+	}
+
+	.intro-content, 
+	.first-main-section, 
+	.second-main-section {
+    justify-content: space-between;
+}
+
+	.section-text {
+		display: table;
+	}
+
+	.p-container {
+		display: table-cell;
+		vertical-align: middle;
+	}
+
+	.intro-text,
+	.second-main-section > .section-text,
+	.vis-content1 {
+		margin-right: 3rem;
+	}
+
+	.second-main-section .image-content, .first-main-section.second-img {
+    margin-top: 2rem;
+}
+
+	.first-main-section > .section-text {
+		margin-left: 3rem;
+	}
+
+	.intro-text, .section-text {
+		max-width: 60%
+	}
+
+	.second-img {
+		max-height: 560px;
+	}
+
+	.poem-container {
+		position: relative;
+	}
+
+	.overlay {
+    background-color: #E8DDD5;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: 0.5s ease;
+	}
+
+	.poem-container:hover .overlay {
+			opacity: 1;
+	}
+
+}
 /* End of Communities (CPT) Styling  */
 
 
@@ -1545,14 +1662,12 @@ COMMUNITIES (CPT) STYLING
 	}
 
 	h1,
-	.about-bsas h1, 
-	h2.community-name {
+	.about-bsas h1 {
 		font-size: 2.5rem;
 	}
 
 	.archiving-history h2,
-	.founders h3,
-	.community-subheading {
+	.founders h3 {
 		font-size: 2rem;
 	}
 

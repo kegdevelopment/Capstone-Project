@@ -16,7 +16,12 @@
             <div class="communites-text">
                 <h2>Community Stories </h2>
                 <p>Learn about the black settlers, their families, and the communities they settled in. Browse through our stories and discover something new.</p>
-                <button><a href="https://blacksettlersb.web.dmitcapstone.ca/communities/">Got To Communities</a></button>
+                <a href="https://blacksettlersb.web.dmitcapstone.ca/communities/">
+                <div>
+                    Got To Communities
+                    <img src="https://blacksettlersb.web.dmitcapstone.ca/wp-content/uploads/2023/04/icons8-arrow-24.png" alt="">
+                </div>
+                </a>
             </div>
             <div class="community-image">
                 <img src="https://blacksettlersb.web.dmitcapstone.ca/wp-content/uploads/2023/04/unid-people-on-horses.jpeg" alt="unidentified person on a horse">
@@ -66,6 +71,26 @@
         
 
 <section>
+<div class="gallery-cards">
+  
+  <div class="gallery-card">
+    <a href="<?php echo get_permalink('gallery-1'); ?>">
+      <img src="<?php echo get_template_directory_uri() . '/images/gallery-1-thumbnail.jpg'; ?>" alt="Gallery 1" />
+      <h3>Gallery 1</h3>
+    </a>
+  </div>
+
+  <div class="gallery-card">
+    <a href="<?php echo get_permalink('gallery-2'); ?>">
+      <img src="<?php echo get_template_directory_uri() . '/images/gallery-2-thumbnail.jpg'; ?>" alt="Gallery 2" />
+      <h3>Gallery 2</h3>
+    </a>
+  </div>
+
+  <!-- Add more gallery cards as needed -->
+
+</div>
+
 
 <?php if(have_posts()) : ?>
  <!-- start the loop -->
