@@ -31,7 +31,7 @@ get_header();
         </div> <!-- .image-content -->
       </div> <!-- .intro-content -->
       <div class="first-main-section">
-      <?php if( get_field('field_name') ): ?>
+      <?php if( get_field('section1_subheading') ): ?>
         <h3 class="community-subheading"><?php the_field('section1_subheading'); ?></h3>
       <?php endif; ?>
         <div class="first-main-section section-content">
@@ -61,7 +61,7 @@ get_header();
         </div><!-- .second-img -->
       </div><!-- .first-main-section -->
       <div class="second-main-section">
-      <?php if( get_field('field_name') ): ?>
+      <?php if( get_field('section2_subheading') ): ?>
         <h3 class="community-subheading"><?php the_field('section2_subheading'); ?></h3>
       <?php endif; ?>
         <div class="second-main-section section-content">
