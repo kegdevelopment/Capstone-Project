@@ -1031,6 +1031,26 @@ h1 {
 		max-width: 1280px;
 }
 
+ul.sub-menu{
+	display:block;
+	background-color:#CEC0B6;
+	padding:0.5rem;
+	box-shadow:none;
+}
+
+ul.sub-menu li{
+	margin-bottom:.2rem;
+}
+
+#primary-menu li a{
+	padding:0.2rem .5rem;
+	border-radius:.5rem
+}
+
+#primary-menu li a:hover{
+	background-color:#E8DDD5;
+}
+
 .footer1,
 .footer2{
 	padding-left:2rem;
