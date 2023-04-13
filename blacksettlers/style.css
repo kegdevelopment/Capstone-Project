@@ -1535,6 +1535,25 @@ COMMUNITIES (CPT) STYLING
 		max-height: 560px;
 	}
 
+	.poem-container {
+		position: relative;
+	}
+
+	.overlay {
+    background-color: #E8DDD5;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: 0.5s ease;
+	}
+
+	.poem-container:hover .overlay {
+			opacity: 1;
+	}
+
 }
 /* End of Communities (CPT) Styling  */
 
