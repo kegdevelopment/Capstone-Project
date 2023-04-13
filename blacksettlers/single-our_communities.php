@@ -80,14 +80,6 @@ get_header();
           </div><!-- .image-content -->
         </div><!--  .second-section section-content -->
       </div><!-- .second-section -->
-      <div class="third-main-section">
-      <?php if( get_field('section3_subheading') ): ?>
-        <h3 class="community-subheading"><?php the_field('section3_subheading'); ?></h3>
-      <?php endif; ?>
-        <div class="third-main-section section-content">
-        <?php the_field('section3_content'); ?>
-        </div><!--  .third-section section-content -->
-      </div><!-- .third-main-section -->
     </div><!-- .community-content -->
     <div class="amber-valley-only">
       <h3 class="community-subheading"><?php the_field('ambervalley_subheading'); ?></h3>
@@ -101,14 +93,6 @@ get_header();
                 <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
             <?php endif; ?>
       </div><!-- .overlay-image -->
-      <div class="visible-content">
-        <div class="vis-content1">
-          <?php the_field('visible_content1'); ?>
-        </div>
-        <div class="vis-content2">
-        <?php the_field('visible_content2'); ?>
-        </div>
-      </div><!-- .visible-content-->
     </div><!-- .amber-valley-only -->
   </div><!-- .community-container -->
 	</main><!-- #main -->

@@ -1454,6 +1454,15 @@ COMMUNITIES (CPT) STYLING
 	.intro-content .intro-text {
 		order: 2;
 	}
+
+	.second-main-section.section-content {
+    display: flex;
+    flex-direction: column;
+	}
+	
+	.second-main-section.section-content .section-text {
+		order: 2;
+	}
 }
 
 @media only screen and (min-width: 900px){
