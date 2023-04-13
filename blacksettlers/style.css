@@ -1369,9 +1369,11 @@ font-size: 1rem;
 .clock img {
     width: 1rem;
 }
-img {
+
+/* Commented out style below because it was stretching images in medium-sized view ports. -K */
+/* img {
     width: 100%;
-}
+} */
 
 /* Albums Page */
 .communties-album {
@@ -1426,6 +1428,12 @@ COMMUNITIES (CPT) STYLING
 	margin: 0 1rem
 }
 
+.community-container h2, 
+.community-container h3,
+.hidden-text {
+	text-align: center;
+}
+
 .community-name {
 	font-size: 2rem;
 	text-transform: uppercase;
@@ -1459,7 +1467,7 @@ COMMUNITIES (CPT) STYLING
     display: flex;
     flex-direction: column;
 	}
-	
+
 	.second-main-section.section-content .section-text {
 		order: 2;
 	}
