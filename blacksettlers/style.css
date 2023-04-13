@@ -1457,6 +1457,10 @@ COMMUNITIES (CPT) STYLING
 	font-style: italic;
 }
 
+.hidden-text p:first-child {
+	font-weight: 700;
+}
+
 @media only screen and (max-width: 899px){
 	.intro-content {
 		display: flex;
