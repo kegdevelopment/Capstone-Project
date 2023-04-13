@@ -1493,6 +1493,10 @@ COMMUNITIES (CPT) STYLING
 		margin-right: 3rem;
 	}
 
+	.second-main-section .image-content, .first-main-section.second-img {
+    margin-top: 2rem;
+}
+
 	.first-main-section > .section-text {
 		margin-left: 3rem;
 	}
