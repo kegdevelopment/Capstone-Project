@@ -1439,6 +1439,10 @@ COMMUNITIES (CPT) STYLING
 	text-transform: uppercase;
 }
 
+.image-content {
+	text-align: center;
+}
+
 .community-subheading {
 	font-size: 1.5rem;
 }
@@ -1473,6 +1477,12 @@ COMMUNITIES (CPT) STYLING
 	}
 }
 
+@media only screen and (min-width: 900px) and (max-width: 1280px) {
+	.community-container {
+		padding: 0 1rem;
+	}
+}
+
 @media only screen and (min-width: 900px){
 	.community-container {
 		max-width: 1280px;
@@ -1489,6 +1499,7 @@ COMMUNITIES (CPT) STYLING
 
 	.community-content p {
 		max-width: 650px;
+		margin-top: 0;
 	}
 
 	.intro-content, 
