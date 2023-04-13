@@ -1445,13 +1445,15 @@ COMMUNITIES (CPT) STYLING
 	font-style: italic;
 }
 
-.intro-content {
-	display: flex;
-	flex-flow: column;
-}
-
-.intro-content .intro-text {
-	order: 2;
+@media only screen and (max-width: 899px){
+	.intro-content {
+		display: flex;
+		flex-flow: column;
+	}
+	
+	.intro-content .intro-text {
+		order: 2;
+	}
 }
 
 @media only screen and (min-width: 900px){
@@ -1501,15 +1503,6 @@ COMMUNITIES (CPT) STYLING
 
 	.second-img {
 		max-height: 560px;
-	}
-
-	.intro-content {
-		display: flex;
-		flex-flow: row;
-	}
-	
-	.intro-content .intro-text {
-		order: 1;
 	}
 
 }
