@@ -31,7 +31,9 @@ get_header();
         </div> <!-- .image-content -->
       </div> <!-- .intro-content -->
       <div class="first-main-section">
+      <?php if( get_field('section1_subheading') ): ?>
         <h3 class="community-subheading"><?php the_field('section1_subheading'); ?></h3>
+      <?php endif; ?>
         <div class="first-main-section section-content">
           <div class="image-content">
             <?php 
@@ -59,7 +61,7 @@ get_header();
         </div><!-- .second-img -->
       </div><!-- .first-main-section -->
       <div class="second-main-section">
-      <?php if( get_field('field_name') ): ?>
+      <?php if( get_field('section2_subheading') ): ?>
         <h3 class="community-subheading"><?php the_field('section2_subheading'); ?></h3>
       <?php endif; ?>
         <div class="second-main-section section-content">
@@ -81,24 +83,18 @@ get_header();
     </div><!-- .community-content -->
     <div class="amber-valley-only">
       <h3 class="community-subheading"><?php the_field('ambervalley_subheading'); ?></h3>
-      <div class="hidden-content">
-        <?php the_field('hidden_text'); ?>
-      </div><!-- .hidden-content -->
-      <div class="overlay-image">
-      <?php 
-              $image = get_field('overlay_image');
-              if( !empty( $image ) ): ?>
-                <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
-            <?php endif; ?>
-      </div><!-- .overlay-image -->
-      <div class="visible-content">
-        <div class="vis-content1">
-          <?php the_field('visible_content1'); ?>
-        </div>
-        <div class="vis-content2">
-        <?php the_field('visible_content2'); ?>
-        </div>
-      </div><!-- .visible-content-->
+      <div class="poem-container">
+        <?php 
+          $image = get_field('overlay_image');
+          if( !empty( $image ) ): ?>
+            <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+        <?php endif; ?>
+        <div class="overlay">
+          <div class="hidden-text">
+            <?php the_field('hidden_text'); ?>
+          </div>
+        </div><!-- .overlay -->
+      </div><!-- .poem-container -->
     </div><!-- .amber-valley-only -->
   </div><!-- .community-container -->
 	</main><!-- #main -->
