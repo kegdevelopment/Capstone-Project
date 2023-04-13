@@ -1121,7 +1121,8 @@ font-size: 1rem;
 	padding:3rem ;
 }
 
-.video-description{
+.video-description h2,
+.video-description p {
 	color:#E8DDD5;
 }
 
@@ -1487,7 +1488,10 @@ COMMUNITIES (CPT) STYLING
 
 	.intro-text, .section-text {
 		max-width: 60%
-		
+	}
+
+	.second-img {
+		max-height: 560px;
 	}
 
 }
