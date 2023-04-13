@@ -52,14 +52,16 @@ get_header();
             <?php 
             $image = get_field('section1_image2');
             if( !empty( $image ) ): ?>
-              <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+              <img class="second-img" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
               <p class="caption"><?php echo $image['caption']; ?></p>
             <?php endif; ?>
           </div><!-- .image-content -->
         </div><!-- .second-img -->
       </div><!-- .first-main-section -->
       <div class="second-main-section">
+      <?php if( get_field('field_name') ): ?>
         <h3 class="community-subheading"><?php the_field('section2_subheading'); ?></h3>
+      <?php endif; ?>
         <div class="second-main-section section-content">
           <div class="section-text">
             <div class="p-container">
