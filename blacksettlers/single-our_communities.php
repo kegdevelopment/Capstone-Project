@@ -83,16 +83,18 @@ get_header();
     </div><!-- .community-content -->
     <div class="amber-valley-only">
       <h3 class="community-subheading"><?php the_field('ambervalley_subheading'); ?></h3>
-      <div class="hidden-content">
-        <?php the_field('hidden_text'); ?>
-      </div><!-- .hidden-content -->
-      <div class="overlay-image">
-      <?php 
-              $image = get_field('overlay_image');
-              if( !empty( $image ) ): ?>
-                <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
-            <?php endif; ?>
-      </div><!-- .overlay-image -->
+      <div class="poem-container">
+        <?php 
+          $image = get_field('overlay_image');
+          if( !empty( $image ) ): ?>
+            <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+        <?php endif; ?>
+        <div class="overlay">
+          <div class="hidden-text">
+            <?php the_field('hidden_text'); ?>
+          </div>
+        </div><!-- .overlay -->
+      </div><!-- .poem-container -->
     </div><!-- .amber-valley-only -->
   </div><!-- .community-container -->
 	</main><!-- #main -->
