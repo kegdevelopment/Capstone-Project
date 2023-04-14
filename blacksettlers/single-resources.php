@@ -21,7 +21,11 @@ get_header();
         </div> <!--  END .res-content -->
         <div class="res-button">
           <div class="res-link">
-            <a href="<?php esc_attr( get_field('resource1_link') ); ?>">View More</a>
+          <?php 
+          $link = get_field('resource1_link');
+          if( $link ): ?>
+              <a class="button" href="<?php echo esc_url( $link ); ?>">View More</a>
+          <?php endif; ?>
           </div>
         </div> <!--  END .res-button -->
         <div class="res-content">
