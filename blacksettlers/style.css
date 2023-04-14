@@ -1126,6 +1126,19 @@ font-size: 1rem;
 	border-radius:2rem;
 	color:#F2DAC0;
 }
+.intro-dream a:hover,
+.video-description a:hover,
+.what-we-do a:hover,
+.contact-right a:hover,
+.albums-description a:hover,
+.video-interviews-description a:hover{
+	text-decoration:none;
+	padding:.6rem 1.5rem;
+	background-color:#F2DAC0;
+	border-radius:2rem;
+	color: #800000;
+}
+
 
 .intro-dream-para-2{
 	margin-bottom:3rem;
@@ -1349,7 +1362,7 @@ font-size: 1rem;
 	align-items: center;
 }
 .contact-us p {
-	font-family: 'Monserat';
+	font-family: 'Montserrat', sans-serif;;
 	color: #111;
 	margin-bottom: 0;
 }
@@ -1401,6 +1414,14 @@ text-decoration:none;
 	border-radius:2rem;
 	color:#F2DAC0;
 }
+input[type="submit"]:hover {
+	text-decoration:none;
+		padding:.6rem 1.5rem;
+		background-color:#F2DAC0;
+		border-radius:2rem;
+		color:#800000;
+		border: none;
+	}
 .bottom-contact {
 	display: flex;
 	flex-direction: column;
