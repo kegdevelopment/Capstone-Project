@@ -975,6 +975,7 @@ BSAS Custom Styles
 body{
 	background-color:#E8DDD5;
 	font-family: 'Montserrat', sans-serif;
+	color: #574436;
 }
 
 h1, h2, h3, h4 {
@@ -1618,7 +1619,7 @@ COMMUNITIES (CPT) STYLING
 	.intro-content, 
 	.first-main-section, 
 	.second-main-section {
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 	.section-text {
