@@ -21,7 +21,7 @@ get_header();
         </div> <!--  END .res-content -->
         <div class="res-button">
           <div class="res-link">
-            <a href=”<?php esc_attr( get_field('resource1_link') ); ?>”><?php esc_attr( get_field('resource1_link') ); ?></a>
+            <a href=”<?php esc_attr( get_field('resource1_link') ); ?>”>View More</a>
           </div>
         </div> <!--  END .res-button -->
         <div class="res-content">
@@ -32,7 +32,7 @@ get_header();
         </div> <!--  END .res-content -->
         <div class="res-button">
           <div class="res-link">
-            <a href=”<?php esc_attr( get_field('resource2_link') ); ?>”><?php esc_attr( get_field('resource2_link') ); ?></a>
+            <a href=”<?php esc_attr( get_field('resource2_link') ); ?>”>View More</a>
           </div>
         </div> <!--  END .res-button -->
         <div class="res-content">
@@ -43,7 +43,7 @@ get_header();
         </div> <!--  END .res-content -->
         <div class="res-button">
           <div class="res-link">
-            <a href=”<?php esc_attr( get_field('resource3_link') ); ?>”><?php esc_attr( get_field('resource3_link') ); ?></a>
+            <a href=”<?php esc_attr( get_field('resource3_link') ); ?>”>View More</a>
           </div>
         </div> <!--  END .res-button -->
         <div class="res-content">
@@ -54,7 +54,7 @@ get_header();
         </div> <!--  END .res-content -->
         <div class="res-button">
           <div class="res-link">
-            <a href=”<?php esc_attr( get_field('resource4_link') ); ?>”><?php esc_attr( get_field('resource4_link') ); ?></a>
+            <a href=”<?php esc_attr( get_field('resource4_link') ); ?>”>View More</a>
           </div>
         </div> <!--  END .res-button -->
         <div class="res-content">
@@ -65,7 +65,7 @@ get_header();
         </div> <!--  END .res-content -->
         <div class="res-button">
           <div class="res-link">
-            <a href=”<?php esc_attr( get_field('resource5_link') ); ?>”><?php esc_attr( get_field('resource5_link') ); ?></a>
+            <a href=”<?php esc_attr( get_field('resource5_link') ); ?>”>View More</a>
           </div>
         </div> <!--  END .res-button -->
         <div class="res-content">
@@ -76,7 +76,7 @@ get_header();
         </div> <!--  END .res-content -->
         <div class="res-button">
           <div class="res-link">
-            <a href=”<?php esc_attr( get_field('resource6_link') ); ?>”><?php esc_attr( get_field('resource6_link') ); ?></a>
+            <a href=”<?php esc_attr( get_field('resource6_link') ); ?>”>View More</a>
           </div>
         </div> <!--  END .res-button -->
         <div class="res-content">
@@ -87,7 +87,7 @@ get_header();
         </div> <!--  END .res-content -->
         <div class="res-button">
           <div class="res-link">
-            <a href=”<?php esc_attr( get_field('resource7_link') ); ?>”><?php esc_attr( get_field('resource7_link') ); ?></a>
+            <a href=”<?php esc_attr( get_field('resource7_link') ); ?>”>View More</a>
           </div>
         </div> <!--  END .res-button -->
         <div class="res-content">
@@ -98,7 +98,7 @@ get_header();
         </div> <!--  END .res-content -->
         <div class="res-button">
           <div class="res-link">
-            <a href=”<?php esc_attr( get_field('resource8_link') ); ?>”><?php esc_attr( get_field('resource8_link') ); ?></a>
+            <a href=”<?php esc_attr( get_field('resource8_link') ); ?>”>View More</a>
           </div>
         </div> <!--  END .res-button -->
         <div class="res-content">
@@ -109,7 +109,7 @@ get_header();
         </div> <!--  END .res-content -->
         <div class="res-button">
           <div class="res-link">
-            <a href=”<?php esc_attr( get_field('resource9_link') ); ?>”><?php esc_attr( get_field('resource9_link') ); ?></a>
+            <a href=”<?php esc_attr( get_field('resource9_link') ); ?>”>View More</a>
           </div>
         </div> <!--  END .res-button -->
         <div class="res-content">
@@ -120,7 +120,7 @@ get_header();
         </div> <!--  END .res-content -->
         <div class="res-button">
           <div class="res-link">
-            <a href=”<?php esc_attr( get_field('resource10_link') ); ?>”><?php esc_attr( get_field('resource10_link') ); ?></a>
+            <a href=”<?php ( get_field('resource10_link') ); ?>”>View More</a>
           </div>
         </div> <!--  END .res-button -->
       </div> <!--  END .res-container -->
