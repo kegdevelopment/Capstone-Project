@@ -1486,7 +1486,6 @@ COMMUNITIES (CPT) STYLING
 		display: flex;
 		flex-flow: column;
 	}
-<<<<<<< HEAD
 
 	.community-container p {
 		text-align: center;
@@ -1501,22 +1500,6 @@ COMMUNITIES (CPT) STYLING
     flex-direction: column;
 	}
 
-=======
-
-	.community-container p {
-		text-align: center;
-	}
-	
-	.intro-content .intro-text {
-		order: 2;
-	}
-
-	.second-main-section.section-content {
-    display: flex;
-    flex-direction: column;
-	}
-
->>>>>>> 67aa3d55b93c8084b82ec3438f677cb156369029
 	.second-main-section.section-content .section-text {
 		order: 2;
 	}

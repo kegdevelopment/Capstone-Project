@@ -244,6 +244,13 @@ function theme_setup(){
 		));
 		}
 		}
+		add_action( 'init', 'add_categories_to_pages' );
+
+		function add_categories_to_pages() {
+			register_taxonomy_for_object_type( 'category', 'page' );
+		}
+		
+		
 	   
 	
 		
