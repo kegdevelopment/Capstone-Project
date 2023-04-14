@@ -43,7 +43,7 @@ get_header();
                 <p class="caption"><?php echo $image['caption']; ?></p>
               <?php endif; ?>
           </div><!-- .image-content -->
-            <div class="section-text">
+            <div class="section-text-right">
               <div class="p-container">
                 <?php the_field('section1_content'); ?>
               </div>
@@ -83,7 +83,7 @@ get_header();
                 <p class="caption"><?php echo $image['caption']; ?></p>
               <?php endif; ?>
             </div><!-- .image-content -->
-            <div class="section-text subsection2">
+            <div class="section-text-right">
               <div class="p-container">
                 <?php the_field('sub2_content'); ?>
               </div>

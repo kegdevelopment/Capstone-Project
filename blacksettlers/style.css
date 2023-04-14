@@ -1736,13 +1736,12 @@ COMMUNITIES (CPT) STYLING
 		vertical-align: middle;
 	}
 
-	.first-main-section > .section-text{
+	.section-text-right{
 		margin-left: 3rem;
 	}
 
 	.intro-text,
-	.second-main-section > .section-text,
-	.subsection2 > .p-container {
+	.second-main-section > .section-text{
 		margin-right: 3rem;
 	}
 
