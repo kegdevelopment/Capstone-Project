@@ -990,7 +990,8 @@ h1 {
 	font-size: 3rem
 }
 
-.intro-dream h1 {
+.intro-dream h1,
+.about-bsas h1 {
 	font-size: 2.5rem;
 }
 
@@ -1831,7 +1832,8 @@ CPT MEDIA QUERIES
 		font-size: 3.75rem;
 	}
 
-	.intro-dream h1 {
+	.intro-dream h1,
+	.about-bsas h1{
 		font-size: 3rem;
 	}
 
@@ -1849,6 +1851,16 @@ CPT MEDIA QUERIES
 
 }
 /* End of CPT media queries  */
+
+.albums,
+.video-interviews {
+	border-radius: 10px;
+}
+
+.albums-img img,
+.video-interviews-img img {
+	border-radius: 10px 10px 0 0;
+}
 
 
 @media only screen and (min-width: 700px){
@@ -1946,6 +1958,14 @@ CPT MEDIA QUERIES
 	.video-interviews{
 		display:flex;
 	}
+
+	.albums-img img {
+    border-radius: 10px 0 0 10px;
+}
+
+	.video-interviews-img img {
+    border-radius: 0 10px 10px 0;
+}
 	
 	.albums-img,
 	.albums-description{
@@ -2142,3 +2162,4 @@ CPT MEDIA QUERIES
 }
 
 }
+
