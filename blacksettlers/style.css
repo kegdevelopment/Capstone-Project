@@ -1757,7 +1757,8 @@ COMMUNITIES (CPT) STYLING
     justify-content: space-around;
 }
 
-	.section-text {
+	.section-text-left,
+	.section-text-right {
 		display: table;
 	}
 
