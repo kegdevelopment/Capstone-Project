@@ -1731,6 +1731,10 @@ COMMUNITIES (CPT) STYLING
 		font-size: 3.75rem;
 	}
 
+	h4.subsection-heading {
+		font-size: 2rem;
+	}
+
 	.community-subheading {
 		font-size: 3rem;
 	}
@@ -1762,19 +1766,20 @@ COMMUNITIES (CPT) STYLING
 		vertical-align: middle;
 	}
 
+	.first-main-section > .section-text{
+		margin-left: 3rem;
+	}
+
 	.intro-text,
 	.second-main-section > .section-text,
-	.vis-content1 {
+	.subsection2 > .p-container {
 		margin-right: 3rem;
 	}
 
-	.second-main-section .image-content, .first-main-section.second-img {
+	.second-main-section .image-content, 
+	.first-main-section.second-img {
     margin-top: 2rem;
 }
-
-	.first-main-section > .section-text {
-		margin-left: 3rem;
-	}
 
 	.intro-text, .section-text {
 		max-width: 60%
@@ -1815,6 +1820,14 @@ COMMUNITIES (CPT) STYLING
 
 	h2 {
 		font-size: 3rem;
+	}
+
+	h3 {
+		font-size: 2.25rem;
+	}
+
+	h4 {
+		font-size: 2rem;
 	}
 
 }
