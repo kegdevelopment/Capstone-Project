@@ -1473,8 +1473,38 @@ input[type="submit"]:hover {
 /* img {
     width: 100%;
 } */
-
+/* pagination */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  .pagination span {
+    margin: 0 5px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  span.prev-arrow {
+    background-image: url(https://blacksettlersb.web.dmitcapstone.ca/wp-content/uploads/2023/04/back-arrow.png);
+  }
+  span.next-arrow {
+    background-image: url(https://blacksettlersb.web.dmitcapstone.ca/wp-content/uploads/2023/04/forward-arrow.png);
+  }
+  .page-numbers {
+    font-size: 14px;
+  }
+  
+ 
 /* Albums Page */
+
 .communties-album {
 	display: grid;
 	

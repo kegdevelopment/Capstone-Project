@@ -37,18 +37,18 @@ get_header();
 
   </div>
 
+  
+  <div class="pagination">
   <?php
-  // Add pagination links
-
-  echo '<div class="pagination">';
-  echo paginate_links( array(
-      'total' => $images->max_num_pages,
-      'current' => max( 1, get_query_var( 'paged' ) ),
-      'prev_text' => __( '&laquo; Previous' ),
-      'next_text' => __( 'Next &raquo;' )
-  ) );
-  echo '</div><!-- .pagination -->';
+    $paged = max(1, get_query_var('paged'));
+    $total_pages = $images->max_num_pages;
+    $prev_arrow = is_rtl() ? '&raquo;' : '&laquo;';
+    $next_arrow = is_rtl() ? '&laquo;' : '&raquo;';
+    echo '<a class="prev-arrow" href="' . get_previous_posts_page_link() . '"><span></span></a>';
+    echo '<span class="page-numbers">' . sprintf(__('Page %d of %d', 'text-domain'), $paged, $total_pages) . '</span>';
+    echo '<a class="next-arrow" href="' . get_next_posts_page_link($total_pages) . '"><span></span></a>';
   ?>
+</div>
 
 </main>
 
