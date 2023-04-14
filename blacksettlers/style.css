@@ -987,10 +987,10 @@ h1, h2, h3, h4 {
 
 h1 {
 	text-transform: uppercase;
-	font-size: calc(2rem - 2vw);
+	font-size: 2.5rem
 }
 h2 {
-	font-size: 3rem;
+	font-size: 2rem;
 }
 
 p {
