@@ -1736,19 +1736,20 @@ COMMUNITIES (CPT) STYLING
 		vertical-align: middle;
 	}
 
-	.intro-text,
-	.second-main-section > .section-text,
-	.section-text.subsection2 {
-		margin-right: 3rem;
-	}
-
-	.second-main-section .image-content, .first-main-section.second-img {
-    margin-top: 2rem;
-}
-
 	.first-main-section > .section-text{
 		margin-left: 3rem;
 	}
+
+	.intro-text,
+	.second-main-section > .section-text,
+	.subsection2 > .p-container {
+		margin-right: 3rem;
+	}
+
+	.second-main-section .image-content, 
+	.first-main-section.second-img {
+    margin-top: 2rem;
+}
 
 	.intro-text, .section-text {
 		max-width: 60%
