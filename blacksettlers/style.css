@@ -1701,6 +1701,10 @@ COMMUNITIES (CPT) STYLING
 		font-size: 3.75rem;
 	}
 
+	h4.subsection-heading {
+		font-size: 2rem;
+	}
+
 	.community-subheading {
 		font-size: 3rem;
 	}
@@ -1742,7 +1746,8 @@ COMMUNITIES (CPT) STYLING
     margin-top: 2rem;
 }
 
-	.first-main-section > .section-text {
+	.first-main-section > .section-text,
+	.section-text.subsection2{
 		margin-left: 3rem;
 	}
 
