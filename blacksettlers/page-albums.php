@@ -13,7 +13,7 @@
 <?php if(have_posts()) : ?>
  <!-- start the loop -->
  	<?php while(have_posts()) : the_post(); ?>
-    <section>
+    <section class="albums-section">
 <h1>Albums </h1>
         <div class="communties-album">
             <div class="communites-text">
