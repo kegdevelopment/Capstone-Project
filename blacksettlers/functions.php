@@ -105,6 +105,7 @@ add_action( 'after_setup_theme', 'blacksettlers_setup' );
 /* Remove WP-Editor from Community Custom Posts */
 add_action( 'init', function() {
 	remove_post_type_support( 'our_communities', 'editor' );
+	remove_post_type_support( 'resources', 'editor' );
 }, 99);
 
 /**
@@ -143,6 +144,9 @@ add_action( 'widgets_init', 'blacksettlers_widgets_init' );
  * Enqueue scripts and styles.
  */
 function blacksettlers_scripts() {
+	/** Google Fonts */
+	wp_enqueue_style('montserrat', 'https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&display=swap', false);
+	wp_enqueue_style('dm serif display', 'https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap', false);
 	wp_enqueue_style( 'blacksettlers-style', get_stylesheet_uri(), array(), _S_VERSION );
 	wp_style_add_data( 'blacksettlers-style', 'rtl', 'replace' );
 
@@ -244,5 +248,13 @@ function theme_setup(){
 		));
 		}
 		}
+		add_action( 'init', 'add_categories_to_pages' );
+
+		function add_categories_to_pages() {
+			register_taxonomy_for_object_type( 'category', 'page' );
+		}
+		
+		
 	   
+	
 		

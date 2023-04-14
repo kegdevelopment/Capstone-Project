@@ -975,17 +975,43 @@ BSAS Custom Styles
 body{
 	background-color:#E8DDD5;
 	font-family: 'Montserrat', sans-serif;
+	font-size: 1.125rem;
+	color: #574436;
 }
 
 h1, h2, h3, h4 {
-	font-family: 'Noto Serif Display', serif;
-	font-weight: 700;
+	font-family: 'DM Serif Display', serif;
+	font-weight: 400;
 	color: #800000;
 }
 
 h1 {
 	text-transform: uppercase;
+	font-size: 3rem
+}
+
+.intro-dream h1,
+.about-bsas h1 {
+	font-size: 2.5rem;
+}
+
+h2 {
+	font-size: 2.25rem;
+}
+
+h3 {
 	font-size: 2rem;
+}
+
+h4 {
+	font-size: 1.5rem;
+}
+
+p {
+	font-family: 'Montserrat', sans-serif;
+	color: #574436;
+	font-size: 1.125rem;
+	line-height: 1.875rem;
 }
 
 .page-template-default{
@@ -1030,6 +1056,35 @@ h1 {
 		justify-content:center;
 		max-width: 1280px;
 }
+.inner-contact {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.contact-left p {
+	color: #E8DDD5;
+	padding-bottom: 2rem;
+}
+ul.sub-menu{
+	display:block;
+	background-color:#CEC0B6;
+	padding:0.5rem;
+	box-shadow:none;
+}
+
+ul.sub-menu li{
+	margin-bottom:.2rem;
+}
+
+#primary-menu li a{
+	padding:0.2rem .5rem;
+	border-radius:.5rem
+}
+
+#primary-menu li a:hover{
+	background-color:#E8DDD5;
+}
 
 ul.sub-menu{
 	display:block;
@@ -1059,6 +1114,7 @@ ul.sub-menu li{
 
 .footer1 h2{
 	color:#800000;
+	font-size: 2rem;
 }
 
 .footer2{
@@ -1112,7 +1168,7 @@ font-size: 1rem;
 .intro-dream{
 	margin-bottom:2rem;
 }
-
+.footer2 a,
 .intro-dream a,
 .video-description a,
 .what-we-do a,
@@ -1125,6 +1181,20 @@ font-size: 1rem;
 	border-radius:2rem;
 	color:#F2DAC0;
 }
+.footer2 a:hover,
+.intro-dream a:hover,
+.video-description a:hover,
+.what-we-do a:hover,
+.contact-right a:hover,
+.albums-description a:hover,
+.video-interviews-description a:hover{
+	text-decoration:none;
+	padding:.6rem 1.5rem;
+	background-color:#F2DAC0;
+	border-radius:2rem;
+	color: #800000;
+}
+
 
 .intro-dream-para-2{
 	margin-bottom:3rem;
@@ -1341,6 +1411,17 @@ font-size: 1rem;
 }
 
 /* Contact Page */
+.contact-us {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+}
+.contact-us p {
+	font-family: 'Montserrat', sans-serif;
+	color: #111;
+	margin-bottom: 0;
+}
 .tooltip{
     color: white;
     position: relative;
@@ -1365,37 +1446,87 @@ font-size: 1rem;
   }
 
 /* Vid interview */
-.post-65 h1 {
+.post-65 h1{
 	display: none;
 }
 .video-container {
 	margin: 2rem;
 	background-color: #CEC0B6;
 }
+.video-container p {
+	margin: 0;
+
+}
+	
+
 .video-text h3 {
 	font-size: 1.5rem;
 	text-align: center;
+	color: #111;
+}
+.video-text h2 {
+	font-size: 2rem;
+	text-align: center;
+	color: #800000;
 }
 
-.vid-info {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+input[type="submit"] {
+text-decoration:none;
+	padding:.6rem 1.5rem;
+	background-color:#800000;
+	border-radius:2rem;
+	color:#F2DAC0;
 }
-.clock {
-    display: flex;
+input[type="submit"]:hover {
+	text-decoration:none;
+		padding:.6rem 1.5rem;
+		background-color:#F2DAC0;
+		border-radius:2rem;
+		color:#800000;
+		border: none;
+	}
+.bottom-contact {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 2rem;
 }
-.clock img {
-    width: 1rem;
-}
-
 /* Commented out style below because it was stretching images in medium-sized view ports. -K */
 /* img {
     width: 100%;
 } */
-
+/* pagination */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  .pagination span {
+    margin: 0 5px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  span.prev-arrow {
+    background-image: url(https://blacksettlersb.web.dmitcapstone.ca/wp-content/uploads/2023/04/back-arrow.png);
+  }
+  span.next-arrow {
+    background-image: url(https://blacksettlersb.web.dmitcapstone.ca/wp-content/uploads/2023/04/forward-arrow.png);
+  }
+  .page-numbers {
+    font-size: 14px;
+  }
+  
+ 
 /* Albums Page */
+
 .communties-album {
 	display: grid;
 	
@@ -1415,31 +1546,130 @@ font-size: 1rem;
 	width: 100vw;
 }
 
-
-
-
-.image-box {
-	position: relative;
-	display: inline-block;
-	background-color: black;
-	opacity: 50%;
+.go-communities {
+	display: flex;
+	align-items: stretch;
 }
-.image-box img {
-	width: 100vw;
+.go-communities img {
+	margin-left: 1rem;
 }
-.image-box .gallery-text {
-	position: absolute;
-	z-index: 999;
-	margin: 0 auto;
-	left: 0;
-	right: 0;
-	text-align:center;
-	top: 50%;
-	color: white;
+.communites-text a {
+	text-decoration: none;
+	font-size: 1rem;
+	color: #800000;
 	text-transform: uppercase;
-
-	
 }
+.gallery-section {
+	margin-top: 5rem;
+}
+.farming-1 {
+	grid-column: 1/1;
+	grid-row: 1/-1;
+}
+.socializing-1 {
+	grid-column: 2/3;
+}
+.farm,
+.schools,
+.churches,
+.social,
+.doc {
+	background-color: #111;
+	opacity: 0.8;
+	height: 100%;
+	width: 100%;
+}
+.farm p {
+	color: #F2DAC0;
+	font-family: 'DM Serif Display', serif;
+	position: relative;
+	top: 6rem;
+	font-size: 3rem;
+	text-align: center;
+}
+.schools p,
+.churches p,
+.social p,
+.doc p {
+	color: #F2DAC0;
+	font-family: 'DM Serif Display', serif;
+	position: relative;
+	top: 6rem;
+	font-size: 3rem;
+	text-align: center;
+}
+.gallery-indivdual a {
+	color: #111;
+	font-size: 3rem;
+	font-family: 'DM Serid Display', serif;
+	text-decoration: none;
+}
+
+
+.farming{
+	
+	background-image:  url("https://blacksettlersb.web.dmitcapstone.ca/wp-content/uploads/2023/04/walker-beaver-farming.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+	
+	height: 15rem;
+}
+
+.church{
+	background-image: url("https://blacksettlersb.web.dmitcapstone.ca/wp-content/uploads/2023/04/unid-school-children.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+	width: 100%;
+	height:15rem;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+.school{
+	background-image: url("https://blacksettlersb.web.dmitcapstone.ca/wp-content/uploads/2023/04/unid-3-men-cropped.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+	height:15rem;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+.socializing{
+	background-image: url("https://blacksettlersb.web.dmitcapstone.ca/wp-content/uploads/2023/04/socializing-bw.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+	height:15rem;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+.documents{
+	background-image: url("https://blacksettlersb.web.dmitcapstone.ca/wp-content/uploads/2023/04/Breton-Train-Station-circa-1940_s-scaled.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+	height:15rem;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+
 
 /* * * * * * * * * * * * *
 COMMUNITIES (CPT) STYLING
@@ -1450,7 +1680,9 @@ COMMUNITIES (CPT) STYLING
 
 .community-container h2, 
 .community-container h3,
-.hidden-text {
+.community-container h4,
+.amber-valley-only h3,
+.hidden-text p {
 	text-align: center;
 }
 
@@ -1461,6 +1693,7 @@ COMMUNITIES (CPT) STYLING
 
 .image-content {
 	text-align: center;
+	margin-bottom: 1.5rem;
 }
 
 .community-subheading {
@@ -1481,6 +1714,23 @@ COMMUNITIES (CPT) STYLING
 	font-weight: 700;
 }
 
+/* End CPT Styling */
+
+/* Donate Page Styling */
+.donate-container {
+	max-width: 1280px;
+	margin: 0 auto;
+}
+
+.donate-container h2 {
+	text-align: center;
+}
+/* End donate page styling */
+
+/* * * * * * * * *
+CPT MEDIA QUERIES
+* * * * * * * * */
+
 @media only screen and (max-width: 899px){
 	.intro-content {
 		display: flex;
@@ -1500,7 +1750,7 @@ COMMUNITIES (CPT) STYLING
     flex-direction: column;
 	}
 
-	.second-main-section.section-content .section-text {
+	.second-main-section.section-content .section-text-left {
 		order: 2;
 	}
 }
@@ -1512,13 +1762,29 @@ COMMUNITIES (CPT) STYLING
 }
 
 @media only screen and (min-width: 900px){
-	.community-container {
+	.community-container,
+	.albums-section {
 		max-width: 1280px;
 		margin: 0 auto;
 	}
 
 	h2.community-name {
 		font-size: 3.75rem;
+	}
+
+	.community-container h3,
+	.community-container h4 {
+		text-align: left;
+	}
+
+	.amber-valley-only h3,
+	.hidden-text p {
+		text-align: center;
+	}
+
+
+	h4.subsection-heading {
+		font-size: 2rem;
 	}
 
 	.community-subheading {
@@ -1533,17 +1799,18 @@ COMMUNITIES (CPT) STYLING
 	.intro-content, 
 	.first-main-section .section-content,
 	.second-main-section .section-content,
-	.visible-content {
+	.subsection-content {
 		display: flex;
 	}
 
 	.intro-content, 
 	.first-main-section, 
 	.second-main-section {
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
-	.section-text {
+	.section-text-left,
+	.section-text-right {
 		display: table;
 	}
 
@@ -1552,19 +1819,19 @@ COMMUNITIES (CPT) STYLING
 		vertical-align: middle;
 	}
 
+	.section-text-right{
+		margin-left: 3rem;
+	}
+
 	.intro-text,
-	.second-main-section > .section-text,
-	.vis-content1 {
+	.section-text-left{
 		margin-right: 3rem;
 	}
 
-	.second-main-section .image-content, .first-main-section.second-img {
+	.second-main-section .image-content, 
+	.first-main-section.second-img {
     margin-top: 2rem;
 }
-
-	.first-main-section > .section-text {
-		margin-left: 3rem;
-	}
 
 	.intro-text, .section-text {
 		max-width: 60%
@@ -1593,8 +1860,45 @@ COMMUNITIES (CPT) STYLING
 			opacity: 1;
 	}
 
+	/* Large Screen Global Font Sizes */
+
+	h1 {
+		font-size: 3.75rem;
+	}
+
+	.intro-dream h1,
+	.about-bsas h1{
+		font-size: 3rem;
+	}
+
+	h2 {
+		font-size: 3rem;
+	}
+
+	h3 {
+		font-size: 2.25rem;
+	}
+
+	h4 {
+		font-size: 2rem;
+	}
+
+	.footer1 h2 {
+		font-size: 2.25rem;
+	}
+
 }
-/* End of Communities (CPT) Styling  */
+/* End of CPT media queries  */
+
+.albums,
+.video-interviews {
+	border-radius: 10px;
+}
+
+.albums-img img,
+.video-interviews-img img {
+	border-radius: 10px 10px 0 0;
+}
 
 
 @media only screen and (min-width: 700px){
@@ -1663,7 +1967,7 @@ COMMUNITIES (CPT) STYLING
 
 	h1,
 	.about-bsas h1 {
-		font-size: 2.5rem;
+		font-size: 3.75rem;
 	}
 
 	.archiving-history h2,
@@ -1692,6 +1996,14 @@ COMMUNITIES (CPT) STYLING
 	.video-interviews{
 		display:flex;
 	}
+
+	.albums-img img {
+    border-radius: 10px 0 0 10px;
+}
+
+	.video-interviews-img img {
+    border-radius: 0 10px 10px 0;
+}
 	
 	.albums-img,
 	.albums-description{
@@ -1750,19 +2062,75 @@ COMMUNITIES (CPT) STYLING
 		margin:0 auto;
 	}
 
+
 	.communities-page-gallery a div{
 		margin: 1rem;
 	}
 
+	.gallery-indivdual {
+		display: grid;
+		grid-template-columns: repeat(3,1fr);
+		grid-template-rows: repeat(2,1fr);
+		margin: 1rem;
+	}
+	.farm p {
+		color: #F2DAC0;
+		font-family: 'DM Serif Display', serif;
+		position: relative;
+		top: 15rem;
+		font-size: 3rem;
+		text-align: center;
+	}
+	.farming{
+	position: relative;
+	height: 33rem;
+	}
+	.church,
+	.school,
+	.socializing,
+	.documents {
+	margin-left: 2rem;
+	width: 95%;
+	}
+	.schools p,
+	.churches p,
+	.social p,
+	.doc p {
+
+	color: #F2DAC0;
+	font-family: 'DM Serif Display', serif;
+	position: relative;
+	top: 7rem;
+	font-size: 3rem;
+	text-align: center;
+	}
+	
 	.intro-header,
-	.intro-video,
 	.what-we-do,
-	.contact,
 	.about-bsas,
 	.archiving-history,
-	.site-info{
+	.site-info,
+	.inner-video,
+	.inner-contact{
 		max-width:1280px;
 		margin:0 auto;
+	}
+	.inner-contact {
+		display: flex;
+		flex-direction: row;
+
+	}
+	.contact-right {
+		margin-left: 5rem;
+	}
+	.inner-video {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+	}
+	.inner-video iframe {
+		width: 100%;
+		height: 30rem;
 	}
 	/* Video Interview */
 	.wide-container {
@@ -1831,4 +2199,18 @@ COMMUNITIES (CPT) STYLING
 	width: 100%;
 }
 
+}
+
+li#menu-item-655 > a {
+	color: #E8DDD5;
+	background: #880000;
+}
+
+li#menu-item-655 > a:hover {
+	color: #880000;
+}
+
+.footer2 h3, 
+.footer1 h2 {
+	margin: 2rem 0;
 }

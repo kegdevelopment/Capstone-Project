@@ -34,12 +34,12 @@ get_header();
 					Johnson, Johnston, Jones, Kinamore, King, Kirk, Lafayette, Lane, Lee, Leffler, Lewis, Lindsey,
 					Lipscombe, Lowe, Mack, Mapp, Martin, Matthews, Mayes, Maclntrye, Medlock, Melton, Miller,
 					Moore, Moorehead, Munson, Murphy, Nelson, Oliver, Pankey, Pauley, Payne, Procter, Proctor,
-					Risby,Roberts, Robinson, RosJ, Sander, Saunders, Sayles, Shaw, Slater, Slaughter, Smith, Sneed,
+					Risby,Roberts, Robinson, Ross, Sander, Saunders, Sayles, Shaw, Slater, Slaughter, Smith, Sneed,
 					Strickland, Taylor, Thomas, Tole, Tucker, Turner, Tyler, Utendale, Walker, Watts, West, Whittaker,
 					Williams, Woods, Wright, Yarborough</p>
 
 			</div>
-			<a href="#">Read our Stories</a>
+			<a href="https://blacksettlersb.web.dmitcapstone.ca/communities/">Read our Stories</a>
 		</div>
 	
 		<div class="intro-img">
@@ -47,6 +47,7 @@ get_header();
 		</div>
 	</div>
 	<div class="intro-video">
+		<div class="inner-video">
 		<div class="video">
         <iframe width="424" height="238" src="https://www.youtube.com/embed/pp_wNuyzPC4" title="BSAS Channel Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 		</div>
@@ -54,8 +55,9 @@ get_header();
 			<h2>Sharing our History</h2>
 			<p>The Black settlers of Alberta and Saskatchewan historical society wishes to pay tribute to all black settlers who came before us by preserving their stories, and ultimately their struggles and successes with all Canadians, thereby firmly establishing their place in Canadian history.</p>
 			
-			<a href="#">More Video Interviews</a>
+			<a href="https://blacksettlersb.web.dmitcapstone.ca/video-interviews/">More Video Interviews</a>
 
+		</div>
 		</div>
 	</div>
 	<div class="what-we-do">
@@ -64,15 +66,17 @@ get_header();
 
 		<p>BSAS wishes to pay tribute to all the Black Settlers who came before us by preserving their stories, and ultimately sharing their struggles and successes with all Canadians, thereby firmly establishing their place in Canadian History.
 		</p>
-		<a href="#">Learn More</a>
+		<a href="https://blacksettlersb.web.dmitcapstone.ca/about/">Learn More</a>
 	</div>
 	<div class="contact">
+		<div class="inner-contact">
 		<div class="contact-left">
 			<h3>Do you have a history in Alberta or Saskatchewan?</h3>
 			<p>Help to preserve our history by participating. Share your stories or images with us.</p>
 		</div>
 		<div class="contact-right">
-		<a href="#">Get in Touch</a>
+		<a href="https://blacksettlersb.web.dmitcapstone.ca/contact-us/">Get in Touch</a>
+		</div>
 		</div>
 	</div>
 	</div><!-- .entry-content -->
