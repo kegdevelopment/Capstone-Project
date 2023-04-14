@@ -51,7 +51,7 @@ get_header();
         </div> <!-- first-main-section .section-content -->
 
         <div class="first-main-section sub-section">
-          <?php if( get_field('section1_subheading') ): ?>
+          <?php if( get_field('sub_subheading') ): ?>
             <h4 class="subsection-heading"><?php the_field('sub_subheading'); ?></h4>
           <?php endif; ?>
           <div class="first-main-section subsection-content">
@@ -70,6 +70,26 @@ get_header();
             </div><!-- .image-content -->
           </div><!-- .subsection-content -->
         </div><!-- .sub-section -->
+        <div class="first-main-section sub-section2">
+          <?php if( get_field('sub2_subheading') ): ?>
+            <h4 class="subsection-heading"><?php the_field('sub2_subheading'); ?></h4>
+          <?php endif; ?>
+          <div class="first-main-section subsection-content">
+            <div class="image-content">
+              <?php 
+              $image = get_field('sub2_image2');
+              if( !empty( $image ) ): ?>
+                <img class="second-img" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+                <p class="caption"><?php echo $image['caption']; ?></p>
+              <?php endif; ?>
+            </div><!-- .image-content -->
+            <div class="section-text">
+              <div class="p-container">
+                <?php the_field('sub2_content'); ?>
+              </div>
+            </div><!-- .section-text -->
+          </div><!-- .subsection-content -->
+        </div><!-- .sub-section2 -->
       </div><!-- .first-main-section -->
       <div class="second-main-section">
       <?php if( get_field('section2_subheading') ): ?>
