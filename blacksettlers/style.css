@@ -990,7 +990,8 @@ h1 {
 	font-size: 3rem
 }
 
-.intro-dream h1 {
+.intro-dream h1,
+.about-bsas h1 {
 	font-size: 2.5rem;
 }
 
@@ -1093,6 +1094,7 @@ ul.sub-menu li{
 
 .footer1 h2{
 	color:#800000;
+	font-size: 2rem;
 }
 
 .footer2{
@@ -1658,7 +1660,9 @@ COMMUNITIES (CPT) STYLING
 
 .community-container h2, 
 .community-container h3,
-.hidden-text {
+.community-container h4,
+.amber-valley-only h3,
+.hidden-text p {
 	text-align: center;
 }
 
@@ -1690,6 +1694,23 @@ COMMUNITIES (CPT) STYLING
 	font-weight: 700;
 }
 
+/* End CPT Styling */
+
+/* Donate Page Styling */
+.donate-container {
+	max-width: 1280px;
+	margin: 0 auto;
+}
+
+.donate-container h2 {
+	text-align: center;
+}
+/* End donate page styling */
+
+/* * * * * * * * *
+CPT MEDIA QUERIES
+* * * * * * * * */
+
 @media only screen and (max-width: 899px){
 	.intro-content {
 		display: flex;
@@ -1709,7 +1730,7 @@ COMMUNITIES (CPT) STYLING
     flex-direction: column;
 	}
 
-	.second-main-section.section-content .section-text {
+	.second-main-section.section-content .section-text-left {
 		order: 2;
 	}
 }
@@ -1731,6 +1752,17 @@ COMMUNITIES (CPT) STYLING
 	h2.community-name {
 		font-size: 3.75rem;
 	}
+
+	.community-container h3,
+	.community-container h4 {
+		text-align: left;
+	}
+
+	.amber-valley-only h3,
+	.hidden-text p {
+		text-align: center;
+	}
+
 
 	h4.subsection-heading {
 		font-size: 2rem;
@@ -1758,7 +1790,8 @@ COMMUNITIES (CPT) STYLING
     justify-content: space-around;
 }
 
-	.section-text {
+	.section-text-left,
+	.section-text-right {
 		display: table;
 	}
 
@@ -1767,13 +1800,12 @@ COMMUNITIES (CPT) STYLING
 		vertical-align: middle;
 	}
 
-	.first-main-section > .section-text{
+	.section-text-right{
 		margin-left: 3rem;
 	}
 
 	.intro-text,
-	.second-main-section > .section-text,
-	.subsection2 > .p-container {
+	.section-text-left{
 		margin-right: 3rem;
 	}
 
@@ -1815,7 +1847,8 @@ COMMUNITIES (CPT) STYLING
 		font-size: 3.75rem;
 	}
 
-	.intro-dream h1 {
+	.intro-dream h1,
+	.about-bsas h1{
 		font-size: 3rem;
 	}
 
@@ -1831,9 +1864,38 @@ COMMUNITIES (CPT) STYLING
 		font-size: 2rem;
 	}
 
-}
-/* End of Communities (CPT) Styling  */
+	.footer1 h2 {
+		font-size: 2.25rem;
+	}
 
+}
+/* End of CPT media queries  */
+
+.albums,
+.video-interviews {
+	border-radius: 10px;
+}
+
+.albums-img img,
+.video-interviews-img img {
+	border-radius: 10px 10px 0 0;
+}
+
+.video-interviews-img img,
+.albums-img img {
+	width: 100%;
+}
+
+@media only screen and (max-width: 699px){
+	.video-interviews {
+		display: flex;
+		flex-flow: column;
+	}
+	
+	.video-interviews-description {
+		order: 2;
+	}
+}
 
 @media only screen and (min-width: 700px){
 		
@@ -1930,6 +1992,14 @@ COMMUNITIES (CPT) STYLING
 	.video-interviews{
 		display:flex;
 	}
+
+	.albums-img img {
+    border-radius: 10px 0 0 10px;
+}
+
+	.video-interviews-img img {
+    border-radius: 0 10px 10px 0;
+}
 	
 	.albums-img,
 	.albums-description{
@@ -2125,4 +2195,18 @@ COMMUNITIES (CPT) STYLING
 	width: 100%;
 }
 
+}
+
+li#menu-item-655 > a {
+	color: #E8DDD5;
+	background: #880000;
+}
+
+li#menu-item-655 > a:hover {
+	color: #880000;
+}
+
+.footer2 h3, 
+.footer1 h2 {
+	margin: 2rem 0;
 }
