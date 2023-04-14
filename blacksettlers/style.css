@@ -1738,7 +1738,7 @@ COMMUNITIES (CPT) STYLING
 
 	.intro-text,
 	.second-main-section > .section-text,
-	.vis-content1 {
+	.section-text.subsection2 {
 		margin-right: 3rem;
 	}
 
@@ -1746,8 +1746,7 @@ COMMUNITIES (CPT) STYLING
     margin-top: 2rem;
 }
 
-	.first-main-section > .section-text,
-	.section-text.subsection2{
+	.first-main-section > .section-text{
 		margin-left: 3rem;
 	}
 
