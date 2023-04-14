@@ -47,6 +47,7 @@ get_header();
 		</div>
 	</div>
 	<div class="intro-video">
+		<div class="inner-video">
 		<div class="video">
         <iframe width="424" height="238" src="https://www.youtube.com/embed/pp_wNuyzPC4" title="BSAS Channel Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 		</div>
@@ -56,6 +57,7 @@ get_header();
 			
 			<a href="https://blacksettlersb.web.dmitcapstone.ca/video-interviews/">More Video Interviews</a>
 
+		</div>
 		</div>
 	</div>
 	<div class="what-we-do">
