@@ -21,7 +21,7 @@ get_header();
         </div> <!--  END .res-content -->
         <div class="res-button">
           <div class="res-link">
-            <a href=”<?php esc_attr( get_field('resource1_link') ); ?>”>View More</a>
+            <a href="<?php esc_attr( get_field('resource1_link') ); ?>">View More</a>
           </div>
         </div> <!--  END .res-button -->
         <div class="res-content">
