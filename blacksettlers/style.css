@@ -2176,3 +2176,12 @@ CPT MEDIA QUERIES
 
 }
 
+li#menu-item-655 > a {
+	color: #E8DDD5;
+	background: #880000;
+}
+
+li#menu-item-655 > a:hover {
+	color: #880000;
+}
+
