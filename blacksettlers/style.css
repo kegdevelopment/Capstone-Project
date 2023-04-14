@@ -1114,7 +1114,7 @@ font-size: 1rem;
 .intro-dream{
 	margin-bottom:2rem;
 }
-
+.footer2 a,
 .intro-dream a,
 .video-description a,
 .what-we-do a,
@@ -1127,6 +1127,7 @@ font-size: 1rem;
 	border-radius:2rem;
 	color:#F2DAC0;
 }
+.footer2 a:hover,
 .intro-dream a:hover,
 .video-description a:hover,
 .what-we-do a:hover,
@@ -1873,9 +1874,7 @@ COMMUNITIES (CPT) STYLING
 	}
 
 	.intro-header,
-	.intro-video,
 	.what-we-do,
-	.contact,
 	.about-bsas,
 	.archiving-history,
 	.site-info{
