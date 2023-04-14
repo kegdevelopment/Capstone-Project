@@ -1341,6 +1341,17 @@ font-size: 1rem;
 }
 
 /* Contact Page */
+.contact-us {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+}
+.contact-us p {
+	font-family: 'Monserat';
+	color: #111;
+	margin-bottom: 0;
+}
 .tooltip{
     color: white;
     position: relative;
@@ -1375,21 +1386,26 @@ font-size: 1rem;
 .video-text h3 {
 	font-size: 1.5rem;
 	text-align: center;
+	color: #111;
 }
-
-.vid-info {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+.video-text h2 {
+	font-size: 2rem;
+	text-align: center;
+	color: #800000;
 }
-.clock {
-    display: flex;
+input[type="submit"] {
+text-decoration:none;
+	padding:.6rem 1.5rem;
+	background-color:#800000;
+	border-radius:2rem;
+	color:#F2DAC0;
 }
-.clock img {
-    width: 1rem;
+.bottom-contact {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 2rem;
 }
-
 /* Commented out style below because it was stretching images in medium-sized view ports. -K */
 /* img {
     width: 100%;
