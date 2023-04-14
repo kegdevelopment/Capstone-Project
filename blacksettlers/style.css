@@ -1648,6 +1648,86 @@ input[type="submit"]:hover {
 	align-items: center;
 	justify-content: center;
 }
+.codedropz-upload-inner h1 {
+		font-size: 2rem;
+	}
+	.tooltip {
+		position: relative;
+		display: inline-block;
+	  }
+	  
+	  .tooltip .tooltiptext {
+		visibility: hidden;
+		width: 100%;
+		background-color: black;
+		color: #fff;
+		text-align: center;
+		border-radius: 6px;
+		padding: 5px 0;
+	  
+		/* Position the tooltip */
+		position: absolute;
+		z-index: 1;
+	  }
+	  
+	  .tooltip:hover .tooltiptext {
+		visibility: visible;
+	  }
+	  .tooltip-button {
+		background-color: #f7f7f7;
+		border: none;
+		color: #333;
+		font-size: 16px;
+		margin-left: 5px;
+		padding: 5px;
+		border-radius: 50%;
+		cursor: pointer;
+	  }
+	  
+	  .tooltip-button:hover {
+		background-color: #ddd;
+	  }
+	  
+/* For screens smaller than 768px */
+@media (max-width: 767px) {
+	.two-column {
+	  display: block;
+	}
+  
+	.column {
+	  width: 100%;
+	  margin-bottom: 20px;
+	}
+  }
+  
+  /* For screens 768px and larger */
+  @media (min-width: 768px) {
+	.two-column {
+	  display: grid;
+	  grid-template-columns: repeat(2, 1fr);
+	  gap: 20px;
+	}
+  
+	.column {
+	  margin-bottom: 20px;
+	}
+	
+  }
+  
+  /* For all screen sizes */
+  .wpcf7-form-control-wrap {
+	width: 100%;
+	box-sizing: border-box;
+  }
+  
+  .wpcf7-submit {
+	width: 100%;
+	max-width: 200px;
+	margin: 0 auto;
+	display: block;
+  }
+  
+
 
 
 
