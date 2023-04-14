@@ -1660,7 +1660,7 @@ COMMUNITIES (CPT) STYLING
 .community-container h2, 
 .community-container h3,
 .amber-valley-only h3
-.hidden-text {
+.hidden-text p {
 	text-align: center;
 }
 
@@ -1728,7 +1728,7 @@ CPT MEDIA QUERIES
     flex-direction: column;
 	}
 
-	.second-main-section.section-content .section-text {
+	.second-main-section.section-content .section-text-left {
 		order: 2;
 	}
 }
@@ -1754,9 +1754,11 @@ CPT MEDIA QUERIES
 		text-align: left;
 	}
 
-	.amber-valley-only h3 {
+	.amber-valley-only h3,
+	.hidden-text p {
 		text-align: center;
 	}
+
 
 	h4.subsection-heading {
 		font-size: 2rem;
