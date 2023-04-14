@@ -1690,6 +1690,23 @@ COMMUNITIES (CPT) STYLING
 	font-weight: 700;
 }
 
+/* End CPT Styling */
+
+/* Donate Page Styling */
+.donate-container {
+	max-width: 1280px;
+	margin: 0 auto;
+}
+
+.donate-container h2 {
+	text-align: center;
+}
+/* End donate page styling */
+
+/* * * * * * * * *
+CPT MEDIA QUERIES
+* * * * * * * * */
+
 @media only screen and (max-width: 899px){
 	.intro-content {
 		display: flex;
@@ -1831,7 +1848,7 @@ COMMUNITIES (CPT) STYLING
 	}
 
 }
-/* End of Communities (CPT) Styling  */
+/* End of CPT media queries  */
 
 
 @media only screen and (min-width: 700px){
