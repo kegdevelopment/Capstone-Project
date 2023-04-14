@@ -1427,31 +1427,97 @@ font-size: 1rem;
 	font-size: 1rem;
 	color: #800000;
 }
-
-
-
-.image-box {
-	position: relative;
-	display: inline-block;
-	background-color: black;
-	opacity: 50%;
+.gallery-indivdual {
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	grid-template-rows: repeat(2,1fr);
+	margin: 1rem;
 }
-.image-box img {
-	width: 100vw;
+.farming-1 {
+	grid-column: 1/1;
+	grid-row: 1/-1;
 }
-.image-box .gallery-text {
-	position: absolute;
-	z-index: 999;
-	margin: 0 auto;
-	left: 0;
-	right: 0;
-	text-align:center;
-	top: 50%;
-	color: white;
-	text-transform: uppercase;
-
+.socializing-1 {
+	grid-column: 2/3;
+}
+.farm {
+	background-color: #111;
+	opacity: 5rem;
+}
+.gallery-indivdual a {
+	color: #111;
+	font-size: 3rem;
+	font-family: 'Noto Serif Display', serif;
+	text-decoration: none;
+}
+.farming{
 	
+	background-image:  url("https://blacksettlersb.web.dmitcapstone.ca/wp-content/uploads/2023/04/walker-beaver-farming.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+	
+	height: 31rem;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
 }
+
+.church{
+	background-image: url("https://blacksettlersb.web.dmitcapstone.ca/wp-content/uploads/2023/04/unid-school-children.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+	width:24rem;
+	height:15rem;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+.school{
+	background-image: url("https://blacksettlersb.web.dmitcapstone.ca/wp-content/uploads/2023/04/unid-3-men-cropped.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+	width:24rem;
+	height:15rem;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+.socializing{
+	background-image: url("https://blacksettlersb.web.dmitcapstone.ca/wp-content/uploads/2023/04/socializing-bw.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+	width:24rem;
+	height:15rem;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+.documents{
+	background-image: url("https://blacksettlersb.web.dmitcapstone.ca/wp-content/uploads/2023/04/Breton-Train-Station-circa-1940_s-scaled.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+	width:24rem;
+	height:15rem;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+
 
 /* * * * * * * * * * * * *
 COMMUNITIES (CPT) STYLING

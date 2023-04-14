@@ -10,7 +10,10 @@
 //display header
 	get_header();
 ?>
-<section>
+<?php if(have_posts()) : ?>
+ <!-- start the loop -->
+ 	<?php while(have_posts()) : the_post(); ?>
+    <section>
 <h1>Albums </h1>
         <div class="communties-album">
             <div class="communites-text">
@@ -31,74 +34,20 @@
         </div>
         <div class="gallery-section">
             <h2>Galleries</h2>
-            <div class="gallery-images">
-                <div class="gallery-box farming">
-                <div class="image-box">
-                <img src="https://blacksettlersb.web.dmitcapstone.ca/wp-content/uploads/2023/04/walker-beaver-farming.jpeg" alt="man on tractor">
-                </div>
-                <div class="gallery-text">
-                    <h3>Farming</h3>
-                </div>
-                </div>
-                <div class="gallery-box schools">
-                    <div class="image-box">
-                    <img src="https://blacksettlersb.web.dmitcapstone.ca/wp-content/uploads/2023/04/unid-school-children.jpeg" alt="children at school">
-                    </div>
-                    <div class="gallery-text">
-                        <h3>Schools</h3>
-                    </div>
-                </div>
-                <div class="gallery-box church" >
-                <div class="image-box">
-                    <img src="https://blacksettlersb.web.dmitcapstone.ca/wp-content/uploads/2023/04/unid-3-men-cropped.jpg" alt="three men dressed for church">
-                </div>
-                    <div class="gallery-text">
-                        <h3>Church</h3>
-                    </div>
-                </div>
-                <a href="https://blacksettlersb.web.dmitcapstone.ca/albums/socializing/">
-                <div class="gallery-box socializing">
-                <div class="image-box">
-                    <img src="https://blacksettlersb.web.dmitcapstone.ca/wp-content/uploads/2023/04/chrisitineb-garrickd-dennisbowen-social.jpg" alt="group of people socializing">
-                </div>
-                    <div class="gallery-text">
-                        <h3>Socializing</h3>
-                    </div>
-                </div>
-                </a>
+            <p>Browse through our various galleries, themed by the different activities that took place in the communities.</p>
+            <div class="gallery-indivdual">
+                <a href="https://blacksettlersb.web.dmitcapstone.ca/albums/farming/" class="farming-1"><div class=" farming"><div class="farm"><p>Farming</p></div></div></a>
+                <a href="https://blacksettlersb.web.dmitcapstone.ca/schools/" class="school-1"><div class="school"><p>Schools</p></div></a>
+                <a href="https://blacksettlersb.web.dmitcapstone.ca/albums/church/" class="church-1"><div class="church"><p>Church</p></div></a>
+                <a href="https://blacksettlersb.web.dmitcapstone.ca/albums/socializing/" class="socializing-1"><div class="socializing"><p>Socializing</p></div></a>
+                <a href="https://blacksettlersb.web.dmitcapstone.ca/albums/documents/" class="documents-1"><div class="documents"><p>Documents</p></div></a>
+                
             </div>
+        </div>
         </div>
         
 
 <section>
-<div class="gallery-cards">
-  
-  <div class="gallery-card">
-    <a href="<?php echo get_permalink('gallery-1'); ?>">
-      <img src="<?php echo get_template_directory_uri() . '/images/gallery-1-thumbnail.jpg'; ?>" alt="Gallery 1" />
-      <h3>Gallery 1</h3>
-    </a>
-  </div>
-
-  <div class="gallery-card">
-    <a href="<?php echo get_permalink('gallery-2'); ?>">
-      <img src="<?php echo get_template_directory_uri() . '/images/gallery-2-thumbnail.jpg'; ?>" alt="Gallery 2" />
-      <h3>Gallery 2</h3>
-    </a>
-  </div>
-
-  <!-- Add more gallery cards as needed -->
-
-</div>
-
-
-<?php if(have_posts()) : ?>
- <!-- start the loop -->
- 	<?php while(have_posts()) : the_post(); ?>
- <?php
- 	//do things -- display content : the function below will pull the content from the template partial.
- 	get_template_part( 'template-parts/content', 'gallery' );
- ?>
 	 <?php endwhile; ?>
  <!-- end while loop -->
  		<?php else : ?>
@@ -115,5 +64,3 @@
 
 
 
-
- 
