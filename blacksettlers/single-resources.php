@@ -12,6 +12,7 @@ get_header();
 
   <main id="primary" class="site-main">
     <div class="res-pg-container">
+      <h1 class="res-title"><?php the_field('page_name'); ?></h1>
       <div class="res-container">
         <div class="res-content">
           <h4 class="res-name"><?php the_field('resource1_name'); ?></h4>
