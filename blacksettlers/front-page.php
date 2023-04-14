@@ -69,12 +69,14 @@ get_header();
 		<a href="https://blacksettlersb.web.dmitcapstone.ca/about/">Learn More</a>
 	</div>
 	<div class="contact">
+		<div class="inner-contact">
 		<div class="contact-left">
 			<h3>Do you have a history in Alberta or Saskatchewan?</h3>
 			<p>Help to preserve our history by participating. Share your stories or images with us.</p>
 		</div>
 		<div class="contact-right">
 		<a href="https://blacksettlersb.web.dmitcapstone.ca/contact-us/">Get in Touch</a>
+		</div>
 		</div>
 	</div>
 	</div><!-- .entry-content -->

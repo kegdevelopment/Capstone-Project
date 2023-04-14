@@ -987,7 +987,7 @@ h1, h2, h3, h4 {
 
 h1 {
 	text-transform: uppercase;
-	font-size: 3.75rem;
+	font-size: calc(2rem - 2vw);
 }
 h2 {
 	font-size: 3rem;
@@ -1042,7 +1042,16 @@ p {
 		justify-content:center;
 		max-width: 1280px;
 }
+.inner-contact {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
 
+.contact-left p {
+	color: #E8DDD5;
+	padding-bottom: 2rem;
+}
 ul.sub-menu{
 	display:block;
 	background-color:#CEC0B6;
@@ -1792,7 +1801,7 @@ COMMUNITIES (CPT) STYLING
 
 	h1,
 	.about-bsas h1 {
-		font-size: 2.5rem;
+		font-size: 3.75rem;
 	}
 
 	.archiving-history h2,
@@ -1888,9 +1897,18 @@ COMMUNITIES (CPT) STYLING
 	.about-bsas,
 	.archiving-history,
 	.site-info,
-	.inner-video{
+	.inner-video,
+	.inner-contact{
 		max-width:1280px;
 		margin:0 auto;
+	}
+	.inner-contact {
+		display: flex;
+		flex-direction: row;
+
+	}
+	.contact-right {
+		margin-left: 5rem;
 	}
 	.inner-video {
 		display: flex;
