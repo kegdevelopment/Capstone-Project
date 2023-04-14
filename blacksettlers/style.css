@@ -1662,7 +1662,7 @@ COMMUNITIES (CPT) STYLING
 	.intro-content, 
 	.first-main-section .section-content,
 	.second-main-section .section-content,
-	.visible-content {
+	.subsection-content {
 		display: flex;
 	}
 
