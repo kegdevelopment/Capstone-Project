@@ -987,10 +987,23 @@ h1, h2, h3, h4 {
 
 h1 {
 	text-transform: uppercase;
-	font-size: 2.5rem
+	font-size: 3rem
 }
+
+.intro-dream h1 {
+	font-size: 2.5rem;
+}
+
 h2 {
+	font-size: 2.25rem;
+}
+
+h3 {
 	font-size: 2rem;
+}
+
+h4 {
+	font-size: 1.5rem;
 }
 
 p {
@@ -1729,6 +1742,20 @@ COMMUNITIES (CPT) STYLING
 
 	.poem-container:hover .overlay {
 			opacity: 1;
+	}
+
+	/* Large Screen Global Font Sizes */
+
+	h1 {
+		font-size: 3.75rem;
+	}
+
+	.intro-dream h1 {
+		font-size: 3rem;
+	}
+
+	h2 {
+		font-size: 3rem;
 	}
 
 }
