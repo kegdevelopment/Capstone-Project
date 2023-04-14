@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Socializing Template
+Template Name: Image Gallery Template
 */
 
 get_header();
@@ -12,18 +12,21 @@ get_header();
 
     <?php
     $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
-    $args = (array(
+    $args = array(
       'post_type' => 'attachment',
       'post_mime_type' => 'image',
       'post_status' => 'inherit',
-      'posts_per_page' => 12,
-      'paged' => $paged
-    ));
-    $images= new WP_Query( $args );
+      'posts_per_page' => 1,
+      'paged' => $paged,
+      'post_parent' => get_the_ID() // include only images attached to the current page
+    );
+    $images = new WP_Query( $args );
 
-    if ($images) {
-      foreach ($images as $image) {
-        $img_url = wp_get_attachment_image_src($image->ID, 'large')[0];
+    if ( $images->have_posts() ) {
+      while ( $images->have_posts() ) {
+        $images->the_post();
+
+        $img_url = wp_get_attachment_image_src( get_the_ID(), 'large' )[0];
 
         echo '<div class="gallery-item">';
         echo '<img src="' . $img_url . '" />';
