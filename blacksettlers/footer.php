@@ -25,7 +25,7 @@
 		<div class="footer2">
 			<h3>Contact Us</h3>
 			<p>Any questions or want to add information to the site?</p>
-			<a href="">Get in Touch</a>
+			<a href="https://blacksettlersb.web.dmitcapstone.ca/contact-us/">Get in Touch</a>
 		</div>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->

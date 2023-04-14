@@ -39,14 +39,14 @@ get_header();
                 <div class="albums-description">
                     <h3>Albums</h3>
                     <p>We have collected and organized a lot of images from these communities. We want to preserve these stories and rich history..</p>
-                    <a href="#">View Albums</a>
+                    <a href="https://blacksettlersb.web.dmitcapstone.ca/albums/">View Albums</a>
                 </div>
             </div>
             <div class="video-interviews">
                 <div class="video-interviews-description">
                     <h3>Video Interviews</h3>
                     <p>We have collected videos interviews from participants to talk about these communities and their personal experiences. If you see a video you would like a copy of, contact us letting us know which one you would like.</p>
-                    <a href="#">View Videos </a>
+                    <a href="https://blacksettlersb.web.dmitcapstone.ca/video-interviews/">View Videos </a>
                     
                 </div>
                 <div class="video-interviews-img">
