@@ -1880,6 +1880,21 @@ CPT MEDIA QUERIES
 	border-radius: 10px 10px 0 0;
 }
 
+.video-interviews-img img,
+.albums-img img {
+	width: 100%;
+}
+
+@media only screen and (max-width: 699px){
+	.video-interviews {
+		display: flex;
+		flex-flow: column;
+	}
+	
+	.video-interviews-description {
+		order: 2;
+	}
+}
 
 @media only screen and (min-width: 700px){
 		
