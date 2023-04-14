@@ -1754,6 +1754,10 @@ CPT MEDIA QUERIES
 		text-align: left;
 	}
 
+	.amber-valley-only h3 {
+		text-align: center;
+	}
+
 	h4.subsection-heading {
 		font-size: 2rem;
 	}
