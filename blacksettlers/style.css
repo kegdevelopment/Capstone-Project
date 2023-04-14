@@ -1094,6 +1094,7 @@ ul.sub-menu li{
 
 .footer1 h2{
 	color:#800000;
+	font-size: 2rem;
 }
 
 .footer2{
@@ -1862,6 +1863,10 @@ CPT MEDIA QUERIES
 		font-size: 2rem;
 	}
 
+	.footer1 h2 {
+		font-size: 2.25rem;
+	}
+
 }
 /* End of CPT media queries  */
 
@@ -2185,3 +2190,7 @@ li#menu-item-655 > a:hover {
 	color: #880000;
 }
 
+.footer2 h3, 
+.footer1 h2 {
+	margin: 2rem 0;
+}
