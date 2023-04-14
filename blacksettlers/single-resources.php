@@ -166,3 +166,4 @@ get_header();
       </div> <!--  END .res-container -->
     </div><!--  END .res-pg-container -->
   </main>
+<?php get_footer(); ?>
