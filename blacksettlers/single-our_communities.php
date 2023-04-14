@@ -55,7 +55,7 @@ get_header();
             <h4 class="subsection-heading"><?php the_field('sub_subheading'); ?></h4>
           <?php endif; ?>
           <div class="first-main-section subsection-content">
-            <div class="section-text">
+            <div class="section-text-left">
               <div class="p-container">
                 <?php the_field('sub_content'); ?>
               </div>
@@ -96,7 +96,7 @@ get_header();
         <h3 class="community-subheading"><?php the_field('section2_subheading'); ?></h3>
       <?php endif; ?>
         <div class="second-main-section section-content">
-          <div class="section-text">
+          <div class="section-text-left">
             <div class="p-container">
               <?php the_field('section2_content'); ?>
             </div>
