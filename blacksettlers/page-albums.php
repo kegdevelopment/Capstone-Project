@@ -37,10 +37,10 @@
             <p>Browse through our various galleries, themed by the different activities that took place in the communities.</p>
             <div class="gallery-indivdual">
                 <a href="https://blacksettlersb.web.dmitcapstone.ca/albums/farming/" class="farming-1"><div class=" farming"><div class="farm"><p>Farming</p></div></div></a>
-                <a href="https://blacksettlersb.web.dmitcapstone.ca/schools/" class="school-1"><div class="school"><p>Schools</p></div></a>
-                <a href="https://blacksettlersb.web.dmitcapstone.ca/albums/church/" class="church-1"><div class="church"><p>Church</p></div></a>
-                <a href="https://blacksettlersb.web.dmitcapstone.ca/albums/socializing/" class="socializing-1"><div class="socializing"><p>Socializing</p></div></a>
-                <a href="https://blacksettlersb.web.dmitcapstone.ca/albums/documents/" class="documents-1"><div class="documents"><p>Documents</p></div></a>
+                <a href="https://blacksettlersb.web.dmitcapstone.ca/schools/" class="school-1"><div class="school"><div class="schools"><p>Schools</p></div></div></a>
+                <a href="https://blacksettlersb.web.dmitcapstone.ca/albums/church/" class="church-1"><div class="church"><div class="churches"><p>Church</p></div></div></a>
+                <a href="https://blacksettlersb.web.dmitcapstone.ca/albums/socializing/" class="socializing-1"><div class="socializing"><div class="social"><p>Socializing</p></div></div></a>
+                <a href="https://blacksettlersb.web.dmitcapstone.ca/albums/documents/" class="documents-1"><div class="documents"><div class="doc"><p>Documents</p></div></div></a>
                 
             </div>
         </div>
