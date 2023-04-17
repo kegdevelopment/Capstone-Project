@@ -1148,6 +1148,9 @@ font-size: 1rem;
 .intro-dream{
 	margin-bottom:2rem;
 }
+.video-description  {
+	text-align: center;
+}
 .footer2 a,
 .intro-dream a,
 .video-description a,
@@ -1475,12 +1478,23 @@ input[type="submit"]:hover {
 /* img {
     width: 100%;
 } */
+.gallery {
+	margin-top: 2rem;
+}
+.gallery-item {
+	width: 18.75rem;
+	height: 18.75rem;
+	display: inline-block;
+	margin: 0 auto;
+  }
+  
 /* pagination */
 .pagination {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
+    margin: 8rem;
+
   }
   .pagination span {
     margin: 0 5px;
@@ -1494,10 +1508,10 @@ input[type="submit"]:hover {
     background-position: center;
   }
   
-  span.prev-arrow {
+  .prev-arrow span{
     background-image: url(https://blacksettlersb.web.dmitcapstone.ca/wp-content/uploads/2023/04/back-arrow.png);
   }
-  span.next-arrow {
+ .next-arrow span {
     background-image: url(https://blacksettlersb.web.dmitcapstone.ca/wp-content/uploads/2023/04/forward-arrow.png);
   }
   .page-numbers {

@@ -1,57 +1,33 @@
 <?php
-/*
-Template Name: Farming Template
-*/
-
+/**
+ * Template Name: Farming Template
+ * Description: A custom template for displaying farming images with pagination.
+ *
+ *
+ */
+ 
 get_header();
-?>
-
-<main id="main" class="site-main">
-
-  <div class="gallery">
-
+ echo wp_get_attachment_image_src();
+$query = my_custom_query();
+if ( $query->have_posts() ) :
+    while ( $query->have_posts() ) : $query->the_post();
+        $image = wp_get_attachment_image_src( get_the_ID(), 'full' );
+        ?>
+        <img src="<?php echo esc_url( $image[0] ); ?>" alt="<?php the_title_attribute(); ?>">
+    <?php endwhile; ?>
     <?php
-    $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
-    $category = get_queried_object();
-    $args = array(
-      'post_type' => 'attachment',
-      'category_name' => $category->slug,
-      'post_status' => 'inherit',
-      'posts_per_page' => 1,
-      'paged' => $paged,
-      'post_parent' => get_the_ID() // include only images attached to the current page
-    );
-    $images= new WP_Query( $args );
-
-    if ( $images->have_posts() ) {
-      while ( $images->have_posts() ) {
-        $images->the_post();
-
-        $img_url = wp_get_attachment_image_src( get_the_ID(), 'large' )[0];
-
-        echo '<div class="gallery-item">';
-        echo '<img src="' . $img_url . '" />';
-        echo '</div>';
-      }
-    }
-    ?>
-
-  </div>
-
-  <?php
-  // Add pagination links
-
-  echo '<div class="pagination">';
-  echo paginate_links( array(
-    'total' => 25,
-    'current' => max( 1, get_query_var( 'paged' ) ),
-    'prev_text' => __( '&laquo; Previous' ),
-    'next_text' => __( 'Next &raquo;' )
-) );
-
-
-  ?>
-
-</main>
-
-<?php get_footer(); ?>
+    $total_pages = $query->max_num_pages;
+    if ( $total_pages > 1 ) :
+        $current_page = max( 1, get_query_var( 'paged' ) );
+        echo paginate_links( array(
+            'base'      => get_pagenum_link( 1 ) . '%_%',
+            'format'    => '/page/%#%',
+            'current'   => $current_page,
+            'total'     => $total_pages,
+        ) );
+    endif;
+endif;
+wp_reset_postdata();
+ 
+get_footer();
+?>

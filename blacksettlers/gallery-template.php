@@ -45,7 +45,7 @@ get_header();
     $prev_arrow = is_rtl() ? '&raquo;' : '&laquo;';
     $next_arrow = is_rtl() ? '&laquo;' : '&raquo;';
     echo '<a class="prev-arrow" href="' . get_previous_posts_page_link() . '"><span></span></a>';
-    echo '<span class="page-numbers">' . sprintf(__('Page %d of %d', 'text-domain'), $paged, $total_pages) . '</span>';
+    echo '<span class="page-numbers">' . sprintf(__(' %d of %d', 'text-domain'), $paged, $total_pages) . '</span>';
     echo '<a class="next-arrow" href="' . get_next_posts_page_link($total_pages) . '"><span></span></a>';
   ?>
 </div>
