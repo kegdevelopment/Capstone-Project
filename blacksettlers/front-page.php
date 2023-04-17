@@ -89,5 +89,5 @@ get_header();
 </article><!-- #post-<?php the_ID(); ?> -->
 
 <?php
-get_sidebar();
+
 get_footer();?>
