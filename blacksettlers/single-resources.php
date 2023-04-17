@@ -110,7 +110,7 @@ get_header();
           <?php endif; ?>
           <div class="res-description">
           <?php if(get_field('resource7_description')) : ?>
-            <?php the_field('resource7_description'); ?>
+          <?php the_field('resource7_description'); ?>
           <?php endif; ?>
           </div>
         </div> <!--  END .res-content -->
