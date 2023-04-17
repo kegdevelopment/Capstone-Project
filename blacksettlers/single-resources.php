@@ -105,9 +105,13 @@ get_header();
           </div>
         </div> <!--  END .res-button -->
         <div class="res-content">
-          <h4 class="res-name"><?php the_field('resource7_name'); ?></h4>
+          <?php if(get_field('resource7_name')) : ?>
+            <h4 class="res-name"><?php the_field('resource7_name'); ?></h4>
+          <?php endif; ?>
           <div class="res-description">
+          <?php if(get_field('resource7_description')) : ?>
             <?php the_field('resource7_description'); ?>
+          <?php endif; ?>
           </div>
         </div> <!--  END .res-content -->
         <div class="res-button">

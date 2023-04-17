@@ -1904,6 +1904,7 @@ CPT MEDIA QUERIES
 
 	.poem-container {
 		position: relative;
+		margin-bottom: 6rem;
 	}
 
 	.overlay {
