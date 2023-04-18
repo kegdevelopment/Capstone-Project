@@ -24,12 +24,12 @@ get_header();
 </p>
 </div>
 <div class="communities-page-gallery">
-<a href="#"><div class="campsie-community"><p>Campsie</p></div></a>
-<a href="#"><div class="amber-valley-community"><p>Amber Valley</p></div></a>
-<a href="#"><div class="breton-community"><p>Breton</p></div></a>
-<a href="#"><div class="wildwood-community"><p>Wildwood</p></div></a>
-<a href="#"><div class="saskatchewan-community"><p>Saskatchewan</p></div></a>
-<a href="#"><div class="cities-community"><p>Cities</p></div></a>
+<a href="#"><div class="campsie-community"><div class="campsie"><p>Campsie</p></div></div></a>
+<a href="#"><div class="amber-valley-community"><div class="amber"><p>Amber Valley</p></div></div></a>
+<a href="#"><div class="breton-community"><div class="breton"><p>Breton</p></div></div></a>
+<a href="#"><div class="wildwood-community"><div class="wildwood"><p>Wildwood</p></div></div></a>
+<a href="#"><div class="saskatchewan-community"><div class="sk"><p>Saskatchewan</p></div></div></a>
+<a href="#"><div class="cities-community"><div class="cities"><p>Cities</p></div></div></a>
 </div>
 </div>
 </main>
