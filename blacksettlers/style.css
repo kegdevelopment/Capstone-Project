@@ -1257,6 +1257,7 @@ font-size: 1rem;
 .intro-dream{
 	margin-bottom: 2rem;
 }
+
 .video-description  {
 	text-align: center;
 }
@@ -2402,11 +2403,16 @@ CPT MEDIA QUERIES
 		max-width:80rem;
 		margin:0 auto;
 	}
+
+	.home-title {
+		text-align: left;
+	}
+
 	.inner-contact {
 		display: flex;
 		flex-direction: row;
-
 	}
+	
 	.contact-right {
 		margin-left: 5rem;
 	}
