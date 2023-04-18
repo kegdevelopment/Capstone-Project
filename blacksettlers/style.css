@@ -2148,7 +2148,7 @@ CPT MEDIA QUERIES
 
 .albums,
 .video-interviews {
-	border-radius: 0.625;
+	border-radius: 0.625rem;
 }
 
 .albums-img img,
@@ -2170,6 +2170,15 @@ CPT MEDIA QUERIES
 	.video-interviews-description {
 		order: 2;
 	}
+
+	.intro-header {
+    display: flex;
+    flex-flow: column;
+}
+
+	.intro-dream {
+    order: 2;
+}
 }
 
 @media only screen and (min-width: 700px){
