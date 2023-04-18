@@ -22,7 +22,7 @@
 				</g>
 				</svg></a>
 				<a href="https://www.youtube.com/@PaulCBSAS" target="_blank">
-					<svg fill="#880000" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64px" height="64px" viewBox="0 0 260 180" enable-background="new 0 0 260 180" xml:space="preserve" stroke="#880000">
+					<svg fill="#880000" version="1.1" id="youtube" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="52px" height="52px" viewBox="0 0 260 180" enable-background="new 0 0 260 180" xml:space="preserve" stroke="#880000">
 						<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
 						<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
 						<g id="SVGRepo_iconCarrier">
