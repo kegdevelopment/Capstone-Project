@@ -1247,6 +1247,7 @@ font-size: 1rem;
 .home-title {
 	padding: 0 2rem;
 	margin-bottom: 0;
+	text-align: center;
 }
 
 .intro-header{
@@ -2396,7 +2397,8 @@ CPT MEDIA QUERIES
 	.site-info,
 	.inner-video,
 	.inner-contact,
-	.video-big-container{
+	.video-big-container,
+	.home-title {
 		max-width:80rem;
 		margin:0 auto;
 	}
