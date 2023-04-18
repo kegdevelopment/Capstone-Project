@@ -59,7 +59,7 @@ get_header();
             <div class="our-founders">
                 <div class="founder-img"><img src="https://blacksettlersb.web.dmitcapstone.ca/wp-content/uploads/2023/04/3-unidentified-people.jpg" alt="founders-img"></div>
                 <div class="founder-description">
-                    <h5>BSAS was founded in 2005 by four women, all descendants of Black slaves and early Canadian pioneers</h5>
+                    <p>BSAS was founded in 2005 by four women, all descendants of Black slaves and early Canadian pioneers<p>
                     <div class="founder-names">
                         
                         <p><b><span class="founders-font">Myrna Wisdom</span></b><br>
@@ -81,7 +81,7 @@ get_header();
             <div class="our-members">
                 <div class="members-img"><img src="https://blacksettlersb.web.dmitcapstone.ca/wp-content/uploads/2023/04/unid-man-horse.jpg" alt="founders-img"></div>
                 <div class="members-description">
-                    <h5>While we cannot list everyone who has contributed images, history, and experiences throughout the years, we would like to acknowledge the fact that sharing and archiving our history would not be possible without the contributions of settlers and their descendants . </h5>
+                    <p>While we cannot list everyone who has contributed images, history, and experiences throughout the years, we would like to acknowledge the fact that sharing and archiving our history would not be possible without the contributions of settlers and their descendants . </p>
                     <p>Here are the current members involved and active in the organization:</p>
                     <div class="founder-names">
                         
