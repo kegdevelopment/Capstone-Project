@@ -1051,9 +1051,6 @@ font-size: 1rem;
 	text-align:center;
 }
 
-.res-description{
-	margin-bottom:2rem;
-}
 
 .res-container a{
 	padding:.7rem 2rem;
@@ -1067,13 +1064,13 @@ font-size: 1rem;
 	padding-bottom:2rem;
 }
 
-.res-description {
-	padding-bottom: 1rem;
-	max-width: 70%
-}
 
 .res-inner-container {
 	border-bottom: 2px solid #574436;
+}
+
+.res-button {
+	margin-bottom: 1.5rem;
 }
 /* * * * * * * * * *
 BSAS Custom Styles
@@ -1642,10 +1639,10 @@ input[type="submit"]:hover {
   }
   
   .prev-arrow span {
-    background-image: url(https://blacksettlersb.web.dmitcapstone.ca/wp-content/uploads/2023/04/back-arrow.png);
+    background-image: url("https://blacksettlersb.web.dmitcapstone.ca/wp-content/uploads/2023/04/back-arrow.png");
   }
  .next-arrow span {
-    background-image: url(https://blacksettlersb.web.dmitcapstone.ca/wp-content/uploads/2023/04/forward-arrow.png);
+    background-image: url("https://blacksettlersb.web.dmitcapstone.ca/wp-content/uploads/2023/04/forward-arrow.png");
   }
   .page-numbers {
     font-size: 0.875rem;
@@ -2134,6 +2131,12 @@ CPT MEDIA QUERIES
 	
 	.res-pg-container{
 		max-width:1280px;
+	}
+
+	.res-description {
+		margin-bottom: 2rem;
+		padding-bottom: 1rem;
+		max-width: 70%
 	}
 
 }
