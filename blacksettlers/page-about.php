@@ -79,7 +79,7 @@ get_header();
     <div class="members">
             <h3>Contributing Members</h3>                           
             <div class="our-members">
-                <div class="members-img"><img src="https://blacksettlersb.web.dmitcapstone.ca/wp-content/uploads/2023/04/unid-man-on-horse-sm.jpg" alt="founders-img"></div>
+                <div class="members-img"><img src="https://blacksettlersb.web.dmitcapstone.ca/wp-content/uploads/2023/04/unid-man-on-horse-sm.jpeg" alt="founders-img"></div>
                 <div class="members-description">
                     <h5>While we cannot list everyone who has contributed images, history, and experiences throughout the years, we would like to acknowledge the fact that sharing and archiving our history would not be possible without the contributions of settlers and their descendants . </h5>
                     <p>Here are the current members involved and active in the organization:</p>
