@@ -106,6 +106,7 @@ add_action( 'after_setup_theme', 'blacksettlers_setup' );
 add_action( 'init', function() {
 	remove_post_type_support( 'our_communities', 'editor' );
 	remove_post_type_support( 'resources', 'editor' );
+	remove_post_type_support( 'videos', 'editor' );
 }, 99);
 
 /**

@@ -21,7 +21,7 @@
                 <p>Learn about the black settlers, their families, and the communities they settled in. Browse through our stories and discover something new.</p>
                 <a href="https://blacksettlersb.web.dmitcapstone.ca/communities/">
                 <div class="go-communities">
-                    Got To Communities
+                    Go To Communities
                     <img src="https://blacksettlersb.web.dmitcapstone.ca/wp-content/uploads/2023/04/icons8-arrow-24.png" alt="">
                 </div>
                 </a>
@@ -37,7 +37,7 @@
             <p>Browse through our various galleries, themed by the different activities that took place in the communities.</p>
             <div class="gallery-indivdual">
                 <a href="https://blacksettlersb.web.dmitcapstone.ca/albums/farming/" class="farming-1"><div class=" farming"><div class="farm"><p>Farming</p></div></div></a>
-                <a href="https://blacksettlersb.web.dmitcapstone.ca/schools/" class="school-1"><div class="school"><div class="schools"><p>Schools</p></div></div></a>
+                <a href="https://blacksettlersb.web.dmitcapstone.ca/albums/schools/" class="school-1"><div class="school"><div class="schools"><p>Schools</p></div></div></a>
                 <a href="https://blacksettlersb.web.dmitcapstone.ca/albums/church/" class="church-1"><div class="church"><div class="churches"><p>Church</p></div></div></a>
                 <a href="https://blacksettlersb.web.dmitcapstone.ca/albums/socializing/" class="socializing-1"><div class="socializing"><div class="social"><p>Socializing</p></div></div></a>
                 <a href="https://blacksettlersb.web.dmitcapstone.ca/albums/documents/" class="documents-1"><div class="documents"><div class="doc"><p>Documents</p></div></div></a>

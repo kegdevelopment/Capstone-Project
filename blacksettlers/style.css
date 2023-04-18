@@ -968,6 +968,110 @@ textarea {
 	margin-bottom: 1.5em;
 }
 
+/******** 
+Custom Styling from the site
+ ********/
+ .custom-logo {
+	max-width:12rem;
+	margin-top:8.5%;
+	margin-left:4rem;
+}
+
+.site-branding{
+	display:flex;
+	background-color:#CEC0B6;
+}
+
+.mob-menu-logo-holder{
+	background-color:#CEC0B6;
+}
+
+#mobmenuleft li a{
+	color:#800000;
+}
+
+#colophon{
+	background-color:#CEC0B6;
+}
+
+.site-info{
+		justify-content:center;
+}
+
+.footer1,
+.footer2{
+	padding:2rem;
+}
+
+.footer1 h2{
+	color:#800000;
+}
+
+.footer2{
+	color:#800000;
+}
+
+.footer2 a{
+	padding:.7rem 2rem;
+	text-decoration:none;
+	background-color:#800000;
+	border-radius:3rem;
+	color:#E8DDD5;
+}
+
+.is-layout-flex{
+	color:#800000;
+	padding:2rem 2rem 2rem 4rem;
+}
+
+
+
+.is-layout-flow p{
+	color:#574436;
+}
+
+.wp-block-buttons{
+	padding-left:0rem;
+}
+
+.wp-block-button a{
+	color: #F2DAC0;
+background-color: #800000;
+border-radius: 9999px;
+box-shadow: none;
+text-decoration: none;
+font-size: 1rem;
+}
+
+.res-pg-container{
+	padding:2rem;
+}
+
+.res-pg-container h1 {
+	text-align:center;
+}
+
+
+.res-container a{
+	padding:.7rem 2rem;
+	text-decoration:none;
+	background-color:#800000;
+	border-radius:3rem;
+	color:#E8DDD5;
+}
+
+.res-content{
+	padding-bottom:2rem;
+}
+
+
+.res-inner-container {
+	border-bottom: 2px solid #574436;
+}
+
+.res-button {
+	margin-bottom: 1.5rem;
+}
 /* * * * * * * * * *
 BSAS Custom Styles
 * * * * * * * * * */
@@ -1054,7 +1158,7 @@ p {
 
 .site-info{
 		justify-content:center;
-		max-width: 1280px;
+		max-width: 80rem;
 }
 .inner-contact {
 	display: flex;
@@ -1160,13 +1264,22 @@ font-size: 1rem;
 }
 
 
+.home-title {
+	padding: 0 2rem;
+	margin-bottom: 0;
+	text-align: center;
+}
 
 .intro-header{
-	padding:3rem;
+	padding: 2rem;
 }
 
 .intro-dream{
-	margin-bottom:2rem;
+	margin-bottom: 2rem;
+}
+
+.video-description  {
+	text-align: center;
 }
 .footer2 a,
 .intro-dream a,
@@ -1208,7 +1321,7 @@ font-size: 1rem;
 
 .intro-video{
 	background-color:#574436;
-	padding:3rem ;
+	padding:2rem ;
 }
 
 .video-description h2,
@@ -1218,7 +1331,7 @@ font-size: 1rem;
 
 .what-we-do{
 	text-align:center;
-	padding:3rem ;
+	padding:2rem ;
 }
 
 .what-we-do h2,
@@ -1242,7 +1355,7 @@ font-size: 1rem;
 
 .contact{
 	background-color:#574436;
-	padding:3rem;
+	padding:2rem;
 	margin-bottom:6rem;
 }
 
@@ -1252,7 +1365,7 @@ font-size: 1rem;
 
 .contact-left h3{
 	color: #E8DDD5;
-	font-size: 28px;
+	font-size: 1.75rem;
 }
 
 .about-bsas{
@@ -1291,10 +1404,12 @@ font-size: 1rem;
 .about-bsas{
 		text-align:center;
 	}
-
-.founders{
-	text-align:left;
+.founders,
+.members {
+	padding-top: 5rem;
+	
 }
+
 
 .founder-description{
 	margin-left:1rem;
@@ -1306,8 +1421,13 @@ font-size: 1rem;
 }
 
 .founder-names p{
-	font-size:.7rem;
+	font-size:1rem;
 	margin-right:.8rem;
+}
+.founders-font {
+	color: #111;
+	font-size: 1.5rem;
+	font-family: 'DM Serif Display', serif;
 }
 
 .events-page h1{
@@ -1351,7 +1471,7 @@ font-size: 1rem;
 }
 
 .campsie-community{
-	background-image: url("https://blacksettlersb.web.dmitcapstone.ca/wp-content/uploads/2023/04/Breton-Grain-elevators.jpg");
+	background-image: url("https://blacksettlersb.web.dmitcapstone.ca/wp-content/uploads/2023/04/store-campsie-1.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1361,7 +1481,7 @@ font-size: 1rem;
 }
 
 .amber-valley-community{
-	background-image: url("https://blacksettlersb.web.dmitcapstone.ca/wp-content/uploads/2023/04/Breton-Grain-elevators.jpg");
+	background-image: url("https://blacksettlersb.web.dmitcapstone.ca/wp-content/uploads/2023/04/toles-school-bw-small.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1381,7 +1501,7 @@ font-size: 1rem;
 }
 
 .wildwood-community{
-	background-image: url("https://blacksettlersb.web.dmitcapstone.ca/wp-content/uploads/2023/04/Breton-Grain-elevators.jpg");
+	background-image: url("https://blacksettlersb.web.dmitcapstone.ca/wp-content/uploads/2023/03/Jay-Leffler-with-Niece-Merna-Holland-on-farm-in-Wildwood-Junkins.jpeg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1391,7 +1511,7 @@ font-size: 1rem;
 }
 
 .saskatchewan-community{
-	background-image: url("https://blacksettlersb.web.dmitcapstone.ca/wp-content/uploads/2023/04/Breton-Grain-elevators.jpg");
+	background-image: url("https://blacksettlersb.web.dmitcapstone.ca/wp-content/uploads/2023/04/school-saskatchewan.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1401,13 +1521,26 @@ font-size: 1rem;
 }
 
 .cities-community{
-	background-image: url("https://blacksettlersb.web.dmitcapstone.ca/wp-content/uploads/2023/04/Breton-Grain-elevators.jpg");
+	background-image: url("https://blacksettlersb.web.dmitcapstone.ca/wp-content/uploads/2023/04/hatties-chicks.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
 	width:24rem;
 	height:15rem;
+}
+.campsie,
+.amber,
+.wildwood,
+.sk,
+.cities,
+.breton {
+	background-color: #111;
+	opacity: 0.8;
+	height: 100%;
+	width: 100%;
+	position: relative;
+	right: 1.063rem;
 }
 
 /* Contact Page */
@@ -1423,18 +1556,18 @@ font-size: 1rem;
 	margin-bottom: 0;
 }
 .tooltip{
-    color: white;
+    color: #574436;
     position: relative;
   display: inline-block;
   
 }
 .tooltiptext{
     visibility: hidden;
-    width: 120px;
+    width: 7.5rem;
     background-color: black;
     color: #fff;
     text-align: center;
-    padding: 5px 0;
+    padding: 0.313rem 0;
     border-radius: 6px;
    
     /* Position the tooltip text - see examples below! */
@@ -1453,6 +1586,7 @@ font-size: 1rem;
 	margin: 2rem;
 	background-color: #CEC0B6;
 }
+
 .video-container p {
 	margin: 0;
 
@@ -1495,17 +1629,34 @@ input[type="submit"]:hover {
 /* img {
     width: 100%;
 } */
+.gallery {
+	margin-top: 2rem;
+}
+.gallery-item {
+	width: 18.75rem;
+	height: 18.75rem;
+	display: inline-block;
+	margin: 0 auto;
+	padding-top: 2rem;
+  }
+.farming-items {
+	width: 100%;
+	margin: 0 auto;
+}
+  
 /* pagination */
 .pagination {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
+    margin: 8rem;
+	padding-top: 2rem;
+
   }
   .pagination span {
     margin: 0 5px;
-    width: 30px;
-    height: 30px;
+    width: 1.875rem;
+    height: 1.875rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1514,14 +1665,14 @@ input[type="submit"]:hover {
     background-position: center;
   }
   
-  span.prev-arrow {
-    background-image: url(https://blacksettlersb.web.dmitcapstone.ca/wp-content/uploads/2023/04/back-arrow.png);
+  .prev-arrow span {
+    background-image: url("https://blacksettlersb.web.dmitcapstone.ca/wp-content/uploads/2023/04/back-arrow.png");
   }
-  span.next-arrow {
-    background-image: url(https://blacksettlersb.web.dmitcapstone.ca/wp-content/uploads/2023/04/forward-arrow.png);
+ .next-arrow span {
+    background-image: url("https://blacksettlersb.web.dmitcapstone.ca/wp-content/uploads/2023/04/forward-arrow.png");
   }
   .page-numbers {
-    font-size: 14px;
+    font-size: 0.875rem;
   }
   
  
@@ -1573,7 +1724,8 @@ input[type="submit"]:hover {
 .schools,
 .churches,
 .social,
-.doc {
+.doc
+ {
 	background-color: #111;
 	opacity: 0.8;
 	height: 100%;
@@ -1590,7 +1742,13 @@ input[type="submit"]:hover {
 .schools p,
 .churches p,
 .social p,
-.doc p {
+.doc p,
+.campsie p,
+.amber p,
+.wildwood p,
+.sk p,
+.cities p,
+.breton p {
 	color: #F2DAC0;
 	font-family: 'DM Serif Display', serif;
 	position: relative;
@@ -1668,6 +1826,86 @@ input[type="submit"]:hover {
 	align-items: center;
 	justify-content: center;
 }
+.codedropz-upload-inner h1 {
+		font-size: 2rem;
+	}
+	.tooltip {
+		position: relative;
+		display: inline-block;
+	  }
+	  
+	  .tooltip .tooltiptext {
+		visibility: hidden;
+		width: 100%;
+		background-color: black;
+		color: #fff;
+		text-align: center;
+		border-radius: 6px;
+		padding: 0.313rem 0;
+	  
+		/* Position the tooltip */
+		position: absolute;
+		z-index: 1;
+	  }
+	  
+	  .tooltip:hover .tooltiptext {
+		visibility: visible;
+	  }
+	  .tooltip-button {
+		background-color: #f7f7f7;
+		border: none;
+		color: #574436;
+		font-size: 1rem;
+		margin-left: 0.313rem;
+		padding: 0.313rem;
+		border-radius: 50%;
+		cursor: pointer;
+	  }
+	  
+	  .tooltip-button:hover {
+		background-color: #ddd;
+	  }
+	  
+/* For screens smaller than 768px */
+@media (max-width: 767px) {
+	.two-column {
+	  display: block;
+	}
+  
+	.column {
+	  width: 100%;
+	  margin-bottom: 1.25rem;
+	}
+  }
+  
+  /* For screens 768px and larger */
+  @media (min-width: 768px) {
+	.two-column {
+	  display: grid;
+	  grid-template-columns: repeat(2, 1fr);
+	  gap: 1.25rem;
+	}
+  
+	.column {
+	  margin-bottom: 1.25rem;
+	}
+	
+  }
+  
+  /* For all screen sizes */
+  .wpcf7-form-control-wrap {
+	width: 100%;
+	box-sizing: border-box;
+  }
+  
+  .wpcf7-submit {
+	width: 100%;
+	max-width: 12rem;
+	margin: 0 auto;
+	display: block;
+  }
+  
+
 
 
 
@@ -1700,8 +1938,19 @@ COMMUNITIES (CPT) STYLING
 	font-size: 1.5rem;
 }
 
-.image-content img {
-	border-radius: 5px;
+.image-content img,
+.founder-img img,
+.members-img img,
+.community-image img {
+	border-radius: 0.313rem;
+}
+
+.video-container {
+	border-radius: 0.625rem;
+}
+
+.vids iframe {
+	border-radius: 0.625rem 0.625rem 0 0;
 }
 
 .caption {
@@ -1718,7 +1967,7 @@ COMMUNITIES (CPT) STYLING
 
 /* Donate Page Styling */
 .donate-container {
-	max-width: 1280px;
+	max-width: 80rem;
 	margin: 0 auto;
 }
 
@@ -1763,8 +2012,10 @@ CPT MEDIA QUERIES
 
 @media only screen and (min-width: 900px){
 	.community-container,
-	.albums-section {
-		max-width: 1280px;
+	.albums-section,
+	.contact-container,
+	.communities-page {
+		max-width: 80rem;
 		margin: 0 auto;
 	}
 
@@ -1792,7 +2043,7 @@ CPT MEDIA QUERIES
 	}
 
 	.community-content p {
-		max-width: 650px;
+		max-width: 40.625rem;
 		margin-top: 0;
 	}
 
@@ -1838,11 +2089,12 @@ CPT MEDIA QUERIES
 	}
 
 	.second-img {
-		max-height: 560px;
+		max-height: 35rem;
 	}
 
 	.poem-container {
 		position: relative;
+		margin-bottom: 6rem;
 	}
 
 	.overlay {
@@ -1887,19 +2139,85 @@ CPT MEDIA QUERIES
 		font-size: 2.25rem;
 	}
 
+	.res-outer-container{
+		display:flex;
+	}
+	
+	.res-container{
+		width:70%;
+	}
+	
+	.sidebar-container{
+		width:20%
+	}
+	
+	.res-container{
+		padding:2rem;
+		margin-right:2rem
+	}
+	
+	.res-inner-container{
+	display:flex;
+		justify-content:space-between;
+}
+	
+	.res-inner-pg-container,
+	.outer-communities-page{
+		display:flex;
+		justify-content:center;
+	}
+	
+	.res-pg-container{
+		max-width:1280px;
+	}
+
+	.res-description {
+		margin-bottom: 2rem;
+		padding-bottom: 1rem;
+		max-width: 70%
+	}
+
+	.res-description p {
+		margin-bottom: 0;
+	}
+
 }
 /* End of CPT media queries  */
 
 .albums,
 .video-interviews {
-	border-radius: 10px;
+	border-radius: 0.625rem;
 }
 
 .albums-img img,
 .video-interviews-img img {
-	border-radius: 10px 10px 0 0;
+	border-radius: 0.625rem 0.625rem 0 0;
 }
 
+.video-interviews-img img,
+.albums-img img {
+	width: 100%;
+}
+
+@media only screen and (max-width: 699px){
+	.video-interviews {
+		display: flex;
+		flex-flow: column;
+	}
+	
+	.video-interviews-description {
+		order: 2;
+	}
+
+	.intro-header {
+    display: flex;
+    flex-flow: column;
+}
+
+	.intro-dream {
+    order: 2;
+}
+}
 
 @media only screen and (min-width: 700px){
 		
@@ -1998,11 +2316,11 @@ CPT MEDIA QUERIES
 	}
 
 	.albums-img img {
-    border-radius: 10px 0 0 10px;
+    border-radius: 0.625rem 0 0 0.625rem;
 }
 
 	.video-interviews-img img {
-    border-radius: 0 10px 10px 0;
+    border-radius: 0 0.625rem 0.625rem 0;
 }
 	
 	.albums-img,
@@ -2058,7 +2376,7 @@ CPT MEDIA QUERIES
 		display:flex;
 		flex-wrap:wrap;
 		justify-content:center;
-		max-width:1080px;
+		max-width:67.5rem;
 		margin:0 auto;
 	}
 
@@ -2111,15 +2429,22 @@ CPT MEDIA QUERIES
 	.archiving-history,
 	.site-info,
 	.inner-video,
-	.inner-contact{
-		max-width:1280px;
+	.inner-contact,
+	.video-big-container,
+	.home-title {
+		max-width:80rem;
 		margin:0 auto;
 	}
+
+	.home-title {
+		text-align: left;
+	}
+
 	.inner-contact {
 		display: flex;
 		flex-direction: row;
-
 	}
+
 	.contact-right {
 		margin-left: 5rem;
 	}
@@ -2137,8 +2462,22 @@ CPT MEDIA QUERIES
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
 	}
-	
+	.our-members {
+		display: grid;
+		grid-template-columns: repeat(2,1fr);
+
+	}
+	.members-img {
+		grid-column: 2/-1;
+
+	}
+	.members-description {
+		grid-row: 1/-1;
+	}
+
 }
+	
+
 @media only screen and (min-width: 1400px) {
 /* Video Interview */
 	.video-text h3{
@@ -2178,7 +2517,7 @@ CPT MEDIA QUERIES
 .gallery-images {
 	display: grid;
 	grid-template-columns: repeat(3,1fr);
-	grid-auto-rows: minmax(100px, auto);
+	grid-auto-rows: minmax(6.25rem, auto);
 }
 .farming {
 	grid-column: 1/2;
@@ -2213,4 +2552,8 @@ li#menu-item-655 > a:hover {
 .footer2 h3, 
 .footer1 h2 {
 	margin: 2rem 0;
+}
+
+.footer1 a {
+	padding-right: 1.5rem;
 }

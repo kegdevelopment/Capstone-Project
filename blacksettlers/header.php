@@ -13,16 +13,22 @@
 <!doctype html>
 <html <?php language_attributes(); ?>>
 <head>
+
+    <meta name="description" content="This is the content that a search engine will display when retuning results.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="Content-Security-Policy" content="script-src 'none'">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="profile" href="https://gmpg.org/xfn/11">
+	
+	<!-- <link rel="profile" href="https://gmpg.org/xfn/11"> -->
 
 	<!-- Google Fonts -->
-	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<!-- <link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
-	
+	 -->
 	<?php wp_head(); ?>
+	
 </head>
 
 <body <?php body_class(); ?>>
@@ -31,6 +37,7 @@
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'blacksettlers' ); ?></a>
 
 	<header id="masthead" class="site-header">
+		
 		<div class="site-branding">
 			<?php
 			the_custom_logo();

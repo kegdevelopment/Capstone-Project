@@ -14,7 +14,7 @@ get_header();
 		<h1>Contact Us</h1>
 <p>We are continuing to seek out good stories and planning to do more oral history interviews in the future. Help to preserve our history by participating and encouraging others to participate.</p>
 		
-</div>
+
 <div class="large-container">
 
 		<div id="content" class=”site-content” >
@@ -25,7 +25,7 @@ get_header();
 
 
 	
-		 <?php echo apply_shortcodes( '[contact-form-7 id="10" title="Contact Us"]' ); ?>
+		 <?php echo apply_shortcodes( '[contact-form-7 id="763" title="Contact Us"]' ); ?>
 
 
 
@@ -44,7 +44,6 @@ function, tags, categories, archives,etc.. -->
  
 
 </div>
-
 
 
 
