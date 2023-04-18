@@ -10,12 +10,14 @@ get_header(); ?>
 
         <?php
         $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
+        $gallery_ids = array(365,363,362,361,359,360,357,358,356,355,354,353,352,351,350,348,349,347,346,345,344,343,342,340,341);
         $args = array(
             'post_type' => 'attachment',
             'post_mime_type' => 'image',
             'post_status' => 'inherit',
             'posts_per_page' => 1,
             'paged' => $paged,
+            'post__in' => $gallery_ids,
             'orderby' => 'menu_order',
             'order' => 'ASC',
             
@@ -27,7 +29,7 @@ get_header(); ?>
 
         $img_url = wp_get_attachment_image_src( get_the_ID(), 'large' )[0];
 
-        echo '<div class="gallery-item">';
+        echo '<div class="gallery-item farming-items">';
         echo '<img src="' . $img_url . '" />';
         echo '</div>';
       }
