@@ -1244,13 +1244,17 @@ font-size: 1rem;
 }
 
 
+.home-title {
+	padding: 0 2rem;
+	margin-bottom: 0;
+}
 
 .intro-header{
-	padding:3rem;
+	padding: 2rem;
 }
 
 .intro-dream{
-	margin-bottom:2rem;
+	margin-bottom: 2rem;
 }
 .video-description  {
 	text-align: center;
@@ -1295,7 +1299,7 @@ font-size: 1rem;
 
 .intro-video{
 	background-color:#574436;
-	padding:3rem ;
+	padding:2rem ;
 }
 
 .video-description h2,
@@ -1305,7 +1309,7 @@ font-size: 1rem;
 
 .what-we-do{
 	text-align:center;
-	padding:3rem ;
+	padding:2rem ;
 }
 
 .what-we-do h2,
@@ -1329,7 +1333,7 @@ font-size: 1rem;
 
 .contact{
 	background-color:#574436;
-	padding:3rem;
+	padding:2rem;
 	margin-bottom:6rem;
 }
 

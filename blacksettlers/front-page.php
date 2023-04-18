@@ -15,7 +15,7 @@ get_header();
 
 	<?php blacksettlers_post_thumbnail(); ?>
 
-	<h1>Black Settlers of Alberta and Saskatchewan Historical Society</h1>
+	<h1 class="home-title">Black Settlers of Alberta and Saskatchewan Historical Society</h1>
 	<div class="intro-header">		
 		<div class="intro-dream">
 			<div class="intro-dream-para-1">
