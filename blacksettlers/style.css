@@ -1536,7 +1536,7 @@ font-size: 1rem;
 	margin-bottom: 0;
 }
 .tooltip{
-    color: white;
+    color: #574436;
     position: relative;
   display: inline-block;
   
@@ -1834,7 +1834,7 @@ input[type="submit"]:hover {
 	  .tooltip-button {
 		background-color: #f7f7f7;
 		border: none;
-		color: #333;
+		color: #574436;
 		font-size: 1rem;
 		margin-left: 0.313rem;
 		padding: 0.313rem;
