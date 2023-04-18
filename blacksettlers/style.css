@@ -1918,6 +1918,7 @@ CPT MEDIA QUERIES
 
 	.poem-container {
 		position: relative;
+		margin-bottom: 6rem;
 	}
 
 	.overlay {
@@ -2304,4 +2305,8 @@ li#menu-item-655 > a:hover {
 .footer2 h3, 
 .footer1 h2 {
 	margin: 2rem 0;
+}
+
+.footer1 a {
+	padding-right: 1.5rem;
 }
