@@ -2292,3 +2292,7 @@ li#menu-item-655 > a:hover {
 .footer1 h2 {
 	margin: 2rem 0;
 }
+
+.footer1 a {
+	padding-right: 1.5rem;
+}
