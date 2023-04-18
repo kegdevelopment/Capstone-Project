@@ -2139,6 +2139,10 @@ CPT MEDIA QUERIES
 		max-width: 70%
 	}
 
+	.res-description p {
+		margin-bottom: 0;
+	}
+
 }
 /* End of CPT media queries  */
 
