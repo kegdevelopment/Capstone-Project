@@ -50,7 +50,7 @@ get_header();
                 <?php 
                 $link = get_field('resource2_link');
                 if( $link ): ?>
-                    <a class="button" href="<?php echo esc_url( $link ); ?>">View More</a>
+                    <a class="button" target="_blank" href="<?php echo esc_url( $link ); ?>">View More</a>
                 <?php endif; ?>
                 </div>
               </div> <!--  END .res-button -->
@@ -71,7 +71,7 @@ get_header();
                 <?php 
                 $link = get_field('resource3_link');
                 if( $link ): ?>
-                    <a class="button" href="<?php echo esc_url( $link ); ?>">View More</a>
+                    <a class="button" target="_blank" href="<?php echo esc_url( $link ); ?>">View More</a>
                 <?php endif; ?>
                 </div>
               </div> <!--  END .res-button -->
@@ -92,7 +92,7 @@ get_header();
                 <?php 
                 $link = get_field('resource4_link');
                 if( $link ): ?>
-                    <a class="button" href="<?php echo esc_url( $link ); ?>">View More</a>
+                    <a class="button" target="_blank" href="<?php echo esc_url( $link ); ?>">View More</a>
                 <?php endif; ?>
                 </div>
               </div> <!--  END .res-button -->
@@ -113,7 +113,7 @@ get_header();
                 <?php 
                 $link = get_field('resource5_link');
                 if( $link ): ?>
-                    <a class="button" href="<?php echo esc_url( $link ); ?>">View More</a>
+                    <a class="button" target="_blank" href="<?php echo esc_url( $link ); ?>">View More</a>
                 <?php endif; ?>
                 </div>
               </div> <!--  END .res-button -->
@@ -134,7 +134,7 @@ get_header();
                 <?php 
                 $link = get_field('resource6_link');
                 if( $link ): ?>
-                    <a class="button" href="<?php echo esc_url( $link ); ?>">View More</a>
+                    <a class="button" target="_blank" href="<?php echo esc_url( $link ); ?>">View More</a>
                 <?php endif; ?>
                 </div>
               </div> <!--  END .res-button -->
@@ -155,7 +155,7 @@ get_header();
                 <?php 
                 $link = get_field('resource7_link');
                 if( $link ): ?>
-                    <a class="button" href="<?php echo esc_url( $link ); ?>">View More</a>
+                    <a class="button" target="_blank" href="<?php echo esc_url( $link ); ?>">View More</a>
                 <?php endif; ?>
                 </div>
               </div> <!--  END .res-button -->
@@ -176,7 +176,7 @@ get_header();
                 <?php 
                 $link = get_field('resource8_link');
                 if( $link ): ?>
-                    <a class="button" href="<?php echo esc_url( $link ); ?>">View More</a>
+                    <a class="button" target="_blank" href="<?php echo esc_url( $link ); ?>">View More</a>
                 <?php endif; ?>
                 </div>
               </div> <!--  END .res-button -->
@@ -197,7 +197,7 @@ get_header();
                 <?php 
                 $link = get_field('resource9_link');
                 if( $link ): ?>
-                    <a class="button" href="<?php echo esc_url( $link ); ?>">View More</a>
+                    <a class="button" target="_blank" href="<?php echo esc_url( $link ); ?>">View More</a>
                 <?php endif; ?>
                 </div>
               </div> <!--  END .res-button -->
@@ -218,7 +218,7 @@ get_header();
                 <?php 
                 $link = get_field('resource10_link');
                 if( $link ): ?>
-                    <a class="button" href="<?php echo esc_url( $link ); ?>">View More</a>
+                    <a class="button" target="_blank" href="<?php echo esc_url( $link ); ?>">View More</a>
                 <?php endif; ?>
                 </div>
               </div> <!--  END .res-button -->
