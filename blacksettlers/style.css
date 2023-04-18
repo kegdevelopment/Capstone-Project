@@ -968,6 +968,113 @@ textarea {
 	margin-bottom: 1.5em;
 }
 
+/******** 
+Custom Styling from the site
+ ********/
+ .custom-logo {
+	max-width:12rem;
+	margin-top:8.5%;
+	margin-left:4rem;
+}
+
+.site-branding{
+	display:flex;
+	background-color:#CEC0B6;
+}
+
+.mob-menu-logo-holder{
+	background-color:#CEC0B6;
+}
+
+#mobmenuleft li a{
+	color:#800000;
+}
+
+#colophon{
+	background-color:#CEC0B6;
+}
+
+.site-info{
+		justify-content:center;
+}
+
+.footer1,
+.footer2{
+	padding:2rem;
+}
+
+.footer1 h2{
+	color:#800000;
+}
+
+.footer2{
+	color:#800000;
+}
+
+.footer2 a{
+	padding:.7rem 2rem;
+	text-decoration:none;
+	background-color:#800000;
+	border-radius:3rem;
+	color:#E8DDD5;
+}
+
+.is-layout-flex{
+	color:#800000;
+	padding:2rem 2rem 2rem 4rem;
+}
+
+
+
+.is-layout-flow p{
+	color:#574436;
+}
+
+.wp-block-buttons{
+	padding-left:0rem;
+}
+
+.wp-block-button a{
+	color: #F2DAC0;
+background-color: #800000;
+border-radius: 9999px;
+box-shadow: none;
+text-decoration: none;
+font-size: 1rem;
+}
+
+.res-pg-container{
+	padding:2rem;
+}
+
+.res-pg-container h1 {
+	text-align:center;
+}
+
+.res-description{
+	margin-bottom:2rem;
+}
+
+.res-container a{
+	padding:.7rem 2rem;
+	text-decoration:none;
+	background-color:#800000;
+	border-radius:3rem;
+	color:#E8DDD5;
+}
+
+.res-content{
+	padding-bottom:2rem;
+}
+
+.res-description {
+	padding-bottom: 1rem;
+	max-width: 70%
+}
+
+.res-inner-container {
+	border-bottom: 2px solid #574436;
+}
 /* * * * * * * * * *
 BSAS Custom Styles
 * * * * * * * * * */
@@ -2275,8 +2382,40 @@ CPT MEDIA QUERIES
 	.members-description {
 		grid-row: 1/-1;
 	}
+	.res-outer-container{
+		display:flex;
+	}
 	
+	.res-container{
+		width:70%;
+	}
+	
+	.sidebar-container{
+		width:20%
+	}
+	
+	.res-container{
+		padding:2rem;
+		margin-right:2rem
+	}
+	
+	.res-inner-container{
+	display:flex;
+		justify-content:space-between;
 }
+	
+	.res-inner-pg-container,
+	.outer-communities-page{
+		display:flex;
+		justify-content:center;
+	}
+	
+	.res-pg-container{
+		max-width:1280px;
+	}
+}
+	
+
 @media only screen and (min-width: 1400px) {
 /* Video Interview */
 	.video-text h3{
