@@ -1566,6 +1566,7 @@ font-size: 1rem;
 	margin: 2rem;
 	background-color: #CEC0B6;
 }
+
 .video-container p {
 	margin: 0;
 
@@ -1917,8 +1918,19 @@ COMMUNITIES (CPT) STYLING
 	font-size: 1.5rem;
 }
 
-.image-content img {
+.image-content img,
+.founder-img img,
+.members-img img,
+.community-image img {
 	border-radius: 0.313rem;
+}
+
+.video-container {
+	border-radius: 0.625rem;
+}
+
+.vids iframe {
+	border-radius: 0.625rem 0.625rem 0 0;
 }
 
 .caption {
@@ -2412,7 +2424,7 @@ CPT MEDIA QUERIES
 		display: flex;
 		flex-direction: row;
 	}
-	
+
 	.contact-right {
 		margin-left: 5rem;
 	}
