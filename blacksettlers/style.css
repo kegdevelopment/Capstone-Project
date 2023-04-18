@@ -2104,6 +2104,38 @@ CPT MEDIA QUERIES
 		font-size: 2.25rem;
 	}
 
+	.res-outer-container{
+		display:flex;
+	}
+	
+	.res-container{
+		width:70%;
+	}
+	
+	.sidebar-container{
+		width:20%
+	}
+	
+	.res-container{
+		padding:2rem;
+		margin-right:2rem
+	}
+	
+	.res-inner-container{
+	display:flex;
+		justify-content:space-between;
+}
+	
+	.res-inner-pg-container,
+	.outer-communities-page{
+		display:flex;
+		justify-content:center;
+	}
+	
+	.res-pg-container{
+		max-width:1280px;
+	}
+
 }
 /* End of CPT media queries  */
 
@@ -2382,37 +2414,7 @@ CPT MEDIA QUERIES
 	.members-description {
 		grid-row: 1/-1;
 	}
-	.res-outer-container{
-		display:flex;
-	}
-	
-	.res-container{
-		width:70%;
-	}
-	
-	.sidebar-container{
-		width:20%
-	}
-	
-	.res-container{
-		padding:2rem;
-		margin-right:2rem
-	}
-	
-	.res-inner-container{
-	display:flex;
-		justify-content:space-between;
-}
-	
-	.res-inner-pg-container,
-	.outer-communities-page{
-		display:flex;
-		justify-content:center;
-	}
-	
-	.res-pg-container{
-		max-width:1280px;
-	}
+
 }
 	
 
