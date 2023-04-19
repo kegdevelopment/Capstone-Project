@@ -2542,6 +2542,13 @@ CPT MEDIA QUERIES
 
 }
 
+/* Anchor tag in Cities Page Styling */
+.p-container p > a {
+    color: #880000;
+    font-weight: 500;
+}
+/* END anchor tag cities styling */
+
 li#menu-item-655 > a {
 	color: #E8DDD5;
 	background: #880000;
