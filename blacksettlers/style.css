@@ -2436,6 +2436,7 @@ CPT MEDIA QUERIES
 	}
 	
 	.intro-header,
+	.home-title,
 	.what-we-do,
 	.about-bsas,
 	.archiving-history,
@@ -2450,6 +2451,7 @@ CPT MEDIA QUERIES
 
 	.home-title {
 		text-align: left;
+		padding: 3rem;
 	}
 
 	.inner-contact {
