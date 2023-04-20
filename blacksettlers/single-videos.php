@@ -104,8 +104,54 @@ get_header();
         <h3><?php the_field('subject_9'); ?></h3>
 
         </div>
-        </div><!-- video container -->
+        </div><!-- video container --> 
+        <?php if(get_field('video_link_10')) : ?>
+        <div class="video-container">
+           
+            <div class="vids">
+           
+            <?php the_field('video_link_10'); ?>
+            </div>
+            
+          
+        <div class="video-text"> 
+           
+        <h2><?php the_field('title_10'); ?></h2>
+       
+        
+        <h3><?php the_field('subject_10'); ?></h3>
+       
 
+        </div>
+        </div><!-- video container -->
+        <?php endif; ?>
+        <?php if(get_field('video_link_11')) : ?>
+        <div class="video-container"> 
+            
+            <div class="vids">
+                
+            <?php the_field('video_link_11'); ?>
+            </div>
+            
+        <div class="video-text">
+        <h2><?php the_field('title_11'); ?></h2>
+        <h3><?php the_field('subject_11'); ?></h3>
+
+        </div>
+        </div><!-- video container -->
+        <?php endif; ?>
+        <?php if(get_field('video_link_12')) : ?>
+        <div class="video-container">
+            <div class="vids">
+            <?php the_field('video_link_12'); ?>
+            </div>
+        <div class="video-text">
+        <h2><?php the_field('title_12'); ?></h2>
+        <h3><?php the_field('subject_12'); ?></h3>
+
+        </div>
+        </div><!-- video container -->
+        <?php endif; ?>
 
     </div><!-- wide container -->
 </div><!-- big video container -->
