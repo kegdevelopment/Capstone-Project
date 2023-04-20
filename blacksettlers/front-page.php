@@ -15,11 +15,10 @@ get_header();
 
 	<?php blacksettlers_post_thumbnail(); ?>
 
-	<div class="intro-header">
-		
+	<h1 class="home-title">Black Settlers of Alberta and Saskatchewan Historical Society</h1>
+	<div class="intro-header">		
 		<div class="intro-dream">
 			<div class="intro-dream-para-1">
-				<h1>Black Settlers of Alberta and Saskatchewan Historical Society</h1>
 				<p>Archiving and documenting material to educate, promote, and officially recognize the historic role Black Settlers played in pioneering the lands that are now known as Alberta and Saskatchewan.</p>
 			</div>
 			<div class="intro-dream-para-2">

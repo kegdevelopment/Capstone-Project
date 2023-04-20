@@ -1051,9 +1051,6 @@ font-size: 1rem;
 	text-align:center;
 }
 
-.res-description{
-	margin-bottom:2rem;
-}
 
 .res-container a{
 	padding:.7rem 2rem;
@@ -1067,13 +1064,13 @@ font-size: 1rem;
 	padding-bottom:2rem;
 }
 
-.res-description {
-	padding-bottom: 1rem;
-	max-width: 70%
-}
 
 .res-inner-container {
 	border-bottom: 2px solid #574436;
+}
+
+.res-button {
+	margin-bottom: 1.5rem;
 }
 /* * * * * * * * * *
 BSAS Custom Styles
@@ -1193,6 +1190,26 @@ ul.sub-menu li{
 	background-color:#E8DDD5;
 }
 
+ul.sub-menu{
+	display:block;
+	background-color:#CEC0B6;
+	padding:0.5rem;
+	box-shadow:none;
+}
+
+ul.sub-menu li{
+	margin-bottom:.2rem;
+}
+
+#primary-menu li a{
+	padding:0.2rem .5rem;
+	border-radius:.5rem
+}
+
+#primary-menu li a:hover{
+	background-color:#E8DDD5;
+}
+
 .footer1,
 .footer2{
 	padding-left:2rem;
@@ -1247,14 +1264,20 @@ font-size: 1rem;
 }
 
 
+.home-title {
+	padding: 0 2rem;
+	margin-bottom: 0;
+	text-align: center;
+}
 
 .intro-header{
-	padding:3rem;
+	padding: 2rem;
 }
 
 .intro-dream{
-	margin-bottom:2rem;
+	margin-bottom: 2rem;
 }
+
 .video-description  {
 	text-align: center;
 }
@@ -1298,7 +1321,7 @@ font-size: 1rem;
 
 .intro-video{
 	background-color:#574436;
-	padding:3rem ;
+	padding:2rem ;
 }
 
 .video-description h2,
@@ -1308,7 +1331,7 @@ font-size: 1rem;
 
 .what-we-do{
 	text-align:center;
-	padding:3rem ;
+	padding:2rem ;
 }
 
 .what-we-do h2,
@@ -1332,7 +1355,7 @@ font-size: 1rem;
 
 .contact{
 	background-color:#574436;
-	padding:3rem;
+	padding:2rem;
 	margin-bottom:6rem;
 }
 
@@ -1448,7 +1471,7 @@ font-size: 1rem;
 }
 
 .campsie-community{
-	background-image: url("https://blacksettlersb.web.dmitcapstone.ca/wp-content/uploads/2023/04/store-campsie-1.png");
+	background-image: url("https://blacksettlersb.web.dmitcapstone.ca/wp-content/uploads/2023/04/store-campsie.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1478,7 +1501,7 @@ font-size: 1rem;
 }
 
 .wildwood-community{
-	background-image: url("https://blacksettlersb.web.dmitcapstone.ca/wp-content/uploads/2023/03/Jay-Leffler-with-Niece-Merna-Holland-on-farm-in-Wildwood-Junkins.jpeg");
+	background-image: url("https://blacksettlersb.web.dmitcapstone.ca/wp-content/uploads/2023/04/Jay-Leffler-with-Niece-Merna-Holland-on-farm-in-Wildwood-Junkins.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1533,7 +1556,7 @@ font-size: 1rem;
 	margin-bottom: 0;
 }
 .tooltip{
-    color: white;
+    color: #574436;
     position: relative;
   display: inline-block;
   
@@ -1563,6 +1586,7 @@ font-size: 1rem;
 	margin: 2rem;
 	background-color: #CEC0B6;
 }
+
 .video-container p {
 	margin: 0;
 
@@ -1642,10 +1666,10 @@ input[type="submit"]:hover {
   }
   
   .prev-arrow span {
-    background-image: url(https://blacksettlersb.web.dmitcapstone.ca/wp-content/uploads/2023/04/back-arrow.png);
+    background-image: url("https://blacksettlersb.web.dmitcapstone.ca/wp-content/uploads/2023/04/back-arrow.png");
   }
  .next-arrow span {
-    background-image: url(https://blacksettlersb.web.dmitcapstone.ca/wp-content/uploads/2023/04/forward-arrow.png);
+    background-image: url("https://blacksettlersb.web.dmitcapstone.ca/wp-content/uploads/2023/04/forward-arrow.png");
   }
   .page-numbers {
     font-size: 0.875rem;
@@ -1833,7 +1857,7 @@ input[type="submit"]:hover {
 	  .tooltip-button {
 		background-color: #f7f7f7;
 		border: none;
-		color: #333;
+		color: #574436;
 		font-size: 1rem;
 		margin-left: 0.313rem;
 		padding: 0.313rem;
@@ -1917,8 +1941,19 @@ COMMUNITIES (CPT) STYLING
 	font-size: 1.5rem;
 }
 
-.image-content img {
+.image-content img,
+.founder-img img,
+.members-img img,
+.community-image img {
 	border-radius: 0.313rem;
+}
+
+.video-container {
+	border-radius: 0.625rem;
+}
+
+.vids iframe {
+	border-radius: 0.625rem 0.625rem 0 0;
 }
 
 .caption {
@@ -2108,12 +2143,54 @@ CPT MEDIA QUERIES
 		font-size: 2.25rem;
 	}
 
+	.res-outer-container{
+		display:flex;
+	}
+	
+	.res-container{
+		width:70%;
+	}
+	
+	.sidebar-container{
+		width:20%
+	}
+	
+	.res-container{
+		padding:2rem;
+		margin-right:2rem
+	}
+	
+	.res-inner-container{
+	display:flex;
+		justify-content:space-between;
+}
+	
+	.res-inner-pg-container,
+	.outer-communities-page{
+		display:flex;
+		justify-content:center;
+	}
+	
+	.res-pg-container{
+		max-width:1280px;
+	}
+
+	.res-description {
+		margin-bottom: 2rem;
+		padding-bottom: 1rem;
+		max-width: 70%
+	}
+
+	.res-description p {
+		margin-bottom: 0;
+	}
+
 }
 /* End of CPT media queries  */
 
 .albums,
 .video-interviews {
-	border-radius: 0.625;
+	border-radius: 0.625rem;
 }
 
 .albums-img img,
@@ -2135,6 +2212,15 @@ CPT MEDIA QUERIES
 	.video-interviews-description {
 		order: 2;
 	}
+
+	.intro-header {
+    display: flex;
+    flex-flow: column;
+}
+
+	.intro-dream {
+    order: 2;
+}
 }
 
 @media only screen and (min-width: 700px){
@@ -2342,21 +2428,29 @@ CPT MEDIA QUERIES
 	}
 	
 	.intro-header,
+	.home-title,
 	.what-we-do,
 	.about-bsas,
 	.archiving-history,
 	.site-info,
 	.inner-video,
 	.inner-contact,
-	.video-big-container{
+	.video-big-container,
+	.home-title {
 		max-width:80rem;
 		margin:0 auto;
 	}
+
+	.home-title {
+		text-align: left;
+		padding: 2rem;
+	}
+
 	.inner-contact {
 		display: flex;
 		flex-direction: row;
-
 	}
+
 	.contact-right {
 		margin-left: 5rem;
 	}
@@ -2386,37 +2480,7 @@ CPT MEDIA QUERIES
 	.members-description {
 		grid-row: 1/-1;
 	}
-	.res-outer-container{
-		display:flex;
-	}
-	
-	.res-container{
-		width:70%;
-	}
-	
-	.sidebar-container{
-		width:20%
-	}
-	
-	.res-container{
-		padding:2rem;
-		margin-right:2rem
-	}
-	
-	.res-inner-container{
-	display:flex;
-		justify-content:space-between;
-}
-	
-	.res-inner-pg-container,
-	.outer-communities-page{
-		display:flex;
-		justify-content:center;
-	}
-	
-	.res-pg-container{
-		max-width:1280px;
-	}
+
 }
 	
 
@@ -2481,6 +2545,13 @@ CPT MEDIA QUERIES
 }
 
 }
+
+/* Anchor tag in Cities Page Styling */
+.p-container p > a {
+    color: #880000;
+    font-weight: 500;
+}
+/* END anchor tag cities styling */
 
 li#menu-item-655 > a {
 	color: #E8DDD5;
