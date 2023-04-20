@@ -1696,6 +1696,9 @@ input[type="submit"]:hover {
 .socializing-1 {
 	grid-column: 2/3;
 }
+.video-big-container {
+	text-align: center;
+}
 .farm,
 .schools,
 .churches,
@@ -1979,7 +1982,8 @@ CPT MEDIA QUERIES
 	.community-container,
 	.albums-section,
 	.contact-container,
-	.communities-page {
+	.communities-page,
+	section.not-found  {
 		max-width: 80rem;
 		margin: 0 auto;
 	}
