@@ -1102,8 +1102,9 @@ p {
 }
 
 #primary-menu li a{
-	margin-right:1.3rem;
+	margin-right: 0.75rem;
 	color:#800000;
+	white-space: nowrap;
 }
 
 .custom-logo {
