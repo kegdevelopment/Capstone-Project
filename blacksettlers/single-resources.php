@@ -218,6 +218,7 @@ get_header();
         </div> <!-- END .res-content -->
       </div> <!-- END .res-inner-container -->
       <div class="fb-feed">
+        <h2>Updates</h2>
         <?php echo do_shortcode('[custom-facebook-feed feed=1]'); ?>
       </div> <!-- END .fb-feed -->
     </div> <!-- END .res-outer-container -->
