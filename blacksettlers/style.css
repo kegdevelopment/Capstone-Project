@@ -2590,6 +2590,14 @@ li#menu-item-655 > a:hover {
 	padding-right: 1.5rem;
 }
 
+footer {
+	margin-top: 2rem;
+}
+
+footer p.copyright {
+	text-align: center;
+}
+
 /* Facebook Feed Plug In Styling */
 
 .cff-header-img {
@@ -2601,3 +2609,4 @@ li#menu-item-655 > a:hover {
 	padding: 1rem;
 	border-radius: 0.313rem;
 }
+
