@@ -1970,6 +1970,11 @@ COMMUNITIES (CPT) STYLING
 	text-align: center;
 }
 
+.res-link a.button {
+	white-space: nowrap;
+	margin-left: 1rem;
+}
+
 /* Donate Page Styling */
 .donate-container {
 	max-width: 80rem;
