@@ -14,8 +14,8 @@ get_header();
   <div class="res-pg-container">
     <h1 class="res-title"><?php the_field('page_title'); ?></h1>
     <div class="res-outer-container">
-      <?php the_field('page_information'); ?>
       <div class="res-inner-container">
+        <?php the_field('page_information'); ?>
         <div class="res-content">
           <?php if(get_field('resource1_name')) : ?>
             <h4 class="res-name"><?php the_field('resource1_name'); ?></h4>
