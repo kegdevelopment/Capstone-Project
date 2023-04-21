@@ -1043,7 +1043,7 @@ text-decoration: none;
 font-size: 1rem;
 }
 
-.res-pg-container{
+/* .res-pg-container{
 	padding:2rem;
 }
 
@@ -1071,7 +1071,8 @@ font-size: 1rem;
 
 .res-button {
 	margin-bottom: 1.5rem;
-}
+} */
+
 /* * * * * * * * * *
 BSAS Custom Styles
 * * * * * * * * * */
@@ -2143,16 +2144,16 @@ CPT MEDIA QUERIES
 		font-size: 2.25rem;
 	}
 
-	.res-outer-container{
+	.sidebar-container{
+		width:20%
+	}
+
+	/* .res-outer-container{
 		display:flex;
 	}
 	
 	.res-container{
 		width:70%;
-	}
-	
-	.sidebar-container{
-		width:20%
 	}
 	
 	.res-container{
@@ -2183,7 +2184,7 @@ CPT MEDIA QUERIES
 
 	.res-description p {
 		margin-bottom: 0;
-	}
+	} */
 
 }
 /* End of CPT media queries  */
