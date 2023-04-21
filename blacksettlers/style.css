@@ -2581,15 +2581,13 @@ li#menu-item-655 > a:hover {
 }
 
 /* Facebook Feed Plug In Styling */
-/* .cff-header-inner-wrap {
-	background-color: #CEC0B6;
-	padding: 1rem;
+
+.cff-header-img {
+	padding-top: 1rem;
 }
 
-div#cff {
-	padding: 1rem;
-}
-
-.cff-wrapper {
+.cff-header-inner-wrap {
 	background-color: #CEC0B6;
-} */
+	padding: 1rem;
+	border-radius: 0.313rem;
+}
