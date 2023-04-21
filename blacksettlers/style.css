@@ -1394,7 +1394,7 @@ font-size: 1rem;
 
 .albums,
 .video-interviews{
-	background-color:#D4C7BD;
+	background-color:#CEC0B6;
 }
 
 .albums-description,
@@ -2578,4 +2578,14 @@ li#menu-item-655 > a:hover {
 
 .footer1 a {
 	padding-right: 1.5rem;
+}
+
+/* Facebook Feed Plug In Styling */
+.cff-header-inner-wrap {
+	background-color: #CEC0B6;
+	padding: 1rem;
+}
+
+div#cff {
+	padding: 1rem;
 }
