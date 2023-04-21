@@ -1972,7 +1972,6 @@ COMMUNITIES (CPT) STYLING
 
 .res-link a.button {
 	white-space: nowrap;
-	margin-left: 1rem;
 }
 
 /* Donate Page Styling */
@@ -2235,6 +2234,10 @@ CPT MEDIA QUERIES
 
 	.intro-dream {
     order: 2;
+}
+
+.res-link a.button {
+	margin-left: 1rem;
 }
 }
 
