@@ -2596,6 +2596,8 @@ footer {
 
 footer p.copyright {
 	text-align: center;
+	margin: 0;
+	padding: 1rem 0;
 }
 
 /* Facebook Feed Plug In Styling */
