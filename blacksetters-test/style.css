@@ -1,0 +1,2624 @@
+/*!
+Theme Name: blacksettlers
+Theme URI: http://underscores.me/
+Author: Underscores.me
+Author URI: http://underscores.me/
+Description: Description
+Version: 1.0.0
+Tested up to: 5.4
+Requires PHP: 5.6
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: blacksettlers
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned.
+
+blacksettlers is based on Underscores https://underscores.me/, (C) 2012-2020 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Generic
+	- Normalize
+	- Box sizing
+# Base
+	- Typography
+	- Elements
+	- Links
+	- Forms
+## Layouts
+# Components
+	- Navigation
+	- Posts and pages
+	- Comments
+	- Widgets
+	- Media
+	- Captions
+	- Galleries
+# plugins
+	- Jetpack infinite scroll
+# Utilities
+	- Accessibility
+	- Alignments
+
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Generic
+--------------------------------------------------------------*/
+
+/* Normalize
+--------------------------------------------- */
+
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+
+/* Document
+	 ========================================================================== */
+
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+ html {
+	line-height: 1.15;
+	-webkit-text-size-adjust: 100%;
+}
+
+/* Sections
+	 ========================================================================== */
+
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+	margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+	display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+	font-size: 2em;
+	margin: 0.67em 0;
+}
+
+/* Grouping content
+	 ========================================================================== */
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+	box-sizing: content-box;
+	height: 0;
+	overflow: visible;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+	font-family: monospace, monospace;
+	font-size: 1em;
+}
+
+/* Text-level semantics
+	 ========================================================================== */
+
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+	background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+	border-bottom: none;
+	text-decoration: underline;
+	text-decoration: underline dotted;
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+	font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+	font-family: monospace, monospace;
+	font-size: 1em;
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+	font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+
+sub {
+	bottom: -0.25em;
+}
+
+sup {
+	top: -0.5em;
+}
+
+/* Embedded content
+	 ========================================================================== */
+
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+	border-style: none;
+}
+
+/* Forms
+	 ========================================================================== */
+
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+	font-family: inherit;
+	font-size: 100%;
+	line-height: 1.15;
+	margin: 0;
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+	overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+	text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+	-webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+	border-style: none;
+	padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+	outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+	padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *		`fieldset` elements in all browsers.
+ */
+legend {
+	box-sizing: border-box;
+	color: inherit;
+	display: table;
+	max-width: 100%;
+	padding: 0;
+	white-space: normal;
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+	vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+	overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type="checkbox"],
+[type="radio"] {
+	box-sizing: border-box;
+	padding: 0;
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+	height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+	-webkit-appearance: textfield;
+	outline-offset: -2px;
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type="search"]::-webkit-search-decoration {
+	-webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+	-webkit-appearance: button;
+	font: inherit;
+}
+
+/* Interactive
+	 ========================================================================== */
+
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+	display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+	display: list-item;
+}
+
+/* Misc
+	 ========================================================================== */
+
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+	display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+	display: none;
+}
+
+/* Box sizing
+--------------------------------------------- */
+
+/* Inherit box-sizing to more easily change it's value on a component level.
+@link http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+html {
+	box-sizing: border-box;
+}
+
+/*--------------------------------------------------------------
+# Base
+--------------------------------------------------------------*/
+
+/* Typography
+--------------------------------------------- */
+body,
+button,
+input,
+select,
+optgroup,
+textarea {
+	color: #404040;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+	font-size: 1rem;
+	line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	clear: both;
+}
+
+p {
+	margin-bottom: 1.5em;
+}
+
+dfn,
+cite,
+em,
+i {
+	font-style: italic;
+}
+
+blockquote {
+	margin: 0 1.5em;
+}
+
+address {
+	margin: 0 0 1.5em;
+}
+
+pre {
+	background: #eee;
+	font-family: "Courier 10 Pitch", courier, monospace;
+	line-height: 1.6;
+	margin-bottom: 1.6em;
+	max-width: 100%;
+	overflow: auto;
+	padding: 1.6em;
+}
+
+code,
+kbd,
+tt,
+var {
+	font-family: monaco, consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+}
+
+abbr,
+acronym {
+	border-bottom: 1px dotted #666;
+	cursor: help;
+}
+
+mark,
+ins {
+	background: #fff9c0;
+	text-decoration: none;
+}
+
+big {
+	font-size: 125%;
+}
+
+/* Elements
+--------------------------------------------- */
+body {
+	background: #fff;
+}
+
+hr {
+	background-color: #ccc;
+	border: 0;
+	height: 1px;
+	margin-bottom: 1.5em;
+}
+
+ul,
+ol {
+	margin: 0 0 1.5em 3em;
+}
+
+ul {
+	list-style: disc;
+}
+
+ol {
+	list-style: decimal;
+}
+
+li > ul,
+li > ol {
+	margin-bottom: 0;
+	margin-left: 1.5em;
+}
+
+dt {
+	font-weight: 700;
+}
+
+dd {
+	margin: 0 1.5em 1.5em;
+}
+
+/* Make sure embeds and iframes fit their containers. */
+embed,
+iframe,
+object {
+	max-width: 100%;
+}
+
+img {
+	height: auto;
+	max-width: 100%;
+}
+
+figure {
+	margin: 1em 0;
+}
+
+table {
+	margin: 0 0 1.5em;
+	width: 100%;
+}
+
+/* Links
+--------------------------------------------- */
+a {
+	color: #4169e1;
+}
+
+a:visited {
+	color: #800080;
+}
+
+a:hover,
+a:focus,
+a:active {
+	color: #191970;
+}
+
+a:focus {
+	outline: thin dotted;
+}
+
+a:hover,
+a:active {
+	outline: 0;
+}
+
+/* Forms
+--------------------------------------------- */
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	border: 1px solid;
+	border-color: #ccc #ccc #bbb;
+	border-radius: 3px;
+	background: #e6e6e6;
+	color: rgba(0, 0, 0, 0.8);
+	line-height: 1;
+	padding: 0.6em 1em 0.4em;
+}
+
+button:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover {
+	border-color: #ccc #bbb #aaa;
+}
+
+button:active,
+button:focus,
+input[type="button"]:active,
+input[type="button"]:focus,
+input[type="reset"]:active,
+input[type="reset"]:focus,
+input[type="submit"]:active,
+input[type="submit"]:focus {
+	border-color: #aaa #bbb #bbb;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="number"],
+input[type="tel"],
+input[type="range"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="color"],
+textarea {
+	color: #666;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	padding: 3px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+input[type="range"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="week"]:focus,
+input[type="time"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="color"]:focus,
+textarea:focus {
+	color: #111;
+}
+
+select {
+	border: 1px solid #ccc;
+}
+
+textarea {
+	width: 100%;
+}
+
+/*--------------------------------------------------------------
+# Layouts
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Components
+--------------------------------------------------------------*/
+
+/* Navigation
+--------------------------------------------- */
+.main-navigation {
+	display: block;
+	width: 100%;
+}
+
+.main-navigation ul {
+	display: none;
+	list-style: none;
+	margin: 0;
+	padding-left: 0;
+}
+
+.main-navigation ul ul {
+	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+	float: left;
+	position: absolute;
+	top: 100%;
+	left: -999em;
+	z-index: 99999;
+}
+
+.main-navigation ul ul ul {
+	left: -999em;
+	top: 0;
+}
+
+.main-navigation ul ul li:hover > ul,
+.main-navigation ul ul li.focus > ul {
+	display: block;
+	left: auto;
+}
+
+.main-navigation ul ul a {
+	width: 200px;
+}
+
+.main-navigation ul li:hover > ul,
+.main-navigation ul li.focus > ul {
+	left: auto;
+}
+
+.main-navigation li {
+	position: relative;
+}
+
+.main-navigation a {
+	display: block;
+	text-decoration: none;
+}
+
+/* Small menu. */
+.menu-toggle,
+.main-navigation.toggled ul {
+	display: block;
+}
+
+@media screen and (min-width: 37.5em) {
+
+	.menu-toggle {
+		display: none;
+	}
+
+	.main-navigation ul {
+		display: flex;
+	}
+}
+
+.site-main .comment-navigation,
+.site-main
+.posts-navigation,
+.site-main
+.post-navigation {
+	margin: 0 0 1.5em;
+}
+
+.comment-navigation .nav-links,
+.posts-navigation .nav-links,
+.post-navigation .nav-links {
+	display: flex;
+}
+
+.comment-navigation .nav-previous,
+.posts-navigation .nav-previous,
+.post-navigation .nav-previous {
+	flex: 1 0 50%;
+}
+
+.comment-navigation .nav-next,
+.posts-navigation .nav-next,
+.post-navigation .nav-next {
+	text-align: end;
+	flex: 1 0 50%;
+}
+
+/* Posts and pages
+--------------------------------------------- */
+.sticky {
+	display: block;
+}
+
+.post,
+.page {
+	margin: 0 0 1.5em;
+}
+
+.updated:not(.published) {
+	display: none;
+}
+
+.page-content,
+.entry-content,
+.entry-summary {
+	margin: 1.5em 0 0;
+}
+
+.page-links {
+	clear: both;
+	margin: 0 0 1.5em;
+}
+
+/* Comments
+--------------------------------------------- */
+.comment-content a {
+	word-wrap: break-word;
+}
+
+.bypostauthor {
+	display: block;
+}
+
+/* Widgets
+--------------------------------------------- */
+.widget {
+	margin: 0 0 1.5em;
+}
+
+.widget select {
+	max-width: 100%;
+}
+
+/* Media
+--------------------------------------------- */
+.page-content .wp-smiley,
+.entry-content .wp-smiley,
+.comment-content .wp-smiley {
+	border: none;
+	margin-bottom: 0;
+	margin-top: 0;
+	padding: 0;
+}
+
+/* Make sure logo link wraps around logo image. */
+.custom-logo-link {
+	display: inline-block;
+}
+
+/* Captions
+--------------------------------------------- */
+.wp-caption {
+	margin-bottom: 1.5em;
+	max-width: 100%;
+}
+
+.wp-caption img[class*="wp-image-"] {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.wp-caption .wp-caption-text {
+	margin: 0.8075em 0;
+}
+
+.wp-caption-text {
+	text-align: center;
+}
+
+/* Galleries
+--------------------------------------------- */
+.gallery {
+	margin-bottom: 1.5em;
+	display: grid;
+	grid-gap: 1.5em;
+}
+
+.gallery-item {
+	display: inline-block;
+	text-align: center;
+	width: 100%;
+}
+
+.gallery-columns-2 {
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.gallery-columns-3 {
+	grid-template-columns: repeat(3, 1fr);
+}
+
+.gallery-columns-4 {
+	grid-template-columns: repeat(4, 1fr);
+}
+
+.gallery-columns-5 {
+	grid-template-columns: repeat(5, 1fr);
+}
+
+.gallery-columns-6 {
+	grid-template-columns: repeat(6, 1fr);
+}
+
+.gallery-columns-7 {
+	grid-template-columns: repeat(7, 1fr);
+}
+
+.gallery-columns-8 {
+	grid-template-columns: repeat(8, 1fr);
+}
+
+.gallery-columns-9 {
+	grid-template-columns: repeat(9, 1fr);
+}
+
+.gallery-caption {
+	display: block;
+}
+
+/*--------------------------------------------------------------
+# Plugins
+--------------------------------------------------------------*/
+
+/* Jetpack infinite scroll
+--------------------------------------------- */
+
+/* Hide the Posts Navigation and the Footer when Infinite Scroll is in use. */
+.infinite-scroll .posts-navigation,
+.infinite-scroll.neverending .site-footer {
+	display: none;
+}
+
+/* Re-display the Theme Footer when Infinite Scroll has reached its end. */
+.infinity-end.neverending .site-footer {
+	display: block;
+}
+
+/*--------------------------------------------------------------
+# Utilities
+--------------------------------------------------------------*/
+
+/* Accessibility
+--------------------------------------------- */
+
+/* Text meant only for screen readers. */
+.screen-reader-text {
+	border: 0;
+	clip: rect(1px, 1px, 1px, 1px);
+	clip-path: inset(50%);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute !important;
+	width: 1px;
+	word-wrap: normal !important;
+}
+
+.screen-reader-text:focus {
+	background-color: #f1f1f1;
+	border-radius: 3px;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	clip: auto !important;
+	clip-path: none;
+	color: #21759b;
+	display: block;
+	font-size: 0.875rem;
+	font-weight: 700;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000;
+}
+
+/* Do not show the outline on the skip link target. */
+#primary[tabindex="-1"]:focus {
+	outline: 0;
+}
+
+/* Alignments
+--------------------------------------------- */
+.alignleft {
+
+	/*rtl:ignore*/
+	float: left;
+
+	/*rtl:ignore*/
+	margin-right: 1.5em;
+	margin-bottom: 1.5em;
+}
+
+.alignright {
+
+	/*rtl:ignore*/
+	float: right;
+
+	/*rtl:ignore*/
+	margin-left: 1.5em;
+	margin-bottom: 1.5em;
+}
+
+.aligncenter {
+	clear: both;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 1.5em;
+}
+
+/******** 
+Custom Styling from the site
+ ********/
+ .custom-logo {
+	max-width:12rem;
+	margin-top:8.5%;
+	margin-left:4rem;
+}
+
+.site-branding{
+	display:flex;
+	background-color:#CEC0B6;
+}
+
+.mob-menu-logo-holder{
+	background-color:#CEC0B6;
+}
+
+#mobmenuleft li a{
+	color:#800000;
+}
+
+#colophon{
+	background-color:#CEC0B6;
+}
+
+.site-info{
+		justify-content:center;
+}
+
+.footer1,
+.footer2{
+	padding:2rem;
+}
+
+.footer1 h2{
+	color:#800000;
+}
+
+.footer2{
+	color:#800000;
+}
+
+.footer2 a{
+	padding:.7rem 2rem;
+	text-decoration:none;
+	background-color:#800000;
+	border-radius:3rem;
+	color:#E8DDD5;
+}
+
+.is-layout-flex{
+	color:#800000;
+	padding:2rem 2rem 2rem 4rem;
+}
+
+
+
+.is-layout-flow p{
+	color:#574436;
+}
+
+.wp-block-buttons{
+	padding-left:0rem;
+}
+
+.wp-block-button a{
+	color: #F2DAC0;
+background-color: #800000;
+border-radius: 9999px;
+box-shadow: none;
+text-decoration: none;
+font-size: 1rem;
+}
+
+
+/* * * * * * * * * *
+BSAS Custom Styles
+* * * * * * * * * */
+
+body{
+	background-color:#E8DDD5;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.125rem;
+	color: #574436;
+}
+
+h1, h2, h3, h4 {
+	font-family: 'DM Serif Display', serif;
+	font-weight: 400;
+	color: #800000;
+}
+
+h1 {
+	text-transform: uppercase;
+	font-size: 3rem
+}
+
+.intro-dream h1,
+.about-bsas h1 {
+	font-size: 2.5rem;
+}
+
+h2 {
+	font-size: 2.25rem;
+}
+
+h3 {
+	font-size: 2rem;
+}
+
+h4 {
+	font-size: 1.5rem;
+}
+
+p {
+	font-family: 'Montserrat', sans-serif;
+	color: #574436;
+	font-size: 1.125rem;
+	line-height: 1.875rem;
+}
+
+.page-template-default{
+	margin-bottom:0rem;
+}
+.menu-menu-1-container{
+	padding:2rem;
+}
+
+#primary-menu{
+	justify-content:right;
+}
+
+#primary-menu li a{
+	margin-right: 0.75rem;
+	color:#800000;
+	white-space: nowrap;
+}
+
+.custom-logo {
+	max-width:12rem;
+	margin-top:8.5%;
+	margin-left:4rem;
+}
+
+.site-branding{
+	background-color:#CEC0B6;
+}
+
+.mob-menu-logo-holder{
+	background-color:#CEC0B6;
+}
+
+#mobmenuleft li a{
+	color:#800000;
+}
+
+#colophon{
+	background-color:#CEC0B6;
+}
+
+.site-info{
+		justify-content:center;
+		max-width: 80rem;
+}
+.inner-contact {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.contact-left p {
+	color: #E8DDD5;
+	padding-bottom: 2rem;
+}
+ul.sub-menu{
+	display:block;
+	background-color:#CEC0B6;
+	padding:0.5rem;
+	box-shadow:none;
+}
+
+ul.sub-menu li{
+	margin-bottom:.2rem;
+}
+
+#primary-menu li a{
+	padding:0.2rem .5rem;
+	border-radius:.5rem
+}
+
+#primary-menu li a:hover{
+	background-color:#E8DDD5;
+}
+
+ul.sub-menu{
+	display:block;
+	background-color:#CEC0B6;
+	padding:0.5rem;
+	box-shadow:none;
+}
+
+ul.sub-menu li{
+	margin-bottom:.2rem;
+}
+
+#primary-menu li a{
+	padding:0.2rem .5rem;
+	border-radius:.5rem
+}
+
+#primary-menu li a:hover{
+	background-color:#E8DDD5;
+}
+
+.footer1,
+.footer2{
+	padding-left:2rem;
+	padding-bottom: 2rem;
+}
+
+.footer1 h2{
+	color:#800000;
+	font-size: 2rem;
+}
+
+.footer2{
+	color:#800000;
+}
+
+.footer2 a{
+	padding:.7rem 2rem;
+	text-decoration:none;
+	background-color:#800000;
+	border-radius:3rem;
+	color:#E8DDD5;
+}
+
+.is-layout-flex{
+	color:#800000;
+	padding:2rem 2rem 2rem 4rem;
+}
+
+
+
+.is-layout-flow p{
+	color:#574436;
+}
+
+.wp-block-buttons{
+	padding-left:0rem;
+}
+
+.wp-block-button a{
+	color: #F2DAC0;
+background-color: #800000;
+border-radius: 9999px;
+box-shadow: none;
+text-decoration: none;
+font-size: 1rem;
+}
+
+@media only screen and (min-width: 486px){
+	.site-info{
+		display:flex;
+}
+}
+
+
+.home-title {
+	padding: 0 2rem;
+	margin-bottom: 0;
+	text-align: center;
+}
+
+.intro-header{
+	padding: 2rem;
+}
+
+.intro-dream{
+	margin-bottom: 2rem;
+}
+
+.video-description  {
+	text-align: center;
+}
+.footer2 a,
+.intro-dream a,
+.video-description a,
+.what-we-do a,
+.contact-right a,
+.albums-description a,
+.video-interviews-description a{
+	text-decoration:none;
+	padding:.6rem 1.5rem;
+	background-color:#800000;
+	border-radius:2rem;
+	color:#F2DAC0;
+}
+.footer2 a:hover,
+.intro-dream a:hover,
+.video-description a:hover,
+.what-we-do a:hover,
+.contact-right a:hover,
+.albums-description a:hover,
+.video-interviews-description a:hover{
+	text-decoration:none;
+	padding:.6rem 1.5rem;
+	background-color:#F2DAC0;
+	border-radius:2rem;
+	color: #800000;
+}
+
+
+.intro-dream-para-2{
+	margin-bottom:3rem;
+}
+
+.intro-video-container
+{
+	background-color:#574436;
+	width: 100vw;
+}
+
+.intro-video{
+	background-color:#574436;
+	padding:2rem ;
+}
+
+.video-description h2,
+.video-description p {
+	color:#E8DDD5;
+}
+
+.what-we-do{
+	text-align:center;
+	padding:2rem ;
+}
+
+.what-we-do h2,
+.albums-description h3,
+.video-interviews-description h3,
+.archiving-history h2,
+.founders h3,
+.founder-names p b,
+.events-page h1,
+.communities-page-header h1{
+	color:#800000;
+}
+
+.what-we-do p{
+	color:#574436;
+}
+
+.what-we-do p{
+	margin-bottom:2rem;
+}
+
+.contact{
+	background-color:#574436;
+	padding:2rem;
+	margin-bottom:6rem;
+}
+
+.contact-left{
+	color:#E8DDD5;
+}
+
+.contact-left h3{
+	color: #E8DDD5;
+	font-size: 1.75rem;
+}
+
+.about-bsas{
+	padding:3rem;
+	
+}
+
+.about-bsas h1{
+	color:#800000;
+	text-align:center;
+}
+
+.about-bsas p{
+	color:#574436;
+}
+
+.video{
+	margin:auto;
+}
+
+.albums,
+.video-interviews{
+	margin-bottom:2rem;
+} 
+
+.albums,
+.video-interviews{
+	background-color:#CEC0B6;
+}
+
+.albums-description,
+.video-interviews-description{
+	padding:2rem;
+}
+
+.about-bsas{
+		text-align:center;
+	}
+.founders,
+.members {
+	padding-top: 5rem;
+	
+}
+
+
+.founder-description{
+	margin-left:1rem;
+}
+
+.founder-description h5{
+	color:#574436;
+	font-size:1rem;
+}
+
+.founder-names p{
+	font-size:1rem;
+	margin-right:.8rem;
+}
+.founders-font {
+	color: #111;
+	font-size: 1.5rem;
+	font-family: 'DM Serif Display', serif;
+}
+
+.events-page h1{
+	text-align:center;
+}
+
+.events-page p{
+	text-align:center;
+	color:#574436;
+}
+
+.communities-page-header{
+	text-align:center;
+}
+
+.communities-page-gallery a{
+	text-decoration:none;
+}
+
+.communities-page-gallery a div{
+	margin: 1rem;
+}
+
+.communities-page-gallery{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content:center;
+}
+
+.campsie-community p,
+.amber-valley-community p,
+.breton-community p,
+.wildwood-community p,
+.saskatchewan-community p,
+.cities-community p{
+	text-decoration:none;
+	color:white;
+	text-align:center;
+	position:relative;
+	top:40%;
+}
+
+.campsie-community{
+	background-image: url("https://blacksettlersb.web.dmitcapstone.ca/wp-content/uploads/2023/04/store-campsie.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+	width:24rem;
+	height:15rem;
+}
+
+.amber-valley-community{
+	background-image: url("https://blacksettlersb.web.dmitcapstone.ca/wp-content/uploads/2023/04/toles-school-bw-small.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+	width:24rem;
+	height:15rem;
+}
+
+.breton-community{
+	background-image: url("https://blacksettlersb.web.dmitcapstone.ca/wp-content/uploads/2023/04/Breton-Grain-elevators.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+	width:24rem;
+	height:15rem;
+}
+
+.wildwood-community{
+	background-image: url("https://blacksettlersb.web.dmitcapstone.ca/wp-content/uploads/2023/04/Jay-Leffler-with-Niece-Merna-Holland-on-farm-in-Wildwood-Junkins.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+	width:24rem;
+	height:15rem;
+}
+
+.saskatchewan-community{
+	background-image: url("https://blacksettlersb.web.dmitcapstone.ca/wp-content/uploads/2023/04/school-saskatchewan.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+	width:24rem;
+	height:15rem;
+}
+
+.cities-community{
+	background-image: url("https://blacksettlersb.web.dmitcapstone.ca/wp-content/uploads/2023/04/hatties-chicks.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+	width:24rem;
+	height:15rem;
+}
+.campsie,
+.amber,
+.wildwood,
+.sk,
+.cities,
+.breton {
+	background-color: #111;
+	opacity: 0.8;
+	height: 100%;
+	width: 100%;
+	position: relative;
+	right: 1.063rem;
+}
+
+/* Contact Page */
+.contact-us {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+}
+.contact-us p {
+	font-family: 'Montserrat', sans-serif;
+	color: #111;
+	margin-bottom: 0;
+}
+.tooltip{
+    color: #574436;
+    position: relative;
+  display: inline-block;
+  
+}
+.tooltiptext{
+    visibility: hidden;
+    width: 7.5rem;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 0.313rem 0;
+    border-radius: 6px;
+   
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+}
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+
+/* Vid interview */
+.post-65 h1{
+	display: none;
+}
+.video-container {
+	margin: 2rem;
+	background-color: #CEC0B6;
+}
+
+.video-container p {
+	margin: 0;
+
+}
+	
+
+.video-text h3 {
+	font-size: 1.5rem;
+	text-align: center;
+	color: #111;
+}
+.video-text h2 {
+	font-size: 2rem;
+	text-align: center;
+	color: #800000;
+}
+
+input[type="submit"] {
+text-decoration:none;
+	padding:.6rem 1.5rem;
+	background-color:#800000;
+	border-radius:2rem;
+	color:#F2DAC0;
+}
+input[type="submit"]:hover {
+	text-decoration:none;
+		padding:.6rem 1.5rem;
+		background-color:#F2DAC0;
+		border-radius:2rem;
+		color:#800000;
+		border: none;
+	}
+.bottom-contact {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 2rem;
+}
+/* Commented out style below because it was stretching images in medium-sized view ports. -K */
+/* img {
+    width: 100%;
+} */
+.gallery {
+	margin-top: 2rem;
+}
+.gallery-item {
+	width: 18.75rem;
+	height: 18.75rem;
+	display: inline-block;
+	margin: 0 auto;
+	padding-top: 2rem;
+  }
+.farming-items {
+	width: 100%;
+	margin: 0 auto;
+}
+  
+/* pagination */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 8rem;
+	padding-top: 2rem;
+
+  }
+  .pagination span {
+    margin: 0 5px;
+    width: 1.875rem;
+    height: 1.875rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .prev-arrow span {
+    background-image: url("https://blacksettlersb.web.dmitcapstone.ca/wp-content/uploads/2023/04/back-arrow.png");
+  }
+ .next-arrow span {
+    background-image: url("https://blacksettlersb.web.dmitcapstone.ca/wp-content/uploads/2023/04/forward-arrow.png");
+  }
+  .page-numbers {
+    font-size: 0.875rem;
+  }
+  
+ 
+/* Albums Page */
+
+.communties-album {
+	display: grid;
+	
+	grid-template-rows: repeat(2, 1fr);
+	
+}
+.community-image {
+	grid-row: 1/2;
+	
+}
+.community-image img {
+	width: 100vw;
+	height: 100%;
+}
+
+.communites-text p {
+	width: 100vw;
+}
+
+.go-communities {
+	display: flex;
+	align-items: stretch;
+}
+.go-communities img {
+	margin-left: 1rem;
+}
+.communites-text a {
+	text-decoration: none;
+	font-size: 1rem;
+	color: #800000;
+	text-transform: uppercase;
+}
+.gallery-section {
+	margin-top: 5rem;
+}
+.farming-1 {
+	grid-column: 1/1;
+	grid-row: 1/-1;
+}
+.socializing-1 {
+	grid-column: 2/3;
+}
+.video-big-container {
+	text-align: center;
+}
+.farm,
+.schools,
+.churches,
+.social,
+.doc
+ {
+	background-color: #111;
+	opacity: 0.8;
+	height: 100%;
+	width: 100%;
+}
+.farm p {
+	color: #F2DAC0;
+	font-family: 'DM Serif Display', serif;
+	position: relative;
+	top: 6rem;
+	font-size: 3rem;
+	text-align: center;
+}
+.schools p,
+.churches p,
+.social p,
+.doc p,
+.campsie p,
+.amber p,
+.wildwood p,
+.sk p,
+.cities p,
+.breton p {
+	color: #F2DAC0;
+	font-family: 'DM Serif Display', serif;
+	position: relative;
+	top: 6rem;
+	font-size: 3rem;
+	text-align: center;
+}
+.gallery-indivdual a {
+	color: #111;
+	font-size: 3rem;
+	font-family: 'DM Serid Display', serif;
+	text-decoration: none;
+}
+
+
+.farming{
+	
+	background-image:  url("https://blacksettlersb.web.dmitcapstone.ca/wp-content/uploads/2023/04/walker-beaver-farming.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+	
+	height: 15rem;
+}
+
+.church{
+	background-image: url("https://blacksettlersb.web.dmitcapstone.ca/wp-content/uploads/2023/04/unid-school-children.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+	width: 100%;
+	height:15rem;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+.school{
+	background-image: url("https://blacksettlersb.web.dmitcapstone.ca/wp-content/uploads/2023/04/unid-3-men-cropped.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+	height:15rem;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+.socializing{
+	background-image: url("https://blacksettlersb.web.dmitcapstone.ca/wp-content/uploads/2023/04/socializing-bw.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+	height:15rem;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+.documents{
+	background-image: url("https://blacksettlersb.web.dmitcapstone.ca/wp-content/uploads/2023/04/Breton-Train-Station-circa-1940_s-scaled.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+	height:15rem;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+.codedropz-upload-inner h1 {
+		font-size: 2rem;
+	}
+	.tooltip {
+		position: relative;
+		display: inline-block;
+	  }
+	  
+	  .tooltip .tooltiptext {
+		visibility: hidden;
+		width: 100%;
+		background-color: black;
+		color: #fff;
+		text-align: center;
+		border-radius: 6px;
+		padding: 0.313rem 0;
+	  
+		/* Position the tooltip */
+		position: absolute;
+		z-index: 1;
+	  }
+	  
+	  .tooltip:hover .tooltiptext {
+		visibility: visible;
+	  }
+	  .tooltip-button {
+		background-color: #f7f7f7;
+		border: none;
+		color: #574436;
+		font-size: 1rem;
+		margin-left: 0.313rem;
+		padding: 0.313rem;
+		border-radius: 50%;
+		cursor: pointer;
+	  }
+	  
+	  .tooltip-button:hover {
+		background-color: #ddd;
+	  }
+	  
+/* For screens smaller than 768px */
+@media (max-width: 767px) {
+	.two-column {
+	  display: block;
+	}
+  
+	.column {
+	  width: 100%;
+	  margin-bottom: 1.25rem;
+	}
+  }
+  
+  /* For screens 768px and larger */
+  @media (min-width: 768px) {
+	.two-column {
+	  display: grid;
+	  grid-template-columns: repeat(2, 1fr);
+	  gap: 1.25rem;
+	}
+  
+	.column {
+	  margin-bottom: 1.25rem;
+	}
+	
+  }
+  
+  /* For all screen sizes */
+  .wpcf7-form-control-wrap {
+	width: 100%;
+	box-sizing: border-box;
+  }
+  
+  .wpcf7-submit {
+	width: 100%;
+	max-width: 12rem;
+	margin: 0 auto;
+	display: block;
+  }
+  
+
+
+/* * * * * * * * * * * * *
+COMMUNITIES (CPT) STYLING
+* * * * * * * * * * * * */
+.community-container {
+	margin: 0 1rem
+}
+
+.community-container h2, 
+.community-container h3,
+.community-container h4,
+.amber-valley-only h3,
+.hidden-text p {
+	text-align: center;
+}
+
+.community-name {
+	font-size: 2rem;
+	text-transform: uppercase;
+}
+
+.image-content {
+	text-align: center;
+	margin-bottom: 1.5rem;
+}
+
+.community-subheading {
+	font-size: 1.5rem;
+}
+
+.image-content img,
+.founder-img img,
+.members-img img,
+.community-image img {
+	border-radius: 0.313rem;
+}
+
+.video-container {
+	border-radius: 0.625rem;
+}
+
+.vids iframe {
+	border-radius: 0.625rem 0.625rem 0 0;
+}
+
+.caption {
+	color: #880000;
+	margin: 0;
+	font-style: italic;
+}
+
+.hidden-text p:first-child {
+	font-weight: 700;
+}
+
+/* End CPT Styling */
+
+/* Resources Page Styling */
+.res-pg-container {
+	max-width: 1280px;
+	margin: 0 auto;
+}
+
+.res-pg-container h1 {
+	text-align: center;
+}
+
+.res-button a {
+	padding: 0.7rem 2rem;
+	text-decoration: none;
+	background-color: #800000;
+	border-radius: 3rem;
+	color: #E8DDD5;
+}
+
+.res-desc-container {
+	border-bottom: 0.125rem solid #574436;
+	padding-bottom: 2rem;
+	text-align: center;
+}
+
+.res-name {
+	text-align: center;
+}
+
+.res-inner-container > p {
+	text-align: center;
+}
+
+.res-link a.button {
+	white-space: nowrap;
+}
+
+.res-link a.button:hover {
+	color: #880000;
+  background-color: #F2DAC0;
+}
+
+/* Donate Page Styling */
+.donate-container {
+	max-width: 80rem;
+	margin: 0 auto;
+}
+
+.donate-container h2 {
+	text-align: center;
+}
+/* End donate page styling */
+
+/* * * * * * * * *
+CPT MEDIA QUERIES
+* * * * * * * * */
+
+@media only screen and (max-width: 899px){
+	.intro-content {
+		display: flex;
+		flex-flow: column;
+	}
+
+	.community-container p {
+		text-align: center;
+	}
+	
+	.intro-content .intro-text {
+		order: 2;
+	}
+
+	.second-main-section.section-content {
+    display: flex;
+    flex-direction: column;
+	}
+
+	.second-main-section.section-content .section-text-left {
+		order: 2;
+	}
+
+	.res-pg-container {
+		padding: 1rem;
+	}
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1280px) {
+	.community-container {
+		padding: 0 1rem;
+	}
+
+	.res-pg-container {
+		padding: 0 1rem;
+	}
+}
+
+@media only screen and (min-width: 900px){
+	.community-container,
+	.albums-section,
+	.contact-container,
+	.communities-page,
+	section.not-found  {
+		max-width: 80rem;
+		margin: 0 auto;
+	}
+
+	h2.community-name {
+		font-size: 3.75rem;
+	}
+
+	.community-container h3,
+	.community-container h4 {
+		text-align: left;
+	}
+
+	.amber-valley-only h3,
+	.hidden-text p {
+		text-align: center;
+	}
+
+
+	h4.subsection-heading {
+		font-size: 2rem;
+	}
+
+	.community-subheading {
+		font-size: 3rem;
+	}
+
+	.community-content p {
+		max-width: 40.625rem;
+		margin-top: 0;
+	}
+
+	.intro-content, 
+	.first-main-section .section-content,
+	.second-main-section .section-content,
+	.subsection-content {
+		display: flex;
+	}
+
+	.intro-content, 
+	.first-main-section, 
+	.second-main-section {
+    justify-content: space-around;
+}
+
+	.section-text-left,
+	.section-text-right {
+		display: table;
+	}
+
+	.p-container {
+		display: table-cell;
+		vertical-align: middle;
+	}
+
+	.section-text-right{
+		margin-left: 3rem;
+	}
+
+	.intro-text,
+	.section-text-left{
+		margin-right: 3rem;
+	}
+
+	.second-main-section .image-content, 
+	.first-main-section.second-img {
+    margin-top: 2rem;
+}
+
+	.intro-text, .section-text {
+		max-width: 60%
+	}
+
+	.second-img {
+		max-height: 35rem;
+	}
+
+	.poem-container {
+		position: relative;
+		margin-bottom: 6rem;
+	}
+
+	.overlay {
+    background-color: #E8DDD5;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: 0.5s ease;
+	}
+
+	.poem-container:hover .overlay {
+			opacity: 1;
+	}
+
+	/* Large Screen Global Font Sizes */
+
+	h1 {
+		font-size: 3.75rem;
+	}
+
+	.intro-dream h1,
+	.about-bsas h1{
+		font-size: 3rem;
+	}
+
+	h2 {
+		font-size: 3rem;
+	}
+
+	h3 {
+		font-size: 2.25rem;
+	}
+
+	h4 {
+		font-size: 2rem;
+	}
+
+	.footer1 h2 {
+		font-size: 2.25rem;
+	}
+
+	.sidebar-container{
+		width:20%
+	}
+
+	.res-outer-container {
+		display: grid;
+		grid-template-columns: 3fr 1fr;
+		column-gap: 4rem;
+}
+
+.res-desc-container {
+		display: flex;
+		border-bottom: 0.125rem solid #574436;
+		justify-content: space-between;
+		text-align: left;
+}
+
+.res-desc-container:last-child {
+	margin-bottom: 4rem;
+}
+
+.res-description {
+	max-width: 80%;
+}
+
+.res-description p {
+	margin: 0;
+	padding-bottom: 2rem;
+}
+
+.res-name {
+	text-align: left;
+}
+
+.res-inner-container > p {
+	text-align: left;
+}
+
+.fb-feed {
+	margin-top: 4rem;
+}
+
+.res-link a.button {
+	margin-left: 1rem;
+}
+
+}
+/* End of CPT media queries  */
+
+.albums,
+.video-interviews {
+	border-radius: 0.625rem;
+}
+
+.albums-img img,
+.video-interviews-img img {
+	border-radius: 0.625rem 0.625rem 0 0;
+}
+
+.video-interviews-img img,
+.albums-img img {
+	width: 100%;
+}
+
+@media only screen and (max-width: 699px){
+	.video-interviews {
+		display: flex;
+		flex-flow: column;
+	}
+	
+	.video-interviews-description {
+		order: 2;
+	}
+
+	.intro-header {
+    display: flex;
+    flex-flow: column;
+}
+
+	.intro-dream {
+    order: 2;
+}
+
+}
+
+@media only screen and (min-width: 700px){
+		
+	.site-info{
+		display: flex;
+		justify-content:space-between;
+		}
+
+	.intro-header,
+	.intro-video{
+	display:flex;
+	}
+	
+
+	.intro-dream{
+	width:60%;
+	margin-right:3rem;
+}
+	
+	.intro-img{
+	width:40%
+}
+
+
+.video-description,
+	.video{
+	width:50%;
+	
+}
+	
+	.video-description{
+	padding:3rem;
+}
+	
+	.what-we-do{
+	padding:6rem 3rem;
+}
+	
+	.what-we-do p{
+	margin-bottom:3rem;
+}
+	
+	.contact{
+		display:flex;
+		margin-bottom:12rem;
+	}
+	
+
+	.contact-left{
+		width:75%;
+	}
+
+	.contact-left h3{
+		font-size: 28px;
+	}
+
+	.contact-right{
+		margin:auto;
+		width: 25%;
+	}
+
+	.about-bsas{
+		text-align: left;
+	}
+
+	h1,
+	.about-bsas h1 {
+		font-size: 3.75rem;
+	}
+
+	.archiving-history h2,
+	.founders h3 {
+		font-size: 2rem;
+	}
+
+	.albums-description h3,
+	.video-interviews-description h3{
+		font-size: 1.5rem;
+	}
+	
+	.about-paras{
+		display:flex
+	}
+	
+	.about-paras div{
+		width:50%;
+	}
+	
+	.about-paras div:first-of-type{
+		margin-right:2rem;
+	}
+
+	.albums,
+	.video-interviews{
+		display:flex;
+	}
+
+	.albums-img img {
+    border-radius: 0.625rem 0 0 0.625rem;
+}
+
+	.video-interviews-img img {
+    border-radius: 0 0.625rem 0.625rem 0;
+}
+	
+	.albums-img,
+	.albums-description{
+		width:50%;
+	}
+	
+	.video-interviews-img,
+	.video-interviews-description{
+		width:50%;
+	}
+	
+	.albums-img img,
+	.video-interviews-img img{
+		height:100%
+	}
+	
+	.albums-description h3,
+	.albums-description p,
+	.albums-description a,
+	.video-interviews-description h3,
+	.video-interviews-description p,
+	.video-interviews-description a{
+		margin-bottom: 3rem;
+	}
+	
+	.our-founders{
+		display:flex;
+	}
+	
+	.founder-img{
+		width:30%;
+	}
+	.founder-description{
+		width:70%
+	}
+	
+	.founder-names{
+		display:flex;
+		flex-wrap:wrap;
+		
+	}
+	
+	.founder-names p{
+		width:45%
+	}
+	
+	.founder-img img{
+		height:100%;
+	}
+
+	.communities-page-gallery{
+		display:flex;
+		flex-wrap:wrap;
+		justify-content:center;
+		max-width:67.5rem;
+		margin:0 auto;
+	}
+
+
+	.communities-page-gallery a div{
+		margin: 1rem;
+	}
+
+	.gallery-indivdual {
+		display: grid;
+		grid-template-columns: repeat(3,1fr);
+		grid-template-rows: repeat(2,1fr);
+		margin: 1rem;
+	}
+	.farm p {
+		color: #F2DAC0;
+		font-family: 'DM Serif Display', serif;
+		position: relative;
+		top: 15rem;
+		font-size: 3rem;
+		text-align: center;
+	}
+	.farming{
+	position: relative;
+	height: 33rem;
+	}
+	.church,
+	.school,
+	.socializing,
+	.documents {
+	margin-left: 2rem;
+	width: 95%;
+	}
+	.schools p,
+	.churches p,
+	.social p,
+	.doc p {
+
+	color: #F2DAC0;
+	font-family: 'DM Serif Display', serif;
+	position: relative;
+	top: 7rem;
+	font-size: 3rem;
+	text-align: center;
+	}
+	
+	.intro-header,
+	.home-title,
+	.what-we-do,
+	.about-bsas,
+	.archiving-history,
+	.site-info,
+	.inner-video,
+	.inner-contact,
+	.video-big-container,
+	.home-title {
+		max-width:80rem;
+		margin:0 auto;
+	}
+
+	.home-title {
+		text-align: left;
+		padding: 2rem;
+	}
+
+	.inner-contact {
+		display: flex;
+		flex-direction: row;
+	}
+
+	.contact-right {
+		margin-left: 5rem;
+	}
+	.inner-video {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+	}
+	.inner-video iframe {
+		width: 100%;
+		height: 30rem;
+	}
+	/* Video Interview */
+	.wide-container {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+	}
+	.our-members {
+		display: grid;
+		grid-template-columns: repeat(2,1fr);
+
+	}
+	.members-img {
+		grid-column: 2/-1;
+
+	}
+	.members-description {
+		grid-row: 1/-1;
+	}
+
+}
+	
+
+@media only screen and (min-width: 1400px) {
+/* Video Interview */
+	.video-text h3{
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+.wide-container {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+}
+
+.video-container {
+    margin-right: 2rem;
+	margin-bottom: 2rem;
+}
+/* Albums Page */
+
+.communties-album {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	margin-top: 5rem;
+}
+.community-image {
+	grid-column: 2 /-1;
+	
+}
+.communites-text p {
+	width: 100%;
+}
+.community-image img {
+	width: 100%;
+}
+.gallery-section {
+	margin-top: 10rem;
+}
+.gallery-images {
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	grid-auto-rows: minmax(6.25rem, auto);
+}
+.farming {
+	grid-column: 1/2;
+	grid-row: 1/-1;
+}
+.schools {
+	grid-column: 2/3;
+	grid-row: 1/2;
+}
+.church {
+	grid-column: 3/-1;
+	grid-row: 1/-1;
+}
+.socializing {
+	grid-column: 2/3;
+}
+.image-box img {
+	width: 100%;
+}
+
+}
+
+/* Anchor tag in Cities Page Styling */
+.p-container p > a {
+    color: #880000;
+    font-weight: 500;
+}
+/* END anchor tag cities styling */
+
+li#menu-item-655 > a {
+	color: #E8DDD5;
+	background: #880000;
+}
+
+li#menu-item-655 > a:hover {
+	color: #880000;
+}
+
+.footer2 h3, 
+.footer1 h2 {
+	margin: 2rem 0;
+}
+
+.footer1 a {
+	padding-right: 1.5rem;
+}
+
+footer {
+	margin-top: 2rem;
+}
+
+footer p.copyright {
+	text-align: center;
+	margin: 0;
+	padding: 1rem 0;
+}
+
+/* Facebook Feed Plug In Styling */
+
+.cff-header-img {
+	padding-top: 1rem;
+}
+
+.cff-header-inner-wrap {
+	background-color: #CEC0B6;
+	padding: 1rem;
+	border-radius: 0.313rem;
+}
+
+p.site-title {
+	display: none;
+}
+
