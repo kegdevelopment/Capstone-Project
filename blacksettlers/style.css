@@ -2199,6 +2199,10 @@ CPT MEDIA QUERIES
 	margin-top: 4rem;
 }
 
+.res-link a.button {
+	margin-left: 1rem;
+}
+
 }
 /* End of CPT media queries  */
 
@@ -2236,9 +2240,6 @@ CPT MEDIA QUERIES
     order: 2;
 }
 
-.res-link a.button {
-	margin-left: 1rem;
-}
 }
 
 @media only screen and (min-width: 700px){
