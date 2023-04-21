@@ -13,8 +13,8 @@ get_header();
 <main id="primary" class="site-main">
   <div class="res-pg-container">
     <h1 class="res-title"><?php the_field('page_title'); ?></h1>
-    <?php the_field('page_information'); ?>
     <div class="res-outer-container">
+      <?php the_field('page_information'); ?>
       <div class="res-inner-container">
         <div class="res-content">
           <?php if(get_field('resource1_name')) : ?>

@@ -1973,6 +1973,10 @@ COMMUNITIES (CPT) STYLING
 	margin: 0 auto;
 }
 
+.res-pg-container h1 {
+	text-align: center;
+}
+
 .res-button a {
 	padding: 0.7rem 2rem;
 	text-decoration: none;
@@ -1980,7 +1984,6 @@ COMMUNITIES (CPT) STYLING
 	border-radius: 3rem;
 	color: #E8DDD5;
 }
-
 
 
 /* Donate Page Styling */
@@ -2174,48 +2177,22 @@ CPT MEDIA QUERIES
 		justify-content: space-between;
 }
 
+.res-desc-container:last-child {
+	margin-bottom: 4rem;
+}
+
+.res-description {
+	max-width: 80%;
+}
+
 .res-description p {
 	margin: 0;
 	padding-bottom: 2rem;
 }
 
-	/* .res-outer-container{
-		display:flex;
-	}
-	
-	.res-container{
-		width:70%;
-	}
-	
-	.res-container{
-		padding:2rem;
-		margin-right:2rem
-	}
-	
-	.res-inner-container{
-	display:flex;
-		justify-content:space-between;
+.fb-feed {
+	margin-top: 4rem;
 }
-	
-	.res-inner-pg-container,
-	.outer-communities-page{
-		display:flex;
-		justify-content:center;
-	}
-	
-	.res-pg-container{
-		max-width:1280px;
-	}
-
-	.res-description {
-		margin-bottom: 2rem;
-		padding-bottom: 1rem;
-		max-width: 70%
-	}
-
-	.res-description p {
-		margin-bottom: 0;
-	} */
 
 }
 /* End of CPT media queries  */
