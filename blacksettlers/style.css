@@ -1974,6 +1974,11 @@ COMMUNITIES (CPT) STYLING
 	white-space: nowrap;
 }
 
+.res-link a.button:hover {
+	color: #880000;
+  background-color: #F2DAC0;
+}
+
 /* Donate Page Styling */
 .donate-container {
 	max-width: 80rem;
