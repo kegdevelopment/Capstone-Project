@@ -1043,35 +1043,6 @@ text-decoration: none;
 font-size: 1rem;
 }
 
-/* .res-pg-container{
-	padding:2rem;
-}
-
-.res-pg-container h1 {
-	text-align:center;
-}
-
-
-.res-container a{
-	padding:.7rem 2rem;
-	text-decoration:none;
-	background-color:#800000;
-	border-radius:3rem;
-	color:#E8DDD5;
-}
-
-.res-content{
-	padding-bottom:2rem;
-}
-
-
-.res-inner-container {
-	border-bottom: 2px solid #574436;
-}
-
-.res-button {
-	margin-bottom: 1.5rem;
-} */
 
 /* * * * * * * * * *
 BSAS Custom Styles
@@ -1985,6 +1956,19 @@ COMMUNITIES (CPT) STYLING
 	color: #E8DDD5;
 }
 
+.res-desc-container {
+	border-bottom: 0.125rem solid #574436;
+	padding-bottom: 2rem;
+	text-align: center;
+}
+
+.res-name {
+	text-align: center;
+}
+
+.res-inner-container > p {
+	text-align: center;
+}
 
 /* Donate Page Styling */
 .donate-container {
@@ -2022,6 +2006,10 @@ CPT MEDIA QUERIES
 
 	.second-main-section.section-content .section-text-left {
 		order: 2;
+	}
+
+	.res-pg-container {
+		padding: 1rem;
 	}
 }
 
@@ -2175,6 +2163,7 @@ CPT MEDIA QUERIES
 		display: flex;
 		border-bottom: 0.125rem solid #574436;
 		justify-content: space-between;
+		text-align: left;
 }
 
 .res-desc-container:last-child {
@@ -2188,6 +2177,14 @@ CPT MEDIA QUERIES
 .res-description p {
 	margin: 0;
 	padding-bottom: 2rem;
+}
+
+.res-name {
+	text-align: left;
+}
+
+.res-inner-container > p {
+	text-align: left;
 }
 
 .fb-feed {
