@@ -24,16 +24,16 @@ get_header();
               <div class="res-description">
                 <?php the_field('resource1_description'); ?>
               </div> <!-- END .res-description -->
+              <div class="res-button">
+                <div class="res-link">
+                  <?php $link = get_field('resource1_link');
+                  if( $link ): ?>
+                    <a class="button" target="_blank" href="<?php echo esc_url( $link ); ?>">View More</a>
+                  <?php endif; ?>
+                </div> <!-- END .res-link -->
+              </div> <!-- END .res-button -->
             </div> <!-- END .res-desc-container -->
           <?php endif; ?>
-          <div class="res-button">
-            <div class="res-link">
-              <?php $link = get_field('resource1_link');
-              if( $link ): ?>
-                <a class="button" target="_blank" href="<?php echo esc_url( $link ); ?>">View More</a>
-              <?php endif; ?>
-            </div> <!-- END .res-link -->
-          </div> <!-- END .res-button -->
         </div> <!-- END .res-content -->
         <div class="res-content">
           <?php if(get_field('resource2_name')) : ?>
@@ -44,16 +44,16 @@ get_header();
               <div class="res-description">
                 <?php the_field('resource2_description'); ?>
               </div> <!-- END .res-description -->
+              <div class="res-button">
+                <div class="res-link">
+                  <?php $link = get_field('resource2_link');
+                  if( $link ): ?>
+                    <a class="button" target="_blank" href="<?php echo esc_url( $link ); ?>">View More</a>
+                  <?php endif; ?>
+                </div> <!-- END .res-link -->
+              </div> <!-- END .res-button -->
             </div> <!-- END .res-desc-container -->
           <?php endif; ?>
-          <div class="res-button">
-            <div class="res-link">
-              <?php $link = get_field('resource2_link');
-              if( $link ): ?>
-                <a class="button" target="_blank" href="<?php echo esc_url( $link ); ?>">View More</a>
-              <?php endif; ?>
-            </div> <!-- END .res-link -->
-          </div> <!-- END .res-button -->
         </div> <!-- END .res-content -->
         <div class="res-content">
           <?php if(get_field('resource3_name')) : ?>
@@ -64,16 +64,16 @@ get_header();
               <div class="res-description">
                 <?php the_field('resource3_description'); ?>
               </div> <!-- END .res-description -->
+              <div class="res-button">
+                <div class="res-link">
+                  <?php $link = get_field('resource3_link');
+                  if( $link ): ?>
+                    <a class="button" target="_blank" href="<?php echo esc_url( $link ); ?>">View More</a>
+                  <?php endif; ?>
+                </div> <!-- END .res-link -->
+              </div> <!-- END .res-button -->
             </div> <!-- END .res-desc-container -->
           <?php endif; ?>
-          <div class="res-button">
-            <div class="res-link">
-              <?php $link = get_field('resource3_link');
-              if( $link ): ?>
-                <a class="button" target="_blank" href="<?php echo esc_url( $link ); ?>">View More</a>
-              <?php endif; ?>
-            </div> <!-- END .res-link -->
-          </div> <!-- END .res-button -->
         </div> <!-- END .res-content -->
         <div class="res-content">
           <?php if(get_field('resource4_name')) : ?>
@@ -84,16 +84,16 @@ get_header();
               <div class="res-description">
                 <?php the_field('resource4_description'); ?>
               </div> <!-- END .res-description -->
+              <div class="res-button">
+                <div class="res-link">
+                  <?php $link = get_field('resource4_link');
+                  if( $link ): ?>
+                    <a class="button" target="_blank" href="<?php echo esc_url( $link ); ?>">View More</a>
+                  <?php endif; ?>
+                </div> <!-- END .res-link -->
+              </div> <!-- END .res-button -->
             </div> <!-- END .res-desc-container -->
           <?php endif; ?>
-          <div class="res-button">
-            <div class="res-link">
-              <?php $link = get_field('resource4_link');
-              if( $link ): ?>
-                <a class="button" target="_blank" href="<?php echo esc_url( $link ); ?>">View More</a>
-              <?php endif; ?>
-            </div> <!-- END .res-link -->
-          </div> <!-- END .res-button -->
         </div> <!-- END .res-content -->
         <div class="res-content">
           <?php if(get_field('resource5_name')) : ?>
@@ -104,16 +104,16 @@ get_header();
               <div class="res-description">
                 <?php the_field('resource5_description'); ?>
               </div> <!-- END .res-description -->
+              <div class="res-button">
+                <div class="res-link">
+                  <?php $link = get_field('resource5_link');
+                  if( $link ): ?>
+                    <a class="button" target="_blank" href="<?php echo esc_url( $link ); ?>">View More</a>
+                  <?php endif; ?>
+                </div> <!-- END .res-link -->
+              </div> <!-- END .res-button -->
             </div> <!-- END .res-desc-container -->
           <?php endif; ?>
-          <div class="res-button">
-            <div class="res-link">
-              <?php $link = get_field('resource5_link');
-              if( $link ): ?>
-                <a class="button" target="_blank" href="<?php echo esc_url( $link ); ?>">View More</a>
-              <?php endif; ?>
-            </div> <!-- END .res-link -->
-          </div> <!-- END .res-button -->
         </div> <!-- END .res-content -->
         <div class="res-content">
           <?php if(get_field('resource6_name')) : ?>
@@ -124,16 +124,16 @@ get_header();
               <div class="res-description">
                 <?php the_field('resource6_description'); ?>
               </div> <!-- END .res-description -->
+              <div class="res-button">
+                <div class="res-link">
+                  <?php $link = get_field('resource6_link');
+                  if( $link ): ?>
+                    <a class="button" target="_blank" href="<?php echo esc_url( $link ); ?>">View More</a>
+                  <?php endif; ?>
+                </div> <!-- END .res-link -->
+              </div> <!-- END .res-button -->
             </div> <!-- END .res-desc-container -->
           <?php endif; ?>
-          <div class="res-button">
-            <div class="res-link">
-              <?php $link = get_field('resource6_link');
-              if( $link ): ?>
-                <a class="button" target="_blank" href="<?php echo esc_url( $link ); ?>">View More</a>
-              <?php endif; ?>
-            </div> <!-- END .res-link -->
-          </div> <!-- END .res-button -->
         </div> <!-- END .res-content -->
         <div class="res-content">
           <?php if(get_field('resource7_name')) : ?>
@@ -144,16 +144,16 @@ get_header();
               <div class="res-description">
                 <?php the_field('resource7_description'); ?>
               </div> <!-- END .res-description -->
+              <div class="res-button">
+                <div class="res-link">
+                  <?php $link = get_field('resource7_link');
+                  if( $link ): ?>
+                    <a class="button" target="_blank" href="<?php echo esc_url( $link ); ?>">View More</a>
+                  <?php endif; ?>
+                </div> <!-- END .res-link -->
+              </div> <!-- END .res-button -->
             </div> <!-- END .res-desc-container -->
           <?php endif; ?>
-          <div class="res-button">
-            <div class="res-link">
-              <?php $link = get_field('resource7_link');
-              if( $link ): ?>
-                <a class="button" target="_blank" href="<?php echo esc_url( $link ); ?>">View More</a>
-              <?php endif; ?>
-            </div> <!-- END .res-link -->
-          </div> <!-- END .res-button -->
         </div> <!-- END .res-content -->
         <div class="res-content">
           <?php if(get_field('resource8_name')) : ?>
@@ -164,16 +164,16 @@ get_header();
               <div class="res-description">
                 <?php the_field('resource8_description'); ?>
               </div> <!-- END .res-description -->
+              <div class="res-button">
+                <div class="res-link">
+                  <?php $link = get_field('resource8_link');
+                  if( $link ): ?>
+                    <a class="button" target="_blank" href="<?php echo esc_url( $link ); ?>">View More</a>
+                  <?php endif; ?>
+                </div> <!-- END .res-link -->
+              </div> <!-- END .res-button -->
             </div> <!-- END .res-desc-container -->
           <?php endif; ?>
-          <div class="res-button">
-            <div class="res-link">
-              <?php $link = get_field('resource8_link');
-              if( $link ): ?>
-                <a class="button" target="_blank" href="<?php echo esc_url( $link ); ?>">View More</a>
-              <?php endif; ?>
-            </div> <!-- END .res-link -->
-          </div> <!-- END .res-button -->
         </div> <!-- END .res-content -->
         <div class="res-content">
           <?php if(get_field('resource9_name')) : ?>
@@ -184,16 +184,16 @@ get_header();
               <div class="res-description">
                 <?php the_field('resource9_description'); ?>
               </div> <!-- END .res-description -->
+              <div class="res-button">
+                <div class="res-link">
+                  <?php $link = get_field('resource9_link');
+                  if( $link ): ?>
+                    <a class="button" target="_blank" href="<?php echo esc_url( $link ); ?>">View More</a>
+                  <?php endif; ?>
+                </div> <!-- END .res-link -->
+              </div> <!-- END .res-button -->
             </div> <!-- END .res-desc-container -->
           <?php endif; ?>
-          <div class="res-button">
-            <div class="res-link">
-              <?php $link = get_field('resource9_link');
-              if( $link ): ?>
-                <a class="button" target="_blank" href="<?php echo esc_url( $link ); ?>">View More</a>
-              <?php endif; ?>
-            </div> <!-- END .res-link -->
-          </div> <!-- END .res-button -->
         </div> <!-- END .res-content -->
         <div class="res-content">
           <?php if(get_field('resource10_name')) : ?>
@@ -204,16 +204,16 @@ get_header();
               <div class="res-description">
                 <?php the_field('resource10_description'); ?>
               </div> <!-- END .res-description -->
+              <div class="res-button">
+                <div class="res-link">
+                  <?php $link = get_field('resource10_link');
+                  if( $link ): ?>
+                    <a class="button" target="_blank" href="<?php echo esc_url( $link ); ?>">View More</a>
+                  <?php endif; ?>
+                </div> <!-- END .res-link -->
+              </div> <!-- END .res-button -->
             </div> <!-- END .res-desc-container -->
           <?php endif; ?>
-          <div class="res-button">
-            <div class="res-link">
-              <?php $link = get_field('resource10_link');
-              if( $link ): ?>
-                <a class="button" target="_blank" href="<?php echo esc_url( $link ); ?>">View More</a>
-              <?php endif; ?>
-            </div> <!-- END .res-link -->
-          </div> <!-- END .res-button -->
         </div> <!-- END .res-content -->
       </div> <!-- END .res-inner-container -->
       <div class="fb-feed">

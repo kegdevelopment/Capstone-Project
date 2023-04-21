@@ -1911,8 +1911,6 @@ input[type="submit"]:hover {
   
 
 
-
-
 /* * * * * * * * * * * * *
 COMMUNITIES (CPT) STYLING
 * * * * * * * * * * * * */
@@ -1968,6 +1966,22 @@ COMMUNITIES (CPT) STYLING
 }
 
 /* End CPT Styling */
+
+/* Resources Page Styling */
+.res-pg-container {
+	max-width: 1280px;
+	margin: 0 auto;
+}
+
+.res-button a {
+	padding: 0.7rem 2rem;
+	text-decoration: none;
+	background-color: #800000;
+	border-radius: 3rem;
+	color: #E8DDD5;
+}
+
+
 
 /* Donate Page Styling */
 .donate-container {
@@ -2147,6 +2161,23 @@ CPT MEDIA QUERIES
 	.sidebar-container{
 		width:20%
 	}
+
+	.res-outer-container {
+		display: grid;
+		grid-template-columns: 3fr 1fr;
+		column-gap: 4rem;
+}
+
+.res-desc-container {
+		display: flex;
+		border-bottom: 0.125rem solid #574436;
+		justify-content: space-between;
+}
+
+.res-description p {
+	margin: 0;
+	padding-bottom: 2rem;
+}
 
 	/* .res-outer-container{
 		display:flex;
