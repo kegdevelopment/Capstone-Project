@@ -2028,7 +2028,9 @@ CPT MEDIA QUERIES
 	h4,
 	h5,
 	p,
-	a {
+	.footer1,
+	.footer2,
+	.intro-dream{
 		text-align: center;
 	}
 }
