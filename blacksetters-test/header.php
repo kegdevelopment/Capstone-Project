@@ -51,8 +51,8 @@
 			<?php endif; ?>
 		<!-- .site-branding -->
 
-		<svg class="menu-toggle" aria-controls="primary-menu" aria-expanded="false" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-		<path d="M2.25 6.75H21.75M2.25 12H21.75M2.25 17.25H21.75" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+		<svg class="menu-toggle" aria-controls="primary-menu" aria-expanded="false" viewBox="0 0 24 24" width="50px" height="50px" xmlns="http://www.w3.org/2000/svg">
+		<path d="M2.25 6.75H21.75M2.25 12H21.75M2.25 17.25H21.75" stroke="#880000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 		</svg>
 
 <nav id="site-navigation" class="main-navigation">
