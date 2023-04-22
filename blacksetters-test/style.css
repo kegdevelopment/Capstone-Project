@@ -1,5 +1,5 @@
 /*!
-Theme Name: blacksettlers
+Theme Name: test theme
 Theme URI: http://underscores.me/
 Author: Underscores.me
 Author URI: http://underscores.me/
@@ -647,20 +647,68 @@ textarea {
 
 /* Navigation
 --------------------------------------------- */
+.menu-toggle {
+	display: block;
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+	fill: none;
+	stroke: #000;
+	stroke-width: 1.5;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+  }
+  
+  .menu-toggle:hover,
+  .menu-toggle:focus {
+	outline: none;
+  }
+  
 .main-navigation {
 	display: block;
 	width: 100%;
 }
 
 .main-navigation ul {
-	display: none;
+	/* display: none; */
 	list-style: none;
 	margin: 0;
 	padding-left: 0;
+	position: absolute;
+    left: -450px;
+	transition: all 0.6s ease-in-out;
 }
 
+.main-navigation ul li{
+	margin-top: 1rem;
+}
+
+
+.main-navigation.show ul {
+	/* display: block; */
+	left:-42px;
+	background-color: #cec0b6;
+	width: 22rem;
+	height:100vh;
+	z-index: 1;
+}
+
+.sub-menu-class{
+	display:none;
+}
+
+.svg-icon {
+	display: inline-block;
+	vertical-align: middle;
+	width: 24px;
+	height: 24px;
+	max-width: 100%;
+	fill: currentColor;
+  }
+
+
+
 .main-navigation ul ul {
-	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
 	float: left;
 	position: absolute;
 	top: 100%;
@@ -698,12 +746,31 @@ textarea {
 }
 
 /* Small menu. */
-.menu-toggle,
-.main-navigation.toggled ul {
+.menu-toggle {
 	display: block;
 }
+/* .main-navigation ul{
+	display: none;
+} */
+/* .menu-toggle{
+	height:2rem;
+	width:2rem;
+} */
+#ham-menu{
+	width:3rem;
+	height:4rem;
+	position: absolute;
+	right:.5rem;
+	top:.5rem;
+}
+.menu-menu-1-container{
+	width:100%;
+	justify-content: center;
+}
 
-@media screen and (min-width: 37.5em) {
+
+@media screen and (min-width: 1200px
+) {
 
 	.menu-toggle {
 		display: none;
@@ -711,6 +778,63 @@ textarea {
 
 	.main-navigation ul {
 		display: flex;
+		right: 0;
+		margin: 13px 0;
+		left: 0;
+		justify-content: end;
+		position: static;
+	}
+
+	.main-navigation ul li{
+		margin-top: 0	;
+	}
+
+	.main-navigation.show ul {
+		display: flex;
+		height: fit-content;
+	}
+	.site-branding{
+		display: flex;
+		justify-content: space-between;
+	}
+	#site-navigation{
+		text-align: right;
+	}
+	.mobile-logo{
+		display: none;
+	}
+	.custom-logo-link .custom-logo{
+		display: block;
+		margin: 0;
+	}
+	.sub-menu-class{
+		display:unset;
+	}
+	.main-navigation ul ul {
+		box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+	}
+	.menu-menu-1-container {
+		width: 100%;
+		display: flex;
+		justify-content: end;
+	}
+
+	.site-branding div h1{
+		display: none;
+		
+	}
+
+	.main-navigation ul ul.sub-menu{
+		display: none;
+		width: 13rem;
+	}
+
+	.main-navigation ul ul.sub-menu li a{
+		text-align: right;
+	}
+
+	#primary-menu li a{
+		margin-right:1.3rem;
 	}
 }
 
@@ -766,6 +890,19 @@ textarea {
 	clear: both;
 	margin: 0 0 1.5em;
 }
+
+/* Style the SVG */
+.menu-toggle-svg {
+	display: block;
+	width: 24px;
+	height: 24px;
+	cursor: pointer;
+}
+
+
+
+  
+
 
 /* Comments
 --------------------------------------------- */
@@ -975,11 +1112,21 @@ Custom Styling from the site
 	max-width:12rem;
 	margin-top:8.5%;
 	margin-left:4rem;
+	display: none;
 }
-
+.mobile-logo{
+	width:4rem;
+	height:4rem;
+	margin:auto 0;
+}
 .site-branding{
-	display:flex;
+	padding:.5rem;
+
+}
+.site-branding{
 	background-color:#CEC0B6;
+	justify-content: space-between;
+	position: relative;
 }
 
 .mob-menu-logo-holder{
@@ -1093,18 +1240,25 @@ p {
 .page-template-default{
 	margin-bottom:0rem;
 }
-.menu-menu-1-container{
-	padding:2rem;
+
+
+nav{
+	justify-content:right;
+	width: 100%;
 }
 
-#primary-menu{
-	justify-content:right;
+
+#site-navigation .show {
+	max-height: 100vh;
+	z-index: 3;
+	/* position: absolute; */
 }
+
+
 
 #primary-menu li a{
-	margin-right: 0.75rem;
 	color:#800000;
-	white-space: nowrap;
+	text-align: center;
 }
 
 .custom-logo {
@@ -1144,7 +1298,7 @@ p {
 	padding-bottom: 2rem;
 }
 ul.sub-menu{
-	display:block;
+	display:none;
 	background-color:#CEC0B6;
 	padding:0.5rem;
 	box-shadow:none;
@@ -1164,7 +1318,7 @@ ul.sub-menu li{
 }
 
 ul.sub-menu{
-	display:block;
+	display:none;
 	background-color:#CEC0B6;
 	padding:0.5rem;
 	box-shadow:none;
@@ -1249,6 +1403,10 @@ font-size: 1rem;
 
 .intro-dream{
 	margin-bottom: 2rem;
+}
+
+.intro-header.intro-dream.intro-dream-para-1 h1{
+	font-size: 2.5rem;
 }
 
 .video-description  {
@@ -1654,8 +1812,6 @@ input[type="submit"]:hover {
 .communties-album {
 	display: grid;
 	
-	grid-template-rows: repeat(2, 1fr);
-	
 }
 .community-image {
 	grid-row: 1/2;
@@ -1975,11 +2131,6 @@ COMMUNITIES (CPT) STYLING
 	white-space: nowrap;
 }
 
-.res-link a.button:hover {
-	color: #880000;
-  background-color: #F2DAC0;
-}
-
 /* Donate Page Styling */
 .donate-container {
 	max-width: 80rem;
@@ -2020,18 +2171,6 @@ CPT MEDIA QUERIES
 
 	.res-pg-container {
 		padding: 1rem;
-	}
-
-	h1, 
-	h2,
-	h3,
-	h4,
-	h5,
-	p,
-	.footer1,
-	.footer2,
-	.intro-dream {
-		text-align: center;
 	}
 }
 
@@ -2303,7 +2442,6 @@ CPT MEDIA QUERIES
 	
 	.contact{
 		display:flex;
-		margin-bottom:12rem;
 	}
 	
 
@@ -2609,7 +2747,7 @@ li#menu-item-655 > a:hover {
 }
 
 footer {
-	margin-top: 2rem;
+	margin-top: 6rem;
 }
 
 footer p.copyright {
@@ -2630,10 +2768,3 @@ footer p.copyright {
 	border-radius: 0.313rem;
 }
 
-p.site-title {
-	display: none;
-}
-
-a {
-	white-space: nowrap;
-}

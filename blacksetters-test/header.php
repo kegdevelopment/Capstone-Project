@@ -33,37 +33,28 @@
 	<header id="masthead" class="site-header">
 		
 		<div class="site-branding">
-			<?php
-			the_custom_logo();
-			if ( is_front_page() && is_home() ) :
-				?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+			<div>
 				<?php
-			else :
-				?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-				<?php
-			endif;
-			$blacksettlers_description = get_bloginfo( 'description', 'display' );
-			if ( $blacksettlers_description || is_customize_preview() ) :
-				?>
-				<p class="site-description"><?php echo $blacksettlers_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
-			<?php endif; ?>
+				the_custom_logo();
+					?>
+					<a href="https://blacksettlersb.web.dmitcapstone.ca/"><img class="mobile-logo" src="https://blacksettlersb.web.dmitcapstone.ca/wp-content/uploads/2023/04/settlers-logo-transparent.png"></a>
+
+					
+			</div>
+			<!-- <h1>BSAS</h1> -->
 		<!-- .site-branding -->
-
-		<svg class="menu-toggle" aria-controls="primary-menu" aria-expanded="false" width="65px" height="65px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M4 18L20 18" stroke="#880000" stroke-width="2" stroke-linecap="round"></path> <path d="M4 12L20 12" stroke="#880000" stroke-width="2" stroke-linecap="round"></path> <path d="M4 6L20 6" stroke="#880000" stroke-width="2" stroke-linecap="round"></path> </g></svg>
-
-<nav id="site-navigation" class="main-navigation">
-	<?php
-	wp_nav_menu(
-		array(
-			'theme_location' => 'menu-1',
-			'menu_id'        => 'primary-menu',
-		)
-	);
-	?>
-</nav>
-
-
+		<nav id="site-navigation" class="main-navigation">
+		<svg id="ham-menu" class="menu-toggle" aria-controls="primary-menu" aria-expanded="false" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+  <path d="M2.25 6.75H21.75M2.25 12H21.75M2.25 17.25H21.75" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+			<?php
+			wp_nav_menu(
+				array(
+					'theme_location' => 'menu-1',
+					'menu_id'        => 'primary-menu',
+				)
+			);
+			?>
+		</nav><!-- #site-navigation -->
 		</div>
 	</header><!-- #masthead -->
