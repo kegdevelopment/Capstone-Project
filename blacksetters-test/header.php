@@ -51,9 +51,7 @@
 			<?php endif; ?>
 		<!-- .site-branding -->
 
-		<svg class="menu-toggle" aria-controls="primary-menu" aria-expanded="false" viewBox="0 0 24 24" width="50px" height="50px" xmlns="http://www.w3.org/2000/svg">
-		<path d="M2.25 6.75H21.75M2.25 12H21.75M2.25 17.25H21.75" stroke="#880000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-		</svg>
+		<svg class="menu-toggle" aria-controls="primary-menu" aria-expanded="false" width="65px" height="65px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M4 18L20 18" stroke="#880000" stroke-width="2" stroke-linecap="round"></path> <path d="M4 12L20 12" stroke="#880000" stroke-width="2" stroke-linecap="round"></path> <path d="M4 6L20 6" stroke="#880000" stroke-width="2" stroke-linecap="round"></path> </g></svg>
 
 <nav id="site-navigation" class="main-navigation">
 	<?php
