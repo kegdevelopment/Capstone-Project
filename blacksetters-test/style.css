@@ -2030,7 +2030,7 @@ CPT MEDIA QUERIES
 	p,
 	.footer1,
 	.footer2,
-	.intro-dream{
+	.intro-dream {
 		text-align: center;
 	}
 }
@@ -2634,3 +2634,6 @@ p.site-title {
 	display: none;
 }
 
+a {
+	white-space: nowrap;
+}
