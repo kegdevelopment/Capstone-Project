@@ -688,7 +688,7 @@ textarea {
 	/* display: block; */
 	left:-42px;
 	background-color: #cec0b6;
-	width: 22rem;
+	width: 100vw;
 	height:100vh;
 	z-index: 1;
 }
