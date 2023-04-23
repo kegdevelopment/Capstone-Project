@@ -2127,7 +2127,10 @@ COMMUNITIES (CPT) STYLING
 	text-align: center;
 }
 
-.res-link a.button {
+.res-link a.button,
+#primary-menu li a,
+li a,
+a {
 	white-space: nowrap;
 }
 
