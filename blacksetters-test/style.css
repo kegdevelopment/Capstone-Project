@@ -800,13 +800,7 @@ textarea {
 	#site-navigation{
 		text-align: right;
 	}
-	.mobile-logo{
-		display: none;
-	}
-	.custom-logo-link .custom-logo{
-		display: block;
-		margin: 0;
-	}
+
 	.sub-menu-class{
 		display:unset;
 	}
@@ -835,6 +829,16 @@ textarea {
 
 	#primary-menu li a{
 		margin-right:1.3rem;
+	}
+}
+
+@media screen and (min-width: 600px) {
+	.mobile-logo{
+		display: none;
+	}
+	.custom-logo-link .custom-logo{
+		display: block;
+		margin: 0;
 	}
 }
 
