@@ -102,6 +102,13 @@ function blacksettlers_setup() {
 }
 add_action( 'after_setup_theme', 'blacksettlers_setup' );
 
+/* Remove WP-Editor from Community Custom Posts */
+add_action( 'init', function() {
+	remove_post_type_support( 'our_communities', 'editor' );
+	remove_post_type_support( 'resources', 'editor' );
+	remove_post_type_support( 'videos', 'editor' );
+}, 99);
+
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
  *
