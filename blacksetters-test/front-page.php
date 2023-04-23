@@ -38,11 +38,11 @@ get_header();
 					Williams, Woods, Wright, Yarborough</p>
 
 			</div>
-			<a href="https://blacksettlersb.web.dmitcapstone.ca/communities/">Read our Stories</a>
+			<a href="http://www.blacksettlers.ca/communities/">Read our Stories</a>
 		</div>
 	
 		<div class="intro-img">
-		<img src="https://blacksettlersb.web.dmitcapstone.ca/wp-content/uploads/2023/03/ab-map.png" alt="map">
+		<img src="http://www.blacksettlers.ca/wp-content/uploads/2023/03/ab-map.png" alt="map">
 		</div>
 	</div>
 	<div class="intro-video">
@@ -54,7 +54,7 @@ get_header();
 			<h2>Sharing our History</h2>
 			<p>The Black settlers of Alberta and Saskatchewan historical society wishes to pay tribute to all black settlers who came before us by preserving their stories, and ultimately their struggles and successes with all Canadians, thereby firmly establishing their place in Canadian history.</p>
 			
-			<a href="https://blacksettlersb.web.dmitcapstone.ca/video-interviews/">More Video Interviews</a>
+			<a href="http://www.blacksettlers.ca/videos/video-interviews/">More Video Interviews</a>
 
 		</div>
 		</div>
@@ -65,7 +65,7 @@ get_header();
 
 		<p>BSAS wishes to pay tribute to all the Black Settlers who came before us by preserving their stories, and ultimately sharing their struggles and successes with all Canadians, thereby firmly establishing their place in Canadian History.
 		</p>
-		<a href="https://blacksettlersb.web.dmitcapstone.ca/about/">Learn More</a>
+		<a href="http://www.blacksettlers.ca/about/">Learn More</a>
 	</div>
 	<div class="contact">
 		<div class="inner-contact">
@@ -74,7 +74,7 @@ get_header();
 			<p>Help to preserve our history by participating. Share your stories or images with us.</p>
 		</div>
 		<div class="contact-right">
-		<a href="https://blacksettlersb.web.dmitcapstone.ca/contact-us/">Get in Touch</a>
+		<a href="http://www.blacksettlers.ca/contact-us/">Get in Touch</a>
 		</div>
 		</div>
 	</div>

@@ -22,12 +22,12 @@
                 <a href="https://blacksettlersb.web.dmitcapstone.ca/communities/">
                 <div class="go-communities">
                     Go To Communities
-                    <img src="https://blacksettlersb.web.dmitcapstone.ca/wp-content/uploads/2023/04/icons8-arrow-24.png" alt="">
+                    <img src="http://www.blacksettlers.ca/wp-content/uploads/2023/04/icons8-arrow-24.png" alt="arrow button">
                 </div>
                 </a>
             </div>
             <div class="community-image">
-                <img src="https://blacksettlersb.web.dmitcapstone.ca/wp-content/uploads/2023/04/unid-people-on-horses.jpeg" alt="unidentified person on a horse">
+                <img src="http://www.blacksettlers.ca/wp-content/uploads/2023/04/unid-people-on-horses.jpeg" alt="unidentified person on a horse">
             </div>
 
 
@@ -36,11 +36,11 @@
             <h2>Galleries</h2>
             <p>Browse through our various galleries, themed by the different activities that took place in the communities.</p>
             <div class="gallery-indivdual">
-                <a href="https://blacksettlersb.web.dmitcapstone.ca/albums/farming/" class="farming-1"><div class=" farming"><div class="farm"><p>Farming</p></div></div></a>
-                <a href="https://blacksettlersb.web.dmitcapstone.ca/albums/schools/" class="school-1"><div class="school"><div class="schools"><p>Schools</p></div></div></a>
-                <a href="https://blacksettlersb.web.dmitcapstone.ca/albums/church/" class="church-1"><div class="church"><div class="churches"><p>Church</p></div></div></a>
-                <a href="https://blacksettlersb.web.dmitcapstone.ca/albums/socializing/" class="socializing-1"><div class="socializing"><div class="social"><p>Socializing</p></div></div></a>
-                <a href="https://blacksettlersb.web.dmitcapstone.ca/albums/documents/" class="documents-1"><div class="documents"><div class="doc"><p>Documents</p></div></div></a>
+                <a href="http://www.blacksettlers.ca/albums/farming/" class="farming-1"><div class=" farming"><div class="farm"><p>Farming</p></div></div></a>
+                <a href="http://www.blacksettlers.ca/albums/schools/" class="school-1"><div class="school"><div class="schools"><p>Schools</p></div></div></a>
+                <a href="http://www.blacksettlers.ca/albums/church/" class="church-1"><div class="church"><div class="churches"><p>Church</p></div></div></a>
+                <a href="http://www.blacksettlers.ca/albums/socializing/" class="socializing-1"><div class="socializing"><div class="social"><p>Socializing</p></div></div></a>
+                <a href="http://www.blacksettlers.ca/albums/documents/" class="documents-1"><div class="documents"><div class="doc"><p>Documents</p></div></div></a>
                 
             </div>
         </div>

@@ -25,12 +25,12 @@ get_header();
 </p>
 </div>
 <div class="communities-page-gallery">
-<a href="https://blacksettlersb.web.dmitcapstone.ca/our_communities/campsie/"><div class="campsie-community"><div class="campsie"><p>Campsie</p></div></div></a>
-<a href="https://blacksettlersb.web.dmitcapstone.ca/our_communities/amber-valley/"><div class="amber-valley-community"><div class="amber"><p>Amber Valley</p></div></div></a>
-<a href="https://blacksettlersb.web.dmitcapstone.ca/our_communities/breton/"><div class="breton-community"><div class="breton"><p>Breton</p></div></div></a>
-<a href="https://blacksettlersb.web.dmitcapstone.ca/our_communities/wildwood/"><div class="wildwood-community"><div class="wildwood"><p>Wildwood</p></div></div></a>
-<a href="https://blacksettlersb.web.dmitcapstone.ca/our_communities/saskatchewan/"><div class="saskatchewan-community"><div class="sk"><p>Saskatchewan</p></div></div></a>
-<a href="https://blacksettlersb.web.dmitcapstone.ca/our_communities/cities/"><div class="cities-community"><div class="cities"><p>Cities</p></div></div></a>
+<a href="http://www.blacksettlers.ca/our_communities/campsie/"><div class="campsie-community"><div class="campsie"><p>Campsie</p></div></div></a>
+<a href="http://www.blacksettlers.ca/our_communities/amber-valley/"><div class="amber-valley-community"><div class="amber"><p>Amber Valley</p></div></div></a>
+<a href="http://www.blacksettlers.ca/our_communities/breton/"><div class="breton-community"><div class="breton"><p>Breton</p></div></div></a>
+<a href="http://www.blacksettlers.ca/our_communities/wildwood/"><div class="wildwood-community"><div class="wildwood"><p>Wildwood</p></div></div></a>
+<a href="http://www.blacksettlers.ca/our_communities/saskatchewan/"><div class="saskatchewan-community"><div class="sk"><p>Saskatchewan</p></div></div></a>
+<a href="http://www.blacksettlers.ca/our_communities/cities/"><div class="cities-community"><div class="cities"><p>Cities</p></div></div></a>
 </div>
 </div>
 </main>
