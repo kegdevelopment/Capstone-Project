@@ -34,7 +34,7 @@
 		<div class="footer2">
 			<h3>Contact Us</h3>
 			<p>Any questions or want to add information to the site?</p>
-			<a href="https://blacksettlersb.web.dmitcapstone.ca/contact-us/">Get in Touch</a>
+			<a href="http://www.blacksettlers.ca/contact-us/">Get in Touch</a>
 		</div>
 	</div><!-- .site-info -->
 	<p class="copyright">&copy; 2023. Black Settlers of Alberta and Saskatchewan Historical Society. </p>
