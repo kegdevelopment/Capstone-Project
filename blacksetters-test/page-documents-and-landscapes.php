@@ -15,9 +15,9 @@
  <!-- start the loop -->
  	<?php while(have_posts()) : the_post(); ?>
      <div class="gallery-images">
-<a href="https://blacksettlersb.web.dmitcapstone.ca/albums/documents-and-landscapes/documents/">
+<a href="http://www.blacksettlers.ca/albums/documents/">
 <div class="gallery-box documents">
-<div class="image-box"><img src="https://blacksettlersb.web.dmitcapstone.ca/wp-content/uploads/2023/04/walker-beaver-farming.jpeg" alt="man on tractor" /></div>
+<div class="image-box"><img src="http://www.blacksettlers.ca/wp-content/uploads/2023/04/walker-beaver-farming.jpeg" alt="Walker Beaver on tractor" /></div>
 <div class="gallery-text">
 <h3>Documents</h3>
 </div>
@@ -25,7 +25,7 @@
 </a>
 <a href="">
 <div class="gallery-box landscapes">
-<div class="image-box"><img class="alignnone size-medium wp-image-212" src="https://blacksettlersb.web.dmitcapstone.ca/wp-content/uploads/2023/04/Breton-Grain-elevators-194x300.jpg" alt="Grain Elevator" width="194" height="300" /></div>
+<div class="image-box"><img class="alignnone size-medium wp-image-212" src="http://www.blacksettlers.ca/wp-content/uploads/2023/04/Breton-Grain-elevators.jpg" alt="Grain Elevator" width="194" height="300" /></div>
 <div class="gallery-text">
 <h3>Landscapes</h3>
 </div>

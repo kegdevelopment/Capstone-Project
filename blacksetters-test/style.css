@@ -2191,6 +2191,25 @@ CPT MEDIA QUERIES
 	.intro-dream {
 		text-align: center;
 	}
+
+	.fb-feed {
+		margin-top: 6rem;
+	}
+
+	.cff-bio {
+    text-align: left;
+	}
+
+	.communities-page,
+	.albums-section {
+    padding: 0 1rem;
+	}
+
+	.go-communities {
+		display: block;
+		text-align: center;
+	}
+
 }
 
 @media only screen and (min-width: 900px) and (max-width: 1280px) {
@@ -2788,3 +2807,7 @@ footer p.copyright {
 	border-radius: 0.313rem;
 }
 
+span.page-numbers {
+	padding: 2rem;
+	width: 50%;
+}
