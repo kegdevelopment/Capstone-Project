@@ -48,7 +48,7 @@
 				<?php
 				the_custom_logo();
 					?>
-					<a href="http://blacksettlers.ca/"><img class="mobile-logo" src="http://www.blacksettlers.ca/wp-content/uploads/2023/04/settlers-logo-transparent.png" alt="BSAS Logo"></a>
+					<a href="http://www.blacksettlers.ca/"><img class="mobile-logo" src="http://www.blacksettlers.ca/wp-content/uploads/2023/04/settlers-logo-transparent.png" alt="BSAS Logo"></a>
 
 					
 			</div>

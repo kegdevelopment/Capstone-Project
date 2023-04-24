@@ -85,14 +85,12 @@ get_header();
                     <p>Here are the current members involved and active in the organization:</p>
                     <div class="founder-names">
                         
-                        <p><b><span class="founders-font">Myrna Wisdom</span></b><br>
-                            Director of Communications</p>
-                        <p><b><span class="founders-font">Alison Crawford</span></b><br>
-                            Director of Promotions & Productions</p>
                         <p><b><span class="founders-font">Debbie Beaver</span></b><br>
                             Director of Outreach & Treasurer</p>
                         <p><b><span class="founders-font">Alene Holland-Drake</span></b><br>
                             Director of Administration<p>
+                        <p><b><span class="founders-font">Patricia Darbasie</span></b><br>
+                            Director of Communication & Productions<p>
 
                     </div>
                 </div>
