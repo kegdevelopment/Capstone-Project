@@ -19,7 +19,7 @@
             <div class="communites-text">
                 <h2>Community Stories </h2>
                 <p>Learn about the black settlers, their families, and the communities they settled in. Browse through our stories and discover something new.</p>
-                <a href="https://blacksettlersb.web.dmitcapstone.ca/communities/">
+                <a href="http://www.blacksettlers.ca/communities/">
                 <div class="go-communities">
                     Go To Communities
                     <img src="http://www.blacksettlers.ca/wp-content/uploads/2023/04/icons8-arrow-24.png" alt="arrow button">
