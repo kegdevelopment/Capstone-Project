@@ -37,7 +37,7 @@
 				<?php
 				the_custom_logo();
 					?>
-					<a href="https://blacksettlersb.web.dmitcapstone.ca/"><img class="mobile-logo" src="https://blacksettlersb.web.dmitcapstone.ca/wp-content/uploads/2023/04/settlers-logo-transparent.png"></a>
+					<a href="http://blacksettlers.ca"><img class="mobile-logo" src="https://blacksettlersb.web.dmitcapstone.ca/wp-content/uploads/2023/04/settlers-logo-transparent.png"></a>
 
 					
 			</div>
