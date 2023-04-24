@@ -13,6 +13,8 @@
 <!doctype html>
 <html <?php language_attributes(); ?>>
 <head>
+	<meta name="description" content="Archiving and sharing black history within Alberta and Saskatchewan.">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
@@ -37,7 +39,7 @@
 				<?php
 				the_custom_logo();
 					?>
-					<a href="https://blacksettlersb.web.dmitcapstone.ca/"><img class="mobile-logo" src="https://blacksettlersb.web.dmitcapstone.ca/wp-content/uploads/2023/04/settlers-logo-transparent.png"></a>
+					<a href="https://blacksettlersb.web.dmitcapstone.ca/"><img class="mobile-logo" src="http://www.blacksettlers.ca/wp-content/uploads/2023/04/settlers-logo-transparent.png" alt="BSAS Logo"></a>
 
 					
 			</div>
