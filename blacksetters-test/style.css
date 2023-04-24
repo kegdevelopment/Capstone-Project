@@ -2795,3 +2795,7 @@ footer p.copyright {
 	border-radius: 0.313rem;
 }
 
+span.page-numbers {
+	padding: 2rem;
+	width: 50%;
+}
